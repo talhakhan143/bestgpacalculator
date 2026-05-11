@@ -39,3 +39,31 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+# Added by code-review-graph
+.code-review-graph/
+
+# database
+/data/
+/drizzle/
+
+# user-uploaded media (preserve dir, ignore contents)
+/public/uploads/*
+!/public/uploads/.gitkeep
+
+# local AI/IDE tool configs
+/.claude/
+/.kiro/
+/.mcp.json
+/.opencode.json
+/.cursorrules
+/.windsurfrules
+/GEMINI.md
+
+# internal audit reports
+/FULL-AUDIT-REPORT.md
+/ACTION-PLAN.md
+
+# stray assets at project root (canonical copies live in public/)
+/logo.png
+/sample.png
+

@@ -1,0 +1,16 @@
+{
+  "name": "BestGPACalculator",
+  "short_name": "BestGPA",
+  "description": "Free GPA calculators for high school and college students. Weighted, unweighted, cumulative, semester, AP, Honors.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdf6ef",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

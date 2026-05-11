@@ -1,0 +1,47 @@
+# BestGPACalculator.com
+
+> Free GPA calculators for high school and college students. Weighted (5 scales), unweighted, AP, Honors, IB, semester, cumulative, college credit hours, percentage-to-GPA, AP-score predictor, and reverse GPA goal planner. Mobile-first, no signup, instant results.
+
+## Calculators
+
+- [Weighted GPA Calculator](https://bestgpacalculator.com/weighted-gpa-calculator): 5 weighting scales (standard +0.5/+1.0, conservative +0.25/+0.75, third-step +0.33/+0.67, uniform +1.0, AP-only +1.0). Supports AP, Honors, IB, dual-enrollment.
+- [Unweighted GPA Calculator](https://bestgpacalculator.com/unweighted-gpa-calculator): Pure 4.0 scale with no level bonuses. For schools and colleges that don't weight courses.
+- [High School GPA Calculator](https://bestgpacalculator.com/high-school-gpa-calculator): 9th-12th grade GPA with weighting options.
+- [College GPA Calculator](https://bestgpacalculator.com/college-gpa-calculator): 4.0 scale with credit hours, single-semester or cumulative.
+- [Middle School GPA Calculator](https://bestgpacalculator.com/middle-school-gpa-calculator): 6th-8th grade tracker.
+- [Cumulative GPA Calculator](https://bestgpacalculator.com/cumulative-gpa-calculator): Combine multiple semesters.
+- [Semester GPA Calculator](https://bestgpacalculator.com/semester-gpa-calculator): Single-term snapshot.
+- [Current GPA Calculator](https://bestgpacalculator.com/current-gpa-calculator): Real-time mid-term.
+- [AP GPA Calculator](https://bestgpacalculator.com/ap-gpa-calculator): AP class +1.0 boost only.
+- [Honors GPA Calculator](https://bestgpacalculator.com/honors-gpa-calculator): +0.5 honors bonus.
+- [Percentage to GPA Calculator](https://bestgpacalculator.com/percentage-to-gpa-calculator): Convert percentage grades to 4.0 scale.
+- [GPA Calculator Without Credits](https://bestgpacalculator.com/gpa-calculator-without-credits): Equal-weight average.
+- [AP Score to GPA Calculator](https://bestgpacalculator.com/ap-score-to-gpa-calculator): Predict college credits earned + GPA boost from AP exam scores 1-5.
+- [GPA Goal Calculator](https://bestgpacalculator.com/gpa-goal-calculator): Reverse calculator — what GPA you need next semester to hit a target.
+
+## Guides
+
+- [How to Calculate GPA](https://bestgpacalculator.com/how-to-calculate-gpa): Complete guide covering weighted, unweighted, cumulative, and college GPA math with examples.
+- [Blog](https://bestgpacalculator.com/blog): Articles on weighted vs unweighted GPA, AP/Honors weighting, college admissions, state policies.
+
+## Reference
+
+- [About](https://bestgpacalculator.com/about): Site purpose and team.
+- [Contact](https://bestgpacalculator.com/contact): hello@bestgpacalculator.com
+- [Privacy Policy](https://bestgpacalculator.com/privacy)
+- [Terms of Use](https://bestgpacalculator.com/terms)
+
+## Key Definitions
+
+- **Weighted GPA**: A grade point average that gives extra credit for harder courses. Most US high schools add +0.5 to Honors and +1.0 to AP, IB, and dual-enrollment classes, so an A in an AP class is worth 5.0 instead of 4.0.
+- **Unweighted GPA**: Standard 4.0 scale where every class counts equally regardless of difficulty. A=4.0, B=3.0, C=2.0, D=1.0, F=0.0.
+- **Cumulative GPA**: Average across all completed terms, weighted by credit hours.
+- **AP Exam Score**: Scored 1-5 by College Board. 3 = qualified, 4 = well qualified, 5 = extremely well qualified. Most colleges grant credit for 3+, selective colleges require 4+.
+- **Honors Class**: A higher-rigor version of a regular course. Typically earns +0.5 weighting bonus.
+- **Standard Weighting Scale**: +0.5 for Honors, +1.0 for AP/IB/dual-enrollment. Most common US scale.
+
+## Authoritative Sources We Reference
+
+- College Board (https://apstudents.collegeboard.org/) — official AP scoring and credit policies
+- NCES (https://nces.ed.gov/) — National Center for Education Statistics
+- IB Organization (https://www.ibo.org/) — International Baccalaureate

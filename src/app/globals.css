@@ -1,26 +1,274 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Force light mode only — dark: variants only activate inside an explicit .dark ancestor
+   (we never add one, so all existing dark:* classes are inert without mass refactor). */
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+  --background: #fdf6ef;
+  --foreground: #15102b;
+  --surface: 255 255 255;
+  --surface-border: 30 27 75;
+  --accent-rgb: 37 99 235;     /* primary blue */
+  --accent-soft: 219 234 254;
+  --warm-rgb: 251 191 36;      /* sun yellow accent */
+  --pink-rgb: 251 113 133;     /* coral pink accent */
+  --lavender-rgb: 196 181 253;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans:
+    var(--font-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, "SFMono-Regular", Menlo,
+    monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.01em;
+}
+
+/* Soft pastel cream → peach → lavender gradient — fixed, behind all content */
+.mesh-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(at 8% 12%, rgba(254, 240, 217, 0.95) 0, transparent 55%),
+    radial-gradient(at 92% 18%, rgba(255, 218, 213, 0.85) 0, transparent 55%),
+    radial-gradient(at 88% 92%, rgba(216, 200, 255, 0.85) 0, transparent 55%),
+    radial-gradient(at 12% 92%, rgba(255, 230, 240, 0.9) 0, transparent 55%),
+    linear-gradient(180deg, #fdf6ef 0%, #fbeee0 40%, #f3e6ff 100%);
+}
+
+/* Soft slow drift for subtle life */
+@keyframes mesh-drift {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(0, -1%, 0) scale(1.02); }
+}
+
+.mesh-bg {
+  animation: mesh-drift 24s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mesh-bg { animation: none; }
+}
+
+/* Card surface — soft white with shadow (replaces old glass) */
+.glass {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.04),
+    0 8px 24px -8px rgba(15, 23, 42, 0.08);
+  border-radius: 1.25rem;
+}
+
+.glass-strong {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow:
+    0 4px 12px -2px rgba(15, 23, 42, 0.06),
+    0 24px 48px -16px rgba(15, 23, 42, 0.12);
+  border-radius: 1.5rem;
+}
+
+.glass-input {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: 0.75rem;
+  transition:
+    border-color 180ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 180ms cubic-bezier(0.16, 1, 0.3, 1),
+    background 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-input:hover {
+  border-color: rgba(var(--accent-rgb), 0.4);
+}
+
+.glass-input:focus,
+.glass-input:focus-visible {
+  outline: none;
+  border-color: rgba(var(--accent-rgb), 0.7);
+  box-shadow: 0 0 0 4px rgba(var(--accent-rgb), 0.18);
+}
+
+/* Highlight accent text — solid blue, high contrast (matches sample) */
+.gradient-text {
+  color: rgb(37, 99, 235);
+}
+
+/* Primary CTA — solid blue rounded button */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.6rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #fff;
+  background: rgb(37, 99, 235);
+  border-radius: 0.75rem;
+  box-shadow:
+    0 1px 0 0 rgba(255, 255, 255, 0.25) inset,
+    0 8px 20px -6px rgba(37, 99, 235, 0.45);
+  transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1),
+              background 200ms cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-primary:hover {
+  background: rgb(29, 78, 216);
+  transform: translateY(-1px);
+  box-shadow:
+    0 1px 0 0 rgba(255, 255, 255, 0.3) inset,
+    0 12px 28px -6px rgba(37, 99, 235, 0.55);
+}
+
+.btn-primary:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.btn-primary:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.35),
+    0 8px 20px -6px rgba(37, 99, 235, 0.45);
+}
+
+/* Ghost/text secondary button (matches sample's "Need Help?") */
+.btn-glass {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.4rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 0.75rem;
+  background: transparent;
+  border: 1px solid transparent;
+  color: rgb(30, 41, 59);
+  transition: background 200ms cubic-bezier(0.16, 1, 0.3, 1),
+              color 200ms cubic-bezier(0.16, 1, 0.3, 1),
+              transform 200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-glass:hover {
+  background: rgba(15, 23, 42, 0.04);
+  color: rgb(37, 99, 235);
+  transform: translateY(-1px);
+}
+
+.btn-glass:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Floating chip — small white card with shadow used over hero illustration */
+.chip-float {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.85rem;
+  background: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.04),
+    0 12px 28px -10px rgba(15, 23, 42, 0.18);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgb(30, 41, 59);
+}
+
+/* Subtle floating orb animation */
+@keyframes float {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -14px, 0); }
+}
+
+.float-slow {
+  animation: float 10s ease-in-out infinite;
+}
+
+@keyframes float-fast {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -8px, 0); }
+}
+
+.float-fast {
+  animation: float-fast 5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .float-slow, .float-fast { animation: none; }
+}
+
+/* Fade-in-up for sections coming into view */
+@keyframes fade-up {
+  from { opacity: 0; transform: translate3d(0, 16px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+.fade-up {
+  animation: fade-up 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up { animation: none; }
+}
+
+/* Tabular numbers — for big GPA display */
+.tabular {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+/* Custom prose tweaks */
+.prose :where(h2, h3, h4) {
+  letter-spacing: -0.02em;
+}
+
+/* Print stylesheet — clean GPA report when user prints/saves PDF */
+@media print {
+  :root { --background: #ffffff; }
+  body { background: #ffffff !important; }
+  .mesh-bg,
+  header,
+  footer,
+  nav[aria-label="Breadcrumb"],
+  .no-print {
+    display: none !important;
+  }
+  .glass,
+  .glass-strong,
+  .glass-input {
+    background: #fff !important;
+    box-shadow: none !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+  .btn-primary,
+  .btn-glass {
+    display: none !important;
+  }
+  a[href]::after {
+    content: "";
+  }
+  .gradient-text {
+    color: #1e3a8a !important;
+  }
+  main { padding: 0 !important; }
+  section { page-break-inside: avoid; }
 }
