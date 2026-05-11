@@ -40,13 +40,13 @@ export default function CurrentGpaPage() {
       <CalculatorSchema
         name="Current GPA Calculator"
         description="Use your current GPA plus new classes to project your overall GPA."
-        url="https://bestgpacalculator.com/current-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/current-gpa-calculator"
       />
       <FaqSchema items={FAQ_ITEMS} />
       <ArticleSchema
         headline="Current GPA Calculator"
         description="Use your current GPA plus new classes to project your overall GPA."
-        url="https://bestgpacalculator.com/current-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/current-gpa-calculator"
         datePublished="2026-04-15"
         dateModified="2026-05-06"
       />

@@ -40,13 +40,13 @@ export default function HighSchoolGpaPage() {
       <CalculatorSchema
         name="High School GPA Calculator"
         description="Free high school GPA calculator with weighted and unweighted results, AP/Honors/IB support, and five weighting scales."
-        url="https://bestgpacalculator.com/high-school-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/high-school-gpa-calculator"
       />
       <FaqSchema items={FAQ_ITEMS} />
       <ArticleSchema
         headline="High School GPA Calculator"
         description="Free high school GPA calculator with weighted and unweighted results, AP/Honors/IB support, and five weighting scales."
-        url="https://bestgpacalculator.com/high-school-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/high-school-gpa-calculator"
         datePublished="2026-04-15"
         dateModified="2026-05-06"
       />

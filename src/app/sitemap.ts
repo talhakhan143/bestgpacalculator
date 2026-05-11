@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { listPublishedPosts } from "@/lib/blog";
 
-const BASE = "https://bestgpacalculator.com";
+const BASE = "https://bestgpacalculator.vercel.app";
 
 const STATIC_ROUTES = [
   "",

@@ -1,6 +1,6 @@
 import { PRESETS } from "@/lib/gpa-math";
 
-const SITE_URL = "https://bestgpacalculator.com";
+const SITE_URL = "https://bestgpacalculator.vercel.app";
 const SITE_NAME = "BestGPACalculator";
 
 export function CalculatorSchema({

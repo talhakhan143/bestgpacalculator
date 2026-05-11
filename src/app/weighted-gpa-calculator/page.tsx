@@ -39,13 +39,13 @@ export default function WeightedGpaPage() {
       <CalculatorSchema
         name="Weighted GPA Calculator"
         description="Free weighted GPA calculator for high school. Five weighting scales, AP/Honors/IB/dual-enrollment support, mobile-first, no signup."
-        url="https://bestgpacalculator.com/weighted-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/weighted-gpa-calculator"
       />
       <FaqSchema items={FAQ_ITEMS} />
       <ArticleSchema
         headline="Weighted GPA Calculator"
         description="Free weighted GPA calculator for high school. Five weighting scales, AP/Honors/IB/dual-enrollment support, mobile-first, no signup."
-        url="https://bestgpacalculator.com/weighted-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/weighted-gpa-calculator"
         datePublished="2026-04-15"
         dateModified="2026-05-06"
       />

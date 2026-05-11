@@ -40,13 +40,13 @@ export default function UnweightedGpaPage() {
       <CalculatorSchema
         name="Unweighted GPA Calculator"
         description="Free unweighted GPA calculator on the standard 4.0 scale. No AP or Honors bonuses."
-        url="https://bestgpacalculator.com/unweighted-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/unweighted-gpa-calculator"
       />
       <FaqSchema items={FAQ_ITEMS} />
       <ArticleSchema
         headline="Unweighted GPA Calculator"
         description="Free unweighted GPA calculator on the standard 4.0 scale. No AP or Honors bonuses."
-        url="https://bestgpacalculator.com/unweighted-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/unweighted-gpa-calculator"
         datePublished="2026-04-15"
         dateModified="2026-05-06"
       />

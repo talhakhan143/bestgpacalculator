@@ -40,13 +40,13 @@ export default function PercentageToGpaPage() {
       <CalculatorSchema
         name="Percentage to GPA Calculator"
         description="Convert percentage grades to GPA on the 4.0 scale. Credit-weighted average."
-        url="https://bestgpacalculator.com/percentage-to-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/percentage-to-gpa-calculator"
       />
       <FaqSchema items={FAQ_ITEMS} />
       <ArticleSchema
         headline="Percentage to GPA Calculator"
         description="Convert percentage grades to GPA on the 4.0 scale. Credit-weighted average."
-        url="https://bestgpacalculator.com/percentage-to-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/percentage-to-gpa-calculator"
         datePublished="2026-04-15"
         dateModified="2026-05-06"
       />

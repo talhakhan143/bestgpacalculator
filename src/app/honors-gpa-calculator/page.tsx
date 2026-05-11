@@ -40,13 +40,13 @@ export default function HonorsGpaPage() {
       <CalculatorSchema
         name="Honors GPA Calculator"
         description="Honors GPA calculator with weighted bonus. Most US schools add +0.5 for Honors classes."
-        url="https://bestgpacalculator.com/honors-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/honors-gpa-calculator"
       />
       <FaqSchema items={FAQ_ITEMS} />
       <ArticleSchema
         headline="Honors GPA Calculator"
         description="Honors GPA calculator with weighted bonus. Most US schools add +0.5 for Honors classes."
-        url="https://bestgpacalculator.com/honors-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/honors-gpa-calculator"
         datePublished="2026-04-15"
         dateModified="2026-05-06"
       />

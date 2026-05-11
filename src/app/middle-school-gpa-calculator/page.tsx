@@ -41,13 +41,13 @@ export default function MiddleSchoolGpaPage() {
       <CalculatorSchema
         name="Middle School GPA Calculator"
         description="Free middle school / junior high GPA calculator on the 4.0 scale. No weighting."
-        url="https://bestgpacalculator.com/middle-school-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/middle-school-gpa-calculator"
       />
       <FaqSchema items={FAQ_ITEMS} />
       <ArticleSchema
         headline="Middle School GPA Calculator"
         description="Free middle school / junior high GPA calculator on the 4.0 scale. No weighting."
-        url="https://bestgpacalculator.com/middle-school-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/middle-school-gpa-calculator"
         datePublished="2026-04-15"
         dateModified="2026-05-06"
       />

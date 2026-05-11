@@ -44,13 +44,13 @@ export default function GpaGoalPage() {
       <CalculatorSchema
         name="GPA Goal Calculator"
         description="Reverse GPA calculator: figure out what GPA you need next semester to hit your target. Works for high school and college."
-        url="https://bestgpacalculator.com/gpa-goal-calculator"
+        url="https://bestgpacalculator.vercel.app/gpa-goal-calculator"
       />
       <FaqSchema items={FAQ_ITEMS} />
       <ArticleSchema
         headline="GPA Goal Calculator"
         description="Reverse GPA calculator: figure out what GPA you need next semester to hit your target. Works for high school and college."
-        url="https://bestgpacalculator.com/gpa-goal-calculator"
+        url="https://bestgpacalculator.vercel.app/gpa-goal-calculator"
         datePublished="2026-04-15"
         dateModified="2026-05-06"
       />

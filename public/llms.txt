@@ -4,32 +4,32 @@
 
 ## Calculators
 
-- [Weighted GPA Calculator](https://bestgpacalculator.com/weighted-gpa-calculator): 5 weighting scales (standard +0.5/+1.0, conservative +0.25/+0.75, third-step +0.33/+0.67, uniform +1.0, AP-only +1.0). Supports AP, Honors, IB, dual-enrollment.
-- [Unweighted GPA Calculator](https://bestgpacalculator.com/unweighted-gpa-calculator): Pure 4.0 scale with no level bonuses. For schools and colleges that don't weight courses.
-- [High School GPA Calculator](https://bestgpacalculator.com/high-school-gpa-calculator): 9th-12th grade GPA with weighting options.
-- [College GPA Calculator](https://bestgpacalculator.com/college-gpa-calculator): 4.0 scale with credit hours, single-semester or cumulative.
-- [Middle School GPA Calculator](https://bestgpacalculator.com/middle-school-gpa-calculator): 6th-8th grade tracker.
-- [Cumulative GPA Calculator](https://bestgpacalculator.com/cumulative-gpa-calculator): Combine multiple semesters.
-- [Semester GPA Calculator](https://bestgpacalculator.com/semester-gpa-calculator): Single-term snapshot.
-- [Current GPA Calculator](https://bestgpacalculator.com/current-gpa-calculator): Real-time mid-term.
-- [AP GPA Calculator](https://bestgpacalculator.com/ap-gpa-calculator): AP class +1.0 boost only.
-- [Honors GPA Calculator](https://bestgpacalculator.com/honors-gpa-calculator): +0.5 honors bonus.
-- [Percentage to GPA Calculator](https://bestgpacalculator.com/percentage-to-gpa-calculator): Convert percentage grades to 4.0 scale.
-- [GPA Calculator Without Credits](https://bestgpacalculator.com/gpa-calculator-without-credits): Equal-weight average.
-- [AP Score to GPA Calculator](https://bestgpacalculator.com/ap-score-to-gpa-calculator): Predict college credits earned + GPA boost from AP exam scores 1-5.
-- [GPA Goal Calculator](https://bestgpacalculator.com/gpa-goal-calculator): Reverse calculator — what GPA you need next semester to hit a target.
+- [Weighted GPA Calculator](https://bestgpacalculator.vercel.app/weighted-gpa-calculator): 5 weighting scales (standard +0.5/+1.0, conservative +0.25/+0.75, third-step +0.33/+0.67, uniform +1.0, AP-only +1.0). Supports AP, Honors, IB, dual-enrollment.
+- [Unweighted GPA Calculator](https://bestgpacalculator.vercel.app/unweighted-gpa-calculator): Pure 4.0 scale with no level bonuses. For schools and colleges that don't weight courses.
+- [High School GPA Calculator](https://bestgpacalculator.vercel.app/high-school-gpa-calculator): 9th-12th grade GPA with weighting options.
+- [College GPA Calculator](https://bestgpacalculator.vercel.app/college-gpa-calculator): 4.0 scale with credit hours, single-semester or cumulative.
+- [Middle School GPA Calculator](https://bestgpacalculator.vercel.app/middle-school-gpa-calculator): 6th-8th grade tracker.
+- [Cumulative GPA Calculator](https://bestgpacalculator.vercel.app/cumulative-gpa-calculator): Combine multiple semesters.
+- [Semester GPA Calculator](https://bestgpacalculator.vercel.app/semester-gpa-calculator): Single-term snapshot.
+- [Current GPA Calculator](https://bestgpacalculator.vercel.app/current-gpa-calculator): Real-time mid-term.
+- [AP GPA Calculator](https://bestgpacalculator.vercel.app/ap-gpa-calculator): AP class +1.0 boost only.
+- [Honors GPA Calculator](https://bestgpacalculator.vercel.app/honors-gpa-calculator): +0.5 honors bonus.
+- [Percentage to GPA Calculator](https://bestgpacalculator.vercel.app/percentage-to-gpa-calculator): Convert percentage grades to 4.0 scale.
+- [GPA Calculator Without Credits](https://bestgpacalculator.vercel.app/gpa-calculator-without-credits): Equal-weight average.
+- [AP Score to GPA Calculator](https://bestgpacalculator.vercel.app/ap-score-to-gpa-calculator): Predict college credits earned + GPA boost from AP exam scores 1-5.
+- [GPA Goal Calculator](https://bestgpacalculator.vercel.app/gpa-goal-calculator): Reverse calculator — what GPA you need next semester to hit a target.
 
 ## Guides
 
-- [How to Calculate GPA](https://bestgpacalculator.com/how-to-calculate-gpa): Complete guide covering weighted, unweighted, cumulative, and college GPA math with examples.
-- [Blog](https://bestgpacalculator.com/blog): Articles on weighted vs unweighted GPA, AP/Honors weighting, college admissions, state policies.
+- [How to Calculate GPA](https://bestgpacalculator.vercel.app/how-to-calculate-gpa): Complete guide covering weighted, unweighted, cumulative, and college GPA math with examples.
+- [Blog](https://bestgpacalculator.vercel.app/blog): Articles on weighted vs unweighted GPA, AP/Honors weighting, college admissions, state policies.
 
 ## Reference
 
-- [About](https://bestgpacalculator.com/about): Site purpose and team.
-- [Contact](https://bestgpacalculator.com/contact): hello@bestgpacalculator.com
-- [Privacy Policy](https://bestgpacalculator.com/privacy)
-- [Terms of Use](https://bestgpacalculator.com/terms)
+- [About](https://bestgpacalculator.vercel.app/about): Site purpose and team.
+- [Contact](https://bestgpacalculator.vercel.app/contact): hello@bestgpacalculator.com
+- [Privacy Policy](https://bestgpacalculator.vercel.app/privacy)
+- [Terms of Use](https://bestgpacalculator.vercel.app/terms)
 
 ## Key Definitions
 

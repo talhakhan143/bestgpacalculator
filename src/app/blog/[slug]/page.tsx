@@ -71,19 +71,19 @@ export default async function PostPage({
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://bestgpacalculator.com/",
+        item: "https://bestgpacalculator.vercel.app/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Blog",
-        item: "https://bestgpacalculator.com/blog",
+        item: "https://bestgpacalculator.vercel.app/blog",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: post.title,
-        item: `https://bestgpacalculator.com/blog/${post.slug}`,
+        item: `https://bestgpacalculator.vercel.app/blog/${post.slug}`,
       },
     ],
   };
@@ -98,11 +98,11 @@ export default async function PostPage({
     dateModified: post.updatedAt.toISOString(),
     keywords: tags.join(", ") || undefined,
     wordCount: post.content.trim().split(/\s+/).filter(Boolean).length,
-    mainEntityOfPage: `https://bestgpacalculator.com/blog/${post.slug}`,
+    mainEntityOfPage: `https://bestgpacalculator.vercel.app/blog/${post.slug}`,
     publisher: {
       "@type": "Organization",
       name: "GPA Boost",
-      url: "https://bestgpacalculator.com",
+      url: "https://bestgpacalculator.vercel.app",
     },
   };
 

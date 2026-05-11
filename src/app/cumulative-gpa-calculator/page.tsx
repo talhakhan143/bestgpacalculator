@@ -40,13 +40,13 @@ export default function CumulativeGpaPage() {
       <CalculatorSchema
         name="Cumulative GPA Calculator"
         description="Calculate your new cumulative GPA. Combine prior GPA with current semester classes."
-        url="https://bestgpacalculator.com/cumulative-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/cumulative-gpa-calculator"
       />
       <FaqSchema items={FAQ_ITEMS} />
       <ArticleSchema
         headline="Cumulative GPA Calculator"
         description="Calculate your new cumulative GPA. Combine prior GPA with current semester classes."
-        url="https://bestgpacalculator.com/cumulative-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/cumulative-gpa-calculator"
         datePublished="2026-04-15"
         dateModified="2026-05-06"
       />

@@ -75,7 +75,7 @@ export default function Home() {
       <CalculatorSchema
         name="Weighted GPA Calculator"
         description="Free weighted GPA calculator for high school students with AP, Honors, IB, and dual-enrollment support across multiple weighting scales."
-        url="https://bestgpacalculator.com/"
+        url="https://bestgpacalculator.vercel.app/"
       />
       <FaqSchema items={FAQ_ITEMS} />
 

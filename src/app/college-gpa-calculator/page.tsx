@@ -41,13 +41,13 @@ export default function CollegeGpaPage() {
       <CalculatorSchema
         name="College GPA Calculator"
         description="Free college GPA calculator on the 4.0 scale with credit hours. Calculate semester or cumulative GPA."
-        url="https://bestgpacalculator.com/college-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/college-gpa-calculator"
       />
       <FaqSchema items={FAQ_ITEMS} />
       <ArticleSchema
         headline="College GPA Calculator"
         description="Free college GPA calculator on the 4.0 scale with credit hours. Calculate semester or cumulative GPA."
-        url="https://bestgpacalculator.com/college-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/college-gpa-calculator"
         datePublished="2026-04-15"
         dateModified="2026-05-06"
       />

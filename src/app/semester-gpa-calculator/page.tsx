@@ -41,13 +41,13 @@ export default function SemesterGpaPage() {
       <CalculatorSchema
         name="Semester GPA Calculator"
         description="Free semester GPA calculator on the 4.0 scale with optional AP/Honors weighting."
-        url="https://bestgpacalculator.com/semester-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/semester-gpa-calculator"
       />
       <FaqSchema items={FAQ_ITEMS} />
       <ArticleSchema
         headline="Semester GPA Calculator"
         description="Free semester GPA calculator on the 4.0 scale with optional AP/Honors weighting."
-        url="https://bestgpacalculator.com/semester-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/semester-gpa-calculator"
         datePublished="2026-04-15"
         dateModified="2026-05-06"
       />

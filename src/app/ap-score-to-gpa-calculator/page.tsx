@@ -44,13 +44,13 @@ export default function ApScoreToGpaPage() {
       <CalculatorSchema
         name="AP Score to GPA Calculator"
         description="Predict college credits earned, weighted GPA boost, and semesters saved from AP exam scores. Free, no signup."
-        url="https://bestgpacalculator.com/ap-score-to-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/ap-score-to-gpa-calculator"
       />
       <FaqSchema items={FAQ_ITEMS} />
       <ArticleSchema
         headline="AP Score to GPA Calculator"
         description="Predict college credits earned, weighted GPA boost, and semesters saved from AP exam scores. Free, no signup."
-        url="https://bestgpacalculator.com/ap-score-to-gpa-calculator"
+        url="https://bestgpacalculator.vercel.app/ap-score-to-gpa-calculator"
         datePublished="2026-04-15"
         dateModified="2026-05-06"
       />

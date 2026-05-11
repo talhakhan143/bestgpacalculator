@@ -40,13 +40,13 @@ export default function GpaWithoutCreditsPage() {
       <CalculatorSchema
         name="GPA Calculator Without Credits"
         description="Equal-weight GPA calculator. Ignores credits — every class counted equally."
-        url="https://bestgpacalculator.com/gpa-calculator-without-credits"
+        url="https://bestgpacalculator.vercel.app/gpa-calculator-without-credits"
       />
       <FaqSchema items={FAQ_ITEMS} />
       <ArticleSchema
         headline="GPA Calculator Without Credits"
         description="Equal-weight GPA calculator. Ignores credits — every class counted equally."
-        url="https://bestgpacalculator.com/gpa-calculator-without-credits"
+        url="https://bestgpacalculator.vercel.app/gpa-calculator-without-credits"
         datePublished="2026-04-15"
         dateModified="2026-05-06"
       />
