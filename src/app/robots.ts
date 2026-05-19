@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://bestgpacalculator.vercel.app/sitemap.xml",
-    host: "https://bestgpacalculator.vercel.app",
+    sitemap: "https://bestgpacalculator.online/sitemap.xml",
+    host: "https://bestgpacalculator.online",
   };
 }

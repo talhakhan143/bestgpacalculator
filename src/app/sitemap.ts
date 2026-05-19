@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { listPublishedPosts } from "@/lib/blog";
 
-const BASE = "https://bestgpacalculator.vercel.app";
+const BASE = "https://bestgpacalculator.online";
 
 const STATIC_ROUTES = [
   "",
@@ -41,19 +41,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  let blogEntries: MetadataRoute.Sitemap = [];
-  try {
-    const posts = listPublishedPosts();
-    blogEntries = posts.map((p) => ({
-      url: `${BASE}/blog/${p.slug}`,
-      lastModified: p.updatedAt,
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    }));
-  } catch {
-    // DB not initialized yet — skip blog entries gracefully
-    blogEntries = [];
-  }
+  const posts = listPublishedPosts();
+  const blogEntries: MetadataRoute.Sitemap = posts.map((p) => ({
+    url: `${BASE}/blog/${p.slug}`,
+    lastModified: p.updatedAt ?? lastModified,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
 
   return [...staticEntries, ...blogEntries];
 }

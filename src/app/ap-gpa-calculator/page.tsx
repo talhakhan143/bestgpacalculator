@@ -40,13 +40,13 @@ export default function ApGpaPage() {
       <CalculatorSchema
         name="AP GPA Calculator"
         description="AP GPA calculator with weighted bonus for Advanced Placement classes. See how each AP class affects your high school weighted GPA."
-        url="https://bestgpacalculator.vercel.app/ap-gpa-calculator"
+        url="https://bestgpacalculator.online/ap-gpa-calculator"
       />
       <FaqSchema items={FAQ_ITEMS} />
       <ArticleSchema
         headline="AP GPA Calculator"
         description="AP GPA calculator with weighted bonus for Advanced Placement classes. See how each AP class affects your high school weighted GPA."
-        url="https://bestgpacalculator.vercel.app/ap-gpa-calculator"
+        url="https://bestgpacalculator.online/ap-gpa-calculator"
         datePublished="2026-04-15"
         dateModified="2026-05-06"
       />

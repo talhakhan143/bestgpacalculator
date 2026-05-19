@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Hero } from "@/components/sections/Hero";
-import { listPublishedPosts, parseTags, readingTime } from "@/lib/blog";
+import { listPublishedPosts, parseTags, readingTime, type BlogPost } from "@/lib/blog";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { RelatedCalculators } from "@/components/sections/RelatedCalculators";
 
@@ -11,8 +11,6 @@ export const metadata: Metadata = {
     "Practical guides on GPA calculation, college admissions, weighted vs unweighted, AP/Honors strategy, and academic planning.",
   alternates: { canonical: "/blog" },
 };
-
-export const dynamic = "force-dynamic";
 
 export default function BlogIndex() {
   const posts = listPublishedPosts();
@@ -40,7 +38,7 @@ export default function BlogIndex() {
         ) : (
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {posts.map((p) => (
-              <PostCard key={p.id} post={p} />
+              <PostCard key={p.slug} post={p} />
             ))}
           </div>
         )}
@@ -51,21 +49,7 @@ export default function BlogIndex() {
   );
 }
 
-function PostCard({
-  post,
-}: {
-  post: {
-    id: number;
-    slug: string;
-    title: string;
-    excerpt: string;
-    coverImage: string | null;
-    tags: string;
-    emoji: string | null;
-    content: string;
-    publishedAt: Date | null;
-  };
-}) {
+function PostCard({ post }: { post: BlogPost }) {
   const tags = parseTags(post.tags).slice(0, 3);
   const minutes = readingTime(post.content);
 

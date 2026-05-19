@@ -30,10 +30,10 @@ export default function ContactPage() {
             policies you wish we supported, partnerships, press — reach us at:
           </p>
           <a
-            href="mailto:hello@bestgpacalculator.com"
+            href="mailto:hello@bestgpacalculator.online"
             className="mt-6 inline-flex items-center gap-2 rounded-full bg-gradient-to-br from-indigo-500 to-fuchsia-500 px-5 py-2.5 text-sm font-semibold text-white shadow-md transition hover:-translate-y-0.5"
           >
-            hello@bestgpacalculator.com
+            hello@bestgpacalculator.online
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <path d="M5 12h14M13 5l7 7-7 7" />
             </svg>

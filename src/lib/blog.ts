@@ -1,11 +1,27 @@
-import { desc, eq, and, sql } from "drizzle-orm";
-import { db, schema } from "@/lib/db/client";
+import fs from "node:fs";
+import path from "node:path";
+import matter from "gray-matter";
 import { marked } from "marked";
 
 marked.setOptions({
   gfm: true,
   breaks: false,
 });
+
+const CONTENT_DIR = path.join(process.cwd(), "content", "blog");
+
+export interface BlogPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  coverImage: string | null;
+  tags: string;
+  emoji: string | null;
+  published: boolean;
+  publishedAt: Date | null;
+  updatedAt: Date | null;
+}
 
 export function slugify(input: string): string {
   return input
@@ -17,68 +33,69 @@ export function slugify(input: string): string {
     .slice(0, 96);
 }
 
-export async function ensureUniqueSlug(
-  base: string,
-  ignoreId?: number,
-): Promise<string> {
-  const stem = slugify(base) || "post";
-  let slug = stem;
-  let n = 2;
-  while (true) {
-    const existing = db
-      .select({ id: schema.posts.id })
-      .from(schema.posts)
-      .where(eq(schema.posts.slug, slug))
-      .get();
-    if (!existing || existing.id === ignoreId) return slug;
-    slug = `${stem}-${n++}`;
-    if (n > 200) return `${stem}-${Date.now()}`;
+function safeReadDir(dir: string): string[] {
+  try {
+    return fs.readdirSync(dir);
+  } catch {
+    return [];
   }
 }
 
-export function listPublishedPosts() {
-  return db
-    .select()
-    .from(schema.posts)
-    .where(eq(schema.posts.published, true))
-    .orderBy(desc(schema.posts.publishedAt))
-    .all();
+function parseFile(filename: string): BlogPost | null {
+  const filePath = path.join(CONTENT_DIR, filename);
+  let raw: string;
+  try {
+    raw = fs.readFileSync(filePath, "utf8");
+  } catch {
+    return null;
+  }
+  const { data, content } = matter(raw);
+  const slugFromName = filename.replace(/\.(md|mdx)$/i, "");
+  const slug = typeof data.slug === "string" && data.slug.length > 0 ? data.slug : slugFromName;
+
+  const published = data.published !== false;
+  const publishedAtRaw = data.publishedAt ?? data.date ?? null;
+  const updatedAtRaw = data.updatedAt ?? data.updated ?? publishedAtRaw;
+
+  return {
+    slug,
+    title: String(data.title ?? slug),
+    excerpt: String(data.excerpt ?? data.description ?? ""),
+    content,
+    coverImage: data.coverImage ? String(data.coverImage) : data.cover ? String(data.cover) : null,
+    tags: Array.isArray(data.tags) ? data.tags.join(", ") : String(data.tags ?? ""),
+    emoji: data.emoji ? String(data.emoji) : null,
+    published,
+    publishedAt: publishedAtRaw ? new Date(publishedAtRaw) : null,
+    updatedAt: updatedAtRaw ? new Date(updatedAtRaw) : null,
+  };
 }
 
-export function getPublishedPostBySlug(slug: string) {
-  return db
-    .select()
-    .from(schema.posts)
-    .where(and(eq(schema.posts.slug, slug), eq(schema.posts.published, true)))
-    .get();
+function loadAllPosts(): BlogPost[] {
+  return safeReadDir(CONTENT_DIR)
+    .filter((f) => /\.(md|mdx)$/i.test(f))
+    .map(parseFile)
+    .filter((p): p is BlogPost => p !== null);
 }
 
-export function listAllPosts() {
-  return db
-    .select()
-    .from(schema.posts)
-    .orderBy(desc(schema.posts.updatedAt))
-    .all();
+export function listPublishedPosts(): BlogPost[] {
+  return loadAllPosts()
+    .filter((p) => p.published)
+    .sort((a, b) => {
+      const ta = a.publishedAt?.getTime() ?? 0;
+      const tb = b.publishedAt?.getTime() ?? 0;
+      return tb - ta;
+    });
 }
 
-export function getPostById(id: number) {
-  return db
-    .select()
-    .from(schema.posts)
-    .where(eq(schema.posts.id, id))
-    .get();
+export function getPublishedPostBySlug(slug: string): BlogPost | undefined {
+  return listPublishedPosts().find((p) => p.slug === slug);
 }
 
-export function deletePost(id: number) {
-  return db.delete(schema.posts).where(eq(schema.posts.id, id)).run();
-}
-
-export function countPosts() {
-  const r = db
-    .select({ count: sql<number>`count(*)` })
-    .from(schema.posts)
-    .get();
-  return r?.count ?? 0;
+export function listAllSlugs(): string[] {
+  return loadAllPosts()
+    .filter((p) => p.published)
+    .map((p) => p.slug);
 }
 
 export async function renderMarkdown(md: string): Promise<string> {
@@ -91,11 +108,6 @@ export interface TocEntry {
   level: 2 | 3;
 }
 
-/**
- * Render content (markdown OR HTML from Tiptap) into final HTML and extract a
- * heading list (h2 + h3) for table-of-contents rendering. Adds `id="..."`
- * attributes to those headings so links + scrollspy work.
- */
 export async function renderArticle(
   content: string,
 ): Promise<{ html: string; toc: TocEntry[] }> {
@@ -123,7 +135,6 @@ export async function renderArticle(
         level: tag === "h2" ? 2 : 3,
       });
 
-      // If existing attrs already contain id="...", replace it; otherwise inject.
       const idAttrRe = /\sid="[^"]*"/;
       const cleanedAttrs = existingAttrs.replace(idAttrRe, "");
       return `<${tag}${cleanedAttrs} id="${id}">${inner}</${tag}>`;

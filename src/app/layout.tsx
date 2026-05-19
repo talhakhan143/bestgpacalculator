@@ -18,7 +18,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bestgpacalculator.vercel.app"),
+  metadataBase: new URL("https://bestgpacalculator.online"),
   title: {
     default: "Best GPA Calculator — Free High School & College GPA Tools",
     template: "%s | BestGPA",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
       "Free GPA calculators with weighted, unweighted, cumulative, semester, AP, Honors, and percentage conversion. Mobile-first, no signup.",
     type: "website",
     siteName: "BestGPACalculator",
-    url: "https://bestgpacalculator.vercel.app",
+    url: "https://bestgpacalculator.online",
     images: [
       {
         url: "/api/og?title=Best%20GPA%20Calculator&subtitle=Weighted%2C%20AP%2C%20Honors%2C%20college%20%E2%80%94%20free%20%26%20instant&stat=5.0&label=Max%20Scale",
