@@ -27,7 +27,7 @@ const STATIC_ROUTES = [
   "/terms",
 ];
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const lastModified = new Date();
 
   const staticEntries: MetadataRoute.Sitemap = STATIC_ROUTES.map((path) => {
@@ -41,13 +41,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  const posts = listPublishedPosts();
-  const blogEntries: MetadataRoute.Sitemap = posts.map((p) => ({
-    url: `${BASE}/blog/${p.slug}`,
-    lastModified: p.updatedAt ?? lastModified,
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
+  let blogEntries: MetadataRoute.Sitemap = [];
+  try {
+    const posts = await listPublishedPosts();
+    blogEntries = posts.map((p) => ({
+      url: `${BASE}/blog/${p.slug}`,
+      lastModified: p.updatedAt ?? lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    }));
+  } catch {
+    blogEntries = [];
+  }
 
   return [...staticEntries, ...blogEntries];
 }

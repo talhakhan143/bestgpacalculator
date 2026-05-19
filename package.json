@@ -12,6 +12,7 @@
     "db:setup": "tsx scripts/db-setup.ts"
   },
   "dependencies": {
+    "@libsql/client": "^0.17.3",
     "@tiptap/extension-link": "^3.22.5",
     "@tiptap/pm": "^3.22.5",
     "@tiptap/react": "^3.22.5",

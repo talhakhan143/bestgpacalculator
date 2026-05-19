@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Hero } from "@/components/sections/Hero";
-import { listPublishedPosts, parseTags, readingTime, type BlogPost } from "@/lib/blog";
+import { listPublishedPosts, parseTags, readingTime } from "@/lib/blog";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { RelatedCalculators } from "@/components/sections/RelatedCalculators";
 
@@ -12,8 +12,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "/blog" },
 };
 
-export default function BlogIndex() {
-  const posts = listPublishedPosts();
+export const dynamic = "force-dynamic";
+
+type Post = Awaited<ReturnType<typeof listPublishedPosts>>[number];
+
+export default async function BlogIndex() {
+  const posts = await listPublishedPosts();
 
   return (
     <>
@@ -38,7 +42,7 @@ export default function BlogIndex() {
         ) : (
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {posts.map((p) => (
-              <PostCard key={p.slug} post={p} />
+              <PostCard key={p.id} post={p} />
             ))}
           </div>
         )}
@@ -49,7 +53,7 @@ export default function BlogIndex() {
   );
 }
 
-function PostCard({ post }: { post: BlogPost }) {
+function PostCard({ post }: { post: Post }) {
   const tags = parseTags(post.tags).slice(0, 3);
   const minutes = readingTime(post.content);
 

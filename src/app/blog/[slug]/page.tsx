@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import {
   getPublishedPostBySlug,
-  listAllSlugs,
   listPublishedPosts,
   parseTags,
   readingTime,
@@ -11,9 +10,7 @@ import {
 } from "@/lib/blog";
 import { TableOfContents } from "@/components/blog/TableOfContents";
 
-export function generateStaticParams() {
-  return listAllSlugs().map((slug) => ({ slug }));
-}
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
@@ -21,7 +18,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const post = getPublishedPostBySlug(slug);
+  const post = await getPublishedPostBySlug(slug);
   if (!post) return { title: "Post not found" };
 
   const desc = post.excerpt || undefined;
@@ -36,7 +33,7 @@ export async function generateMetadata({
       description: desc,
       type: "article",
       publishedTime: post.publishedAt?.toISOString(),
-      modifiedTime: post.updatedAt?.toISOString(),
+      modifiedTime: post.updatedAt.toISOString(),
       images: ogImage ? [ogImage] : undefined,
       tags: parseTags(post.tags),
     },
@@ -55,14 +52,14 @@ export default async function PostPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const post = getPublishedPostBySlug(slug);
+  const post = await getPublishedPostBySlug(slug);
   if (!post) notFound();
 
   const { html, toc } = await renderArticle(post.content);
   const tags = parseTags(post.tags);
   const minutes = readingTime(post.content);
-  const allPublished = listPublishedPosts();
-  const related = allPublished.filter((p) => p.slug !== post.slug);
+  const allPublished = await listPublishedPosts();
+  const related = allPublished.filter((p) => p.id !== post.id);
   const sidebarRelated = related.slice(0, 6);
   const moreArticles = related.slice(0, 9);
 
@@ -98,7 +95,7 @@ export default async function PostPage({
     description: post.excerpt || undefined,
     image: post.coverImage || undefined,
     datePublished: post.publishedAt?.toISOString(),
-    dateModified: post.updatedAt?.toISOString(),
+    dateModified: post.updatedAt.toISOString(),
     keywords: tags.join(", ") || undefined,
     wordCount: post.content.trim().split(/\s+/).filter(Boolean).length,
     mainEntityOfPage: `https://bestgpacalculator.online/blog/${post.slug}`,
@@ -135,7 +132,7 @@ export default async function PostPage({
               ) : (
                 <ul className="space-y-1">
                   {sidebarRelated.map((p) => (
-                    <li key={p.slug}>
+                    <li key={p.id}>
                       <Link
                         href={`/blog/${p.slug}`}
                         className="block rounded-md px-2 py-1.5 text-xs leading-snug text-zinc-600 transition hover:bg-white/40 hover:text-indigo-700 dark:text-zinc-400 dark:hover:bg-white/10 dark:hover:text-indigo-300"
@@ -271,7 +268,7 @@ export default async function PostPage({
                 </h2>
                 <ul className="mt-4 grid gap-1.5 sm:grid-cols-2">
                   {moreArticles.map((p) => (
-                    <li key={p.slug}>
+                    <li key={p.id}>
                       <Link
                         href={`/blog/${p.slug}`}
                         className="block rounded-lg px-3 py-2 text-sm text-zinc-700 transition hover:bg-white/40 hover:text-indigo-700 dark:text-zinc-300 dark:hover:bg-white/10 dark:hover:text-indigo-300"
