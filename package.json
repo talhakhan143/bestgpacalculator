@@ -9,7 +9,8 @@
     "lint": "eslint",
     "test": "vitest run",
     "test:watch": "vitest",
-    "db:setup": "tsx scripts/db-setup.ts"
+    "db:setup": "tsx scripts/db-setup.ts",
+    "publish": "tsx scripts/publish-draft.ts"
   },
   "dependencies": {
     "@libsql/client": "^0.17.3",

@@ -3,6 +3,8 @@ import { listPublishedPosts } from "@/lib/blog";
 
 const BASE = "https://bestgpacalculator.online";
 
+export const revalidate = 300;
+
 const STATIC_ROUTES = [
   "",
   "/weighted-gpa-calculator",
