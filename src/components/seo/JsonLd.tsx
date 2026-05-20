@@ -96,8 +96,8 @@ export function OrganizationSchema() {
         logo: {
           "@type": "ImageObject",
           url: `${SITE_URL}/logo.png`,
-          width: 1264,
-          height: 832,
+          width: 956,
+          height: 188,
         },
         sameAs: [],
         slogan: "Free GPA calculators for high school and college students",

@@ -47,8 +47,8 @@ export function SiteFooter() {
               <img
                 src="/logo.png"
                 alt="BestGPACalculator"
-                width={480}
-                height={316}
+                width={956}
+                height={188}
                 loading="lazy"
                 className="h-10 w-auto"
               />

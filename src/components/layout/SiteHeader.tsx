@@ -54,9 +54,9 @@ export function SiteHeader() {
           <img
             src="/logo.png"
             alt="BestGPACalculator"
-            width={480}
-            height={316}
-            className="h-9 w-auto sm:h-10"
+            width={956}
+            height={188}
+            className="h-8 w-auto sm:h-10"
           />
         </Link>
 
