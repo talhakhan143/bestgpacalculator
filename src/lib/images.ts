@@ -1,10 +1,15 @@
 import path from "node:path";
 import { promises as fs } from "node:fs";
 import crypto from "node:crypto";
+import { put } from "@vercel/blob";
 
 const UPLOAD_DIR = path.join(process.cwd(), "public", "uploads");
 const ALLOWED_EXT = new Set(["jpg", "jpeg", "png", "webp", "gif"]);
 const MAX_BYTES = 8 * 1024 * 1024; // 8 MB
+
+function hasBlobStore(): boolean {
+  return Boolean(process.env.BLOB_READ_WRITE_TOKEN);
+}
 
 async function ensureDir() {
   await fs.mkdir(UPLOAD_DIR, { recursive: true });
@@ -18,6 +23,32 @@ function safeExtFromMime(mime: string): string | null {
   return null;
 }
 
+function uniqueFilename(ext: string): string {
+  return `${Date.now()}-${crypto.randomBytes(6).toString("hex")}.${ext}`;
+}
+
+async function persistBuffer(buf: Buffer, filename: string, contentType: string): Promise<string> {
+  if (hasBlobStore()) {
+    const blob = await put(`uploads/${filename}`, buf, {
+      access: "public",
+      contentType,
+      addRandomSuffix: false,
+    });
+    return blob.url;
+  }
+  await ensureDir();
+  await fs.writeFile(path.join(UPLOAD_DIR, filename), buf);
+  return `/uploads/${filename}`;
+}
+
+function mimeFromExt(ext: string): string {
+  if (ext === "jpg" || ext === "jpeg") return "image/jpeg";
+  if (ext === "png") return "image/png";
+  if (ext === "webp") return "image/webp";
+  if (ext === "gif") return "image/gif";
+  return "application/octet-stream";
+}
+
 export async function saveImageFromFile(file: File): Promise<string> {
   if (file.size > MAX_BYTES) {
     throw new Error(
@@ -27,11 +58,9 @@ export async function saveImageFromFile(file: File): Promise<string> {
   const ext = safeExtFromMime(file.type);
   if (!ext) throw new Error("Unsupported image type");
 
-  await ensureDir();
-  const filename = `${Date.now()}-${crypto.randomBytes(6).toString("hex")}.${ext}`;
+  const filename = uniqueFilename(ext);
   const buf = Buffer.from(await file.arrayBuffer());
-  await fs.writeFile(path.join(UPLOAD_DIR, filename), buf);
-  return `/uploads/${filename}`;
+  return persistBuffer(buf, filename, file.type || mimeFromExt(ext));
 }
 
 export async function saveImageFromBuffer(
@@ -40,10 +69,8 @@ export async function saveImageFromBuffer(
 ): Promise<string> {
   const cleanExt = ext.toLowerCase().replace(/[^a-z0-9]/g, "");
   if (!ALLOWED_EXT.has(cleanExt)) throw new Error("Unsupported image type");
-  await ensureDir();
-  const filename = `${Date.now()}-${crypto.randomBytes(6).toString("hex")}.${cleanExt}`;
-  await fs.writeFile(path.join(UPLOAD_DIR, filename), buf);
-  return `/uploads/${filename}`;
+  const filename = uniqueFilename(cleanExt);
+  return persistBuffer(buf, filename, mimeFromExt(cleanExt));
 }
 
 export async function generateImage(prompt: string): Promise<string> {
