@@ -10,6 +10,7 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 import { createClient } from "@libsql/client";
+import { indexNowPing } from "../src/lib/indexnow";
 
 async function main() {
   const arg = process.argv[2];
@@ -92,6 +93,14 @@ async function main() {
   // Show live count
   const cnt = await client.execute("SELECT COUNT(*) as c FROM posts WHERE published = 1");
   console.log(`Total published posts: ${cnt.rows[0]?.c}`);
+
+  // Ping IndexNow (Bing/Yandex) — fire and forget
+  if (publish) {
+    const postUrl = `https://bestgpacalculator.online/blog/${slug}`;
+    const sitemapUrl = `https://bestgpacalculator.online/sitemap.xml`;
+    const result = await indexNowPing([postUrl, sitemapUrl]);
+    console.log(`IndexNow: ${result.status} ${result.message}`);
+  }
 }
 
 main()

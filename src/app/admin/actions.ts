@@ -13,6 +13,7 @@ import {
 } from "@/lib/auth";
 import { ensureUniqueSlug } from "@/lib/blog";
 import { generateImage, saveImageFromFile } from "@/lib/images";
+import { indexNowPing } from "@/lib/indexnow";
 
 export async function loginAction(
   prevState: { error?: string } | undefined,
@@ -100,6 +101,13 @@ export async function createPostAction(formData: FormData) {
   revalidatePath(`/blog/${slug}`);
   revalidatePath("/admin");
 
+  if (publish) {
+    void indexNowPing([
+      `https://bestgpacalculator.online/blog/${slug}`,
+      `https://bestgpacalculator.online/sitemap.xml`,
+    ]);
+  }
+
   redirect(`/admin/posts/${inserted.id}/edit?saved=1`);
 }
 
@@ -159,6 +167,13 @@ export async function updatePostAction(formData: FormData) {
   revalidatePath(`/blog/${existing.slug}`);
   revalidatePath(`/blog/${newSlug}`);
   revalidatePath("/admin");
+
+  if (publish) {
+    void indexNowPing([
+      `https://bestgpacalculator.online/blog/${newSlug}`,
+      `https://bestgpacalculator.online/sitemap.xml`,
+    ]);
+  }
 
   redirect(`/admin/posts/${id}/edit?saved=1`);
 }
