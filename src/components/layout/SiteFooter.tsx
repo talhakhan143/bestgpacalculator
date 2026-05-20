@@ -45,7 +45,7 @@ export function SiteFooter() {
             <Link href="/" aria-label="BestGPACalculator — home" className="flex items-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/logo.png"
+                src="/logo.svg"
                 alt="BestGPACalculator"
                 width={956}
                 height={188}
