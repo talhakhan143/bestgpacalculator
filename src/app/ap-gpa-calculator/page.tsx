@@ -47,13 +47,13 @@ export default function ApGpaPage() {
         headline="AP GPA Calculator"
         description="AP GPA calculator with weighted bonus for Advanced Placement classes. See how each AP class affects your high school weighted GPA."
         url="https://bestgpacalculator.online/ap-gpa-calculator"
-        datePublished="2026-04-15"
+        datePublished="2026-04-23"
         dateModified="2026-05-06"
       />
 
 
       
-      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Calculators", href: "/weighted-gpa-calculator" }, { name: "AP GPA", href: "/ap-gpa-calculator" }]} />
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "AP GPA", href: "/ap-gpa-calculator" }]} />
       <Hero
         badge="Advanced Placement"
         title="AP GPA"

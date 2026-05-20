@@ -47,13 +47,13 @@ export default function PercentageToGpaPage() {
         headline="Percentage to GPA Calculator"
         description="Convert percentage grades to GPA on the 4.0 scale. Credit-weighted average."
         url="https://bestgpacalculator.online/percentage-to-gpa-calculator"
-        datePublished="2026-04-15"
+        datePublished="2026-04-25"
         dateModified="2026-05-06"
       />
 
 
       
-      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Calculators", href: "/weighted-gpa-calculator" }, { name: "Percentage to GPA", href: "/percentage-to-gpa-calculator" }]} />
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Percentage to GPA", href: "/percentage-to-gpa-calculator" }]} />
       <Hero
         badge="Percentage → GPA"
         title="Percentage to GPA"

@@ -47,13 +47,13 @@ export default function GpaWithoutCreditsPage() {
         headline="GPA Calculator Without Credits"
         description="Equal-weight GPA calculator. Ignores credits — every class counted equally."
         url="https://bestgpacalculator.online/gpa-calculator-without-credits"
-        datePublished="2026-04-15"
+        datePublished="2026-04-26"
         dateModified="2026-05-06"
       />
 
 
       
-      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Calculators", href: "/weighted-gpa-calculator" }, { name: "Without Credits", href: "/gpa-calculator-without-credits" }]} />
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Without Credits", href: "/gpa-calculator-without-credits" }]} />
       <Hero
         badge="Equal-weight average"
         title="GPA Calculator"

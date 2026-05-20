@@ -47,13 +47,13 @@ export default function HighSchoolGpaPage() {
         headline="High School GPA Calculator"
         description="Free high school GPA calculator with weighted and unweighted results, AP/Honors/IB support, and five weighting scales."
         url="https://bestgpacalculator.online/high-school-gpa-calculator"
-        datePublished="2026-04-15"
+        datePublished="2026-04-17"
         dateModified="2026-05-06"
       />
 
 
       
-      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Calculators", href: "/weighted-gpa-calculator" }, { name: "High School GPA", href: "/high-school-gpa-calculator" }]} />
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "High School GPA", href: "/high-school-gpa-calculator" }]} />
       <Hero
         badge="9th-12th grade"
         title="High School"

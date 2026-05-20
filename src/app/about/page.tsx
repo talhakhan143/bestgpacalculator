@@ -9,6 +9,19 @@ export const metadata: Metadata = {
   description:
     "About BestGPACalculator — a free, mobile-first GPA calculator suite for high school and college students. Built for accuracy, transparency, and zero friction.",
   alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About BestGPACalculator",
+    description:
+      "Editorial team, peer-review process, corrections policy, and sources used by BestGPACalculator's GPA tools and articles.",
+    url: "/about",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "About BestGPACalculator",
+    description:
+      "Editorial team, peer review, corrections, and sources for our GPA tools and articles.",
+  },
 };
 
 export default function AboutPage() {

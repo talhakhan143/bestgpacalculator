@@ -47,13 +47,13 @@ export default function CurrentGpaPage() {
         headline="Current GPA Calculator"
         description="Use your current GPA plus new classes to project your overall GPA."
         url="https://bestgpacalculator.online/current-gpa-calculator"
-        datePublished="2026-04-15"
+        datePublished="2026-04-22"
         dateModified="2026-05-06"
       />
 
 
       
-      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Calculators", href: "/weighted-gpa-calculator" }, { name: "Current GPA", href: "/current-gpa-calculator" }]} />
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Current GPA", href: "/current-gpa-calculator" }]} />
       <Hero
         badge="Project ahead"
         title="Current GPA"

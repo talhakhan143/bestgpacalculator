@@ -10,7 +10,12 @@ import {
 } from "@/lib/blog";
 import { TableOfContents } from "@/components/blog/TableOfContents";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
+
+export async function generateStaticParams() {
+  const posts = await listPublishedPosts();
+  return posts.map((p) => ({ slug: p.slug }));
+}
 
 export async function generateMetadata({
   params,
@@ -93,16 +98,41 @@ export default async function PostPage({
     "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt || undefined,
-    image: post.coverImage || undefined,
+    image: post.coverImage
+      ? {
+          "@type": "ImageObject",
+          url: post.coverImage,
+          width: 1600,
+          height: 900,
+        }
+      : undefined,
     datePublished: post.publishedAt?.toISOString(),
     dateModified: post.updatedAt.toISOString(),
+    inLanguage: "en-US",
     keywords: tags.join(", ") || undefined,
     wordCount: post.content.trim().split(/\s+/).filter(Boolean).length,
     mainEntityOfPage: `https://bestgpacalculator.online/blog/${post.slug}`,
+    author: {
+      "@type": "Organization",
+      "@id": "https://bestgpacalculator.online/#organization",
+      name: "BestGPACalculator Editorial Team",
+      url: "https://bestgpacalculator.online/about",
+    },
     publisher: {
       "@type": "Organization",
-      name: "GPA Boost",
+      "@id": "https://bestgpacalculator.online/#organization",
+      name: "BestGPACalculator",
       url: "https://bestgpacalculator.online",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://bestgpacalculator.online/logo.png",
+        width: 956,
+        height: 188,
+      },
+    },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", ".prose > p:first-of-type"],
     },
   };
 
@@ -214,7 +244,7 @@ export default async function PostPage({
               )}
               <span>{minutes} min read</span>
               <span className="mx-2 text-zinc-400 dark:text-zinc-600">·</span>
-              <span>by GPA Boost editors</span>
+              <span>by BestGPACalculator Editorial Team</span>
             </p>
 
             {post.excerpt && (
@@ -227,7 +257,10 @@ export default async function PostPage({
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 src={post.coverImage}
-                alt=""
+                alt={post.title}
+                width={1600}
+                height={900}
+                fetchPriority="high"
                 className="mt-8 aspect-[16/9] w-full rounded-3xl object-cover"
               />
             )}

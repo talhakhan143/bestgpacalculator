@@ -4,6 +4,7 @@ import { Hero } from "@/components/sections/Hero";
 import { listPublishedPosts, parseTags, readingTime } from "@/lib/blog";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { RelatedCalculators } from "@/components/sections/RelatedCalculators";
+import { ItemListSchema } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: "Blog — GPA Calculation Guides & Resources",
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/blog" },
 };
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
 
 type Post = Awaited<ReturnType<typeof listPublishedPosts>>[number];
 
@@ -21,6 +22,11 @@ export default async function BlogIndex() {
 
   return (
     <>
+      <ItemListSchema
+        name="BestGPACalculator Blog"
+        description="Guides on GPA calculation, college admissions, AP/Honors strategy, and academic planning."
+        items={posts.map((p) => ({ name: p.title, href: `/blog/${p.slug}` }))}
+      />
       <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Blog", href: "/blog" }]} />
       <Hero
         badge="Blog"

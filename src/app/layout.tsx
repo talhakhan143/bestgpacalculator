@@ -28,21 +28,6 @@ export const metadata: Metadata = {
   },
   description:
     "Free GPA calculators for high school and college students. Weighted, unweighted, cumulative, semester, AP, Honors, percentage conversion. Mobile-first, no signup, instant results.",
-  keywords: [
-    "gpa calculator",
-    "best gpa calculator",
-    "calculate gpa",
-    "weighted gpa calculator",
-    "unweighted gpa calculator",
-    "high school gpa calculator",
-    "college gpa calculator",
-    "cumulative gpa calculator",
-    "semester gpa calculator",
-    "ap gpa calculator",
-    "honors gpa calculator",
-    "percentage to gpa",
-    "gpa goal calculator",
-  ],
   openGraph: {
     title: "Best GPA Calculator — Free High School & College GPA Tools",
     description:
@@ -101,6 +86,20 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
+      <head>
+        <link
+          rel="preconnect"
+          href="https://images.unsplash.com"
+          crossOrigin=""
+        />
+        {GA_ID ? (
+          <link
+            rel="preconnect"
+            href="https://www.googletagmanager.com"
+            crossOrigin=""
+          />
+        ) : null}
+      </head>
       <body className="min-h-full flex flex-col text-slate-900">
         <div className="mesh-bg" aria-hidden="true" />
         <OrganizationSchema />

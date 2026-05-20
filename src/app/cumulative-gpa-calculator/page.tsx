@@ -47,13 +47,13 @@ export default function CumulativeGpaPage() {
         headline="Cumulative GPA Calculator"
         description="Calculate your new cumulative GPA. Combine prior GPA with current semester classes."
         url="https://bestgpacalculator.online/cumulative-gpa-calculator"
-        datePublished="2026-04-15"
+        datePublished="2026-04-20"
         dateModified="2026-05-06"
       />
 
 
       
-      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Calculators", href: "/weighted-gpa-calculator" }, { name: "Cumulative GPA", href: "/cumulative-gpa-calculator" }]} />
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Cumulative GPA", href: "/cumulative-gpa-calculator" }]} />
       <Hero
         badge="Add a semester"
         title="Cumulative"

@@ -7,6 +7,19 @@ export const metadata: Metadata = {
   description:
     "Contact BestGPACalculator. Questions about a calculation, a missing weighting scale, a bug, or a partnership? Get in touch.",
   alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact BestGPACalculator",
+    description:
+      "Bug reports, missing school weighting policies, partnership requests, and corrections — get in touch with the editorial team.",
+    url: "/contact",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Contact BestGPACalculator",
+    description:
+      "Reach the editorial team for bugs, missing policies, and corrections.",
+  },
 };
 
 export default function ContactPage() {

@@ -48,13 +48,13 @@ export default function CollegeGpaPage() {
         headline="College GPA Calculator"
         description="Free college GPA calculator on the 4.0 scale with credit hours. Calculate semester or cumulative GPA."
         url="https://bestgpacalculator.online/college-gpa-calculator"
-        datePublished="2026-04-15"
+        datePublished="2026-04-18"
         dateModified="2026-05-06"
       />
 
 
       
-      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Calculators", href: "/weighted-gpa-calculator" }, { name: "College GPA", href: "/college-gpa-calculator" }]} />
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "College GPA", href: "/college-gpa-calculator" }]} />
       <Hero
         badge="Undergrad / grad"
         title="College"

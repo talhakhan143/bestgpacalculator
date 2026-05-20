@@ -48,13 +48,13 @@ export default function SemesterGpaPage() {
         headline="Semester GPA Calculator"
         description="Free semester GPA calculator on the 4.0 scale with optional AP/Honors weighting."
         url="https://bestgpacalculator.online/semester-gpa-calculator"
-        datePublished="2026-04-15"
+        datePublished="2026-04-21"
         dateModified="2026-05-06"
       />
 
 
       
-      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Calculators", href: "/weighted-gpa-calculator" }, { name: "Semester GPA", href: "/semester-gpa-calculator" }]} />
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Semester GPA", href: "/semester-gpa-calculator" }]} />
       <Hero
         badge="One term at a time"
         title="Semester"

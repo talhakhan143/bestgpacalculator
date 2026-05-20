@@ -47,13 +47,13 @@ export default function HonorsGpaPage() {
         headline="Honors GPA Calculator"
         description="Honors GPA calculator with weighted bonus. Most US schools add +0.5 for Honors classes."
         url="https://bestgpacalculator.online/honors-gpa-calculator"
-        datePublished="2026-04-15"
+        datePublished="2026-04-24"
         dateModified="2026-05-06"
       />
 
 
       
-      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Calculators", href: "/weighted-gpa-calculator" }, { name: "Honors GPA", href: "/honors-gpa-calculator" }]} />
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Honors GPA", href: "/honors-gpa-calculator" }]} />
       <Hero
         badge="Honors classes"
         title="Honors GPA"

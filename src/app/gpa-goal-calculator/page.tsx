@@ -51,13 +51,13 @@ export default function GpaGoalPage() {
         headline="GPA Goal Calculator"
         description="Reverse GPA calculator: figure out what GPA you need next semester to hit your target. Works for high school and college."
         url="https://bestgpacalculator.online/gpa-goal-calculator"
-        datePublished="2026-04-15"
+        datePublished="2026-04-28"
         dateModified="2026-05-06"
       />
 
 
       
-      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Calculators", href: "/weighted-gpa-calculator" }, { name: "GPA Goal Reverse", href: "/gpa-goal-calculator" }]} />
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "GPA Goal Reverse", href: "/gpa-goal-calculator" }]} />
       <Hero
         badge="Reverse calculator"
         title="GPA Goal"

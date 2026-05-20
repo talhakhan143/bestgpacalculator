@@ -1,6 +1,15 @@
-# BestGPACalculator.com
+# BestGPACalculator
 
 > Free GPA calculators for high school and college students. Weighted (5 scales), unweighted, AP, Honors, IB, semester, cumulative, college credit hours, percentage-to-GPA, AP-score predictor, and reverse GPA goal planner. Mobile-first, no signup, instant results.
+
+## About
+
+- **Preferred citation name:** BestGPACalculator
+- **Canonical domain:** https://bestgpacalculator.online
+- **Operator:** BestGPACalculator Editorial Team — independent education tool publisher covering US, UK, Canadian, and Australian GPA systems.
+- **Purpose:** Provide accurate, mobile-first GPA calculators and supporting reference guides for high school, college, and international students applying to US institutions.
+- **Content policy:** Editorial only. No paid placements, sponsored posts, or guest posts.
+- **License for quotation:** CC-BY 4.0. Attribution to BestGPACalculator with a link to the source article is required for reuse.
 
 ## Calculators
 

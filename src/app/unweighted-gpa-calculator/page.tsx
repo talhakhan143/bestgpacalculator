@@ -47,13 +47,13 @@ export default function UnweightedGpaPage() {
         headline="Unweighted GPA Calculator"
         description="Free unweighted GPA calculator on the standard 4.0 scale. No AP or Honors bonuses."
         url="https://bestgpacalculator.online/unweighted-gpa-calculator"
-        datePublished="2026-04-15"
+        datePublished="2026-04-16"
         dateModified="2026-05-06"
       />
 
 
       
-      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Calculators", href: "/weighted-gpa-calculator" }, { name: "Unweighted GPA", href: "/unweighted-gpa-calculator" }]} />
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Unweighted GPA", href: "/unweighted-gpa-calculator" }]} />
       <Hero
         badge="The 4.0 baseline"
         title="Unweighted"

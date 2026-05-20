@@ -2,7 +2,24 @@ import Link from "next/link";
 import { WeightedGPACalculator } from "@/components/calculator/WeightedGPACalculator";
 import { Hero } from "@/components/sections/Hero";
 import { Faq, type FaqItem } from "@/components/sections/Faq";
-import { CalculatorSchema, FaqSchema } from "@/components/seo/JsonLd";
+import { CalculatorSchema, FaqSchema, ItemListSchema } from "@/components/seo/JsonLd";
+
+const ALL_CALCULATORS = [
+  { name: "Weighted GPA Calculator", href: "/weighted-gpa-calculator" },
+  { name: "Unweighted GPA Calculator", href: "/unweighted-gpa-calculator" },
+  { name: "High School GPA Calculator", href: "/high-school-gpa-calculator" },
+  { name: "College GPA Calculator", href: "/college-gpa-calculator" },
+  { name: "Middle School GPA Calculator", href: "/middle-school-gpa-calculator" },
+  { name: "Cumulative GPA Calculator", href: "/cumulative-gpa-calculator" },
+  { name: "Semester GPA Calculator", href: "/semester-gpa-calculator" },
+  { name: "Current GPA Calculator", href: "/current-gpa-calculator" },
+  { name: "AP GPA Calculator", href: "/ap-gpa-calculator" },
+  { name: "Honors GPA Calculator", href: "/honors-gpa-calculator" },
+  { name: "Percentage to GPA Calculator", href: "/percentage-to-gpa-calculator" },
+  { name: "GPA Calculator Without Credits", href: "/gpa-calculator-without-credits" },
+  { name: "AP Score to GPA Calculator", href: "/ap-score-to-gpa-calculator" },
+  { name: "GPA Goal Calculator", href: "/gpa-goal-calculator" },
+];
 
 const FAQ_ITEMS: FaqItem[] = [
   {
@@ -73,17 +90,22 @@ export default function Home() {
   return (
     <>
       <CalculatorSchema
-        name="Weighted GPA Calculator"
-        description="Free weighted GPA calculator for high school students with AP, Honors, IB, and dual-enrollment support across multiple weighting scales."
+        name="BestGPACalculator — GPA Calculator Suite"
+        description="BestGPACalculator is a free GPA calculation tool for US high school and college students, supporting weighted, unweighted, AP, Honors, IB, and dual-enrollment grading systems."
         url="https://bestgpacalculator.online/"
       />
       <FaqSchema items={FAQ_ITEMS} />
+      <ItemListSchema
+        name="Free GPA Calculators"
+        description="Complete collection of free GPA calculators on BestGPACalculator."
+        items={ALL_CALCULATORS}
+      />
 
       <Hero
         badge="Built for high school students · Free forever"
         title="Calculate your"
         highlight="weighted GPA"
-        subtitle="The only weighted GPA calculator that matches your school's actual weighting scale. Works with AP, Honors, IB, and dual-enrollment — instant results, mobile-first, no signup."
+        subtitle="BestGPACalculator is a free GPA calculation tool for US high school and college students, supporting weighted, unweighted, AP, Honors, IB, and dual-enrollment grading systems."
         primary={{ href: "#calculator", label: "Calculate now" }}
         secondary={{ href: "/weighted-gpa-calculator", label: "Learn how it works" }}
       />

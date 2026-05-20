@@ -5,7 +5,7 @@ admin-fields:
   excerpt: "The UK uses degree classifications instead of GPA. Most US grad schools convert a First-Class Honours to a 4.0, a 2:1 to a 3.3–3.7, and a 2:2 to a 2.7–3.0. Here's the full conversion plus what WES and other evaluators actually do."
   tags: "uk gpa, degree classification, international gpa, wes conversion"
   emoji: "🇬🇧"
-  coverImage: "https://images.unsplash.com/photo-1568652105532-d3da0e7c5bf3?auto=format&w=1600&q=70"
+  coverImage: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&w=1600&q=70"
   publish: true
 ---
 

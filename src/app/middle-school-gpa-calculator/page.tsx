@@ -48,13 +48,13 @@ export default function MiddleSchoolGpaPage() {
         headline="Middle School GPA Calculator"
         description="Free middle school / junior high GPA calculator on the 4.0 scale. No weighting."
         url="https://bestgpacalculator.online/middle-school-gpa-calculator"
-        datePublished="2026-04-15"
+        datePublished="2026-04-19"
         dateModified="2026-05-06"
       />
 
 
       
-      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Calculators", href: "/weighted-gpa-calculator" }, { name: "Middle School GPA", href: "/middle-school-gpa-calculator" }]} />
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Middle School GPA", href: "/middle-school-gpa-calculator" }]} />
       <Hero
         badge="6th-8th grade · Jr. high"
         title="Middle School"

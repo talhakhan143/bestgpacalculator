@@ -51,13 +51,13 @@ export default function ApScoreToGpaPage() {
         headline="AP Score to GPA Calculator"
         description="Predict college credits earned, weighted GPA boost, and semesters saved from AP exam scores. Free, no signup."
         url="https://bestgpacalculator.online/ap-score-to-gpa-calculator"
-        datePublished="2026-04-15"
+        datePublished="2026-04-27"
         dateModified="2026-05-06"
       />
 
 
       
-      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Calculators", href: "/weighted-gpa-calculator" }, { name: "AP Score to GPA", href: "/ap-score-to-gpa-calculator" }]} />
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "AP Score to GPA", href: "/ap-score-to-gpa-calculator" }]} />
       <Hero
         badge="AP exam predictor"
         title="AP Score to"

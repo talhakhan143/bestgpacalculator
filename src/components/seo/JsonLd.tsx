@@ -2,6 +2,7 @@ import { PRESETS } from "@/lib/gpa-math";
 
 const SITE_URL = "https://bestgpacalculator.online";
 const SITE_NAME = "BestGPACalculator";
+const ORG_ID = `${SITE_URL}/#organization`;
 
 export function CalculatorSchema({
   name,
@@ -14,49 +15,22 @@ export function CalculatorSchema({
 }) {
   const schema = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebApplication",
-        name,
-        description,
-        url,
-        applicationCategory: "EducationalApplication",
-        operatingSystem: "Any",
-        offers: {
-          "@type": "Offer",
-          price: "0",
-          priceCurrency: "USD",
-        },
-        featureList: PRESETS.map((p) => p.label).join(", "),
-        publisher: {
-          "@type": "Organization",
-          name: SITE_NAME,
-          url: SITE_URL,
-        },
-      },
-      {
-        "@type": "HowTo",
-        name: `How to use the ${name}`,
-        description: "Calculate your GPA in three steps.",
-        step: [
-          {
-            "@type": "HowToStep",
-            name: "Pick your school's weighting scale",
-            text: "Choose the scale your district uses — most use +0.5 for Honors and +1.0 for AP/IB.",
-          },
-          {
-            "@type": "HowToStep",
-            name: "Enter your classes and grades",
-            text: "Add each class with its letter grade, credit value, and course level (Regular, Honors, AP, IB, or Dual).",
-          },
-          {
-            "@type": "HowToStep",
-            name: "Read your weighted and unweighted GPA",
-            text: "Both numbers update instantly. Your data saves to your browser so you can come back later.",
-          },
-        ],
-      },
-    ],
+    "@type": "WebApplication",
+    name,
+    description,
+    url,
+    applicationCategory: "EducationalApplication",
+    operatingSystem: "Any",
+    inLanguage: "en-US",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+    featureList: PRESETS.map((p) => p.label).join(", "),
+    publisher: {
+      "@id": ORG_ID,
+    },
   };
   return (
     <script
@@ -90,7 +64,7 @@ export function OrganizationSchema() {
     "@graph": [
       {
         "@type": "Organization",
-        "@id": `${SITE_URL}/#organization`,
+        "@id": ORG_ID,
         name: SITE_NAME,
         url: SITE_URL,
         logo: {
@@ -99,7 +73,6 @@ export function OrganizationSchema() {
           width: 956,
           height: 188,
         },
-        sameAs: [],
         slogan: "Free GPA calculators for high school and college students",
       },
       {
@@ -108,7 +81,7 @@ export function OrganizationSchema() {
         url: SITE_URL,
         name: SITE_NAME,
         description: "Free GPA calculators for high school and college.",
-        publisher: { "@id": `${SITE_URL}/#organization` },
+        publisher: { "@id": ORG_ID },
         inLanguage: "en-US",
       },
     ],
@@ -150,14 +123,14 @@ export function ArticleSchema({
   url,
   datePublished,
   dateModified,
-  authorName = "BestGPACalculator Editorial Team",
+  imageUrl,
 }: {
   headline: string;
   description: string;
   url: string;
   datePublished: string;
   dateModified?: string;
-  authorName?: string;
+  imageUrl?: string;
 }) {
   const schema = {
     "@context": "https://schema.org",
@@ -165,33 +138,75 @@ export function ArticleSchema({
     headline,
     description,
     url,
+    image: imageUrl
+      ? {
+          "@type": "ImageObject",
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+        }
+      : {
+          "@type": "ImageObject",
+          url: `${SITE_URL}/logo.png`,
+          width: 956,
+          height: 188,
+        },
     datePublished,
     dateModified: dateModified ?? datePublished,
+    inLanguage: "en-US",
     author: {
-      "@type": "Person",
-      name: authorName,
-      jobTitle: "Editorial Team",
-      knowsAbout: [
-        "GPA calculation",
-        "weighted vs unweighted GPA",
-        "AP and IB course weighting",
-        "college admissions",
-        "high school transcripts",
-        "academic standing and probation",
-        "international grade conversion",
-      ],
-      worksFor: {
-        "@type": "Organization",
-        name: SITE_NAME,
-        url: SITE_URL,
-      },
+      "@type": "Organization",
+      "@id": ORG_ID,
+      name: SITE_NAME,
+      url: SITE_URL,
     },
     publisher: {
       "@type": "Organization",
+      "@id": ORG_ID,
       name: SITE_NAME,
-      logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` },
+      url: SITE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/logo.png`,
+        width: 956,
+        height: 188,
+      },
     },
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", "h2"],
+    },
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export function ItemListSchema({
+  name,
+  description,
+  items,
+}: {
+  name: string;
+  description?: string;
+  items: { name: string; href: string }[];
+}) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    description,
+    numberOfItems: items.length,
+    itemListElement: items.map((it, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: it.name,
+      url: it.href.startsWith("http") ? it.href : `${SITE_URL}${it.href}`,
+    })),
   };
   return (
     <script
