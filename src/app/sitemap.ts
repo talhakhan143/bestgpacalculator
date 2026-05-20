@@ -5,50 +5,53 @@ const BASE = "https://bestgpacalculator.online";
 
 export const revalidate = 300;
 
-const STATIC_ROUTES = [
-  "",
-  "/weighted-gpa-calculator",
-  "/unweighted-gpa-calculator",
-  "/high-school-gpa-calculator",
-  "/college-gpa-calculator",
-  "/middle-school-gpa-calculator",
-  "/cumulative-gpa-calculator",
-  "/semester-gpa-calculator",
-  "/current-gpa-calculator",
-  "/ap-gpa-calculator",
-  "/honors-gpa-calculator",
-  "/percentage-to-gpa-calculator",
-  "/gpa-calculator-without-credits",
-  "/ap-score-to-gpa-calculator",
-  "/gpa-goal-calculator",
-  "/how-to-calculate-gpa",
-  "/blog",
-  "/about",
-  "/contact",
-  "/privacy",
-  "/terms",
-];
+const ROUTE_LAST_MODIFIED: Record<string, string> = {
+  "": "2026-05-20",
+  "/weighted-gpa-calculator": "2026-05-14",
+  "/unweighted-gpa-calculator": "2026-05-14",
+  "/high-school-gpa-calculator": "2026-05-14",
+  "/college-gpa-calculator": "2026-05-14",
+  "/middle-school-gpa-calculator": "2026-05-14",
+  "/cumulative-gpa-calculator": "2026-05-14",
+  "/semester-gpa-calculator": "2026-05-14",
+  "/current-gpa-calculator": "2026-05-14",
+  "/ap-gpa-calculator": "2026-05-14",
+  "/honors-gpa-calculator": "2026-05-14",
+  "/percentage-to-gpa-calculator": "2026-05-14",
+  "/gpa-calculator-without-credits": "2026-05-14",
+  "/ap-score-to-gpa-calculator": "2026-05-14",
+  "/gpa-goal-calculator": "2026-05-14",
+  "/how-to-calculate-gpa": "2026-05-15",
+  "/blog": "2026-05-20",
+  "/about": "2026-05-15",
+  "/contact": "2026-05-15",
+  "/privacy": "2026-05-15",
+  "/terms": "2026-05-15",
+};
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const lastModified = new Date();
+  const buildDate = new Date();
 
-  const staticEntries: MetadataRoute.Sitemap = STATIC_ROUTES.map((path) => {
-    const isHome = path === "";
-    const isCalc = path.includes("calculator");
-    return {
-      url: `${BASE}${path}`,
-      lastModified,
-      changeFrequency: isHome ? "weekly" : isCalc ? "weekly" : "monthly",
-      priority: isHome ? 1 : isCalc ? 0.8 : 0.5,
-    };
-  });
+  const staticEntries: MetadataRoute.Sitemap = Object.entries(ROUTE_LAST_MODIFIED).map(
+    ([path, lastMod]) => {
+      const isHome = path === "";
+      const isCalc = path.includes("calculator");
+      const isBlogIndex = path === "/blog";
+      return {
+        url: `${BASE}${path}`,
+        lastModified: new Date(lastMod),
+        changeFrequency: isHome || isBlogIndex ? "weekly" : isCalc ? "weekly" : "monthly",
+        priority: isHome ? 1 : isCalc ? 0.8 : isBlogIndex ? 0.7 : 0.5,
+      };
+    },
+  );
 
   let blogEntries: MetadataRoute.Sitemap = [];
   try {
     const posts = await listPublishedPosts();
     blogEntries = posts.map((p) => ({
       url: `${BASE}/blog/${p.slug}`,
-      lastModified: p.updatedAt ?? lastModified,
+      lastModified: p.updatedAt ?? buildDate,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     }));

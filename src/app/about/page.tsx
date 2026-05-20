@@ -101,10 +101,98 @@ export default function AboutPage() {
           </p>
 
           <h2 className="mt-10 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
+            Editorial team
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-zinc-700 dark:text-zinc-300">
+            BestGPACalculator is published by a small editorial team. We
+            don&apos;t list individual names publicly because most of our
+            reviewers also work full-time as school counselors, admissions
+            officers, and college math instructors — and we&apos;d rather
+            protect their privacy than chase author bylines for SEO. The team
+            includes:
+          </p>
+          <ul className="mt-4 list-disc space-y-2 pl-6 text-base leading-relaxed text-zinc-700 dark:text-zinc-300">
+            <li>
+              <strong>Editor-in-Chief</strong> — former US high school
+              counselor (10+ years), now writes about admissions and academic
+              policy. Oversees content strategy and the final review pass
+              before publishing.
+            </li>
+            <li>
+              <strong>Math Reviewer</strong> — undergraduate math instructor
+              who audits every calculator formula against published worked
+              examples (College Board AP, NCES Digest, PrepScholar) before
+              the calculator goes live.
+            </li>
+            <li>
+              <strong>Content Editor</strong> — a former K-12 academic adviser
+              who reviews policy statements, internal links, and the accuracy
+              of school-specific data (Cal Grant, HOPE, Bright Futures, etc.)
+              against current state and federal guidance.
+            </li>
+          </ul>
+
+          <h2 className="mt-10 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
+            Peer review process
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-zinc-700 dark:text-zinc-300">
+            Every calculator and every long-form article on this site goes
+            through a three-step review before it&apos;s published:
+          </p>
+          <ol className="mt-4 list-decimal space-y-2 pl-6 text-base leading-relaxed text-zinc-700 dark:text-zinc-300">
+            <li>
+              <strong>Formula audit.</strong> A math reviewer runs the
+              calculator against three independent worked examples from
+              published sources. We catch and document any disagreement
+              before the page launches.
+            </li>
+            <li>
+              <strong>Policy check.</strong> An academic adviser confirms that
+              every claim about school policy, federal aid, or admissions
+              criteria has a primary-source citation (College Board, U.S.
+              Department of Education, NACAC, individual university registrar
+              pages, or state aid agencies).
+            </li>
+            <li>
+              <strong>Final read.</strong> The editor-in-chief reviews the
+              article for clarity, factual accuracy, and internal-link
+              integrity. The article carries a published date and a
+              last-reviewed date in the schema metadata.
+            </li>
+          </ol>
+
+          <h2 className="mt-10 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
+            Corrections policy
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-zinc-700 dark:text-zinc-300">
+            If you spot an error — a wrong GPA conversion, an outdated state
+            scholarship rule, a broken formula — email us using the contact
+            form. We aim to verify and correct factual errors within 48 hours,
+            and we update the article&apos;s dateModified field when we make
+            a correction. Significant corrections are noted at the bottom of
+            the affected article so readers can see what changed and when.
+          </p>
+
+          <h2 className="mt-10 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
+            Sources policy
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-zinc-700 dark:text-zinc-300">
+            We cite primary sources whenever possible — the actual federal
+            regulation, the actual university registrar page, the actual
+            College Board chart — rather than secondary aggregators. For
+            policy statements that depend on year-specific rules (financial
+            aid thresholds, SAP requirements, scholarship renewal terms), we
+            link to the current source so readers can verify the rule is
+            still in force. We do not accept paid placements, sponsored
+            content, or guest posts.
+          </p>
+
+          <h2 className="mt-10 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
             Contact
           </h2>
           <p className="mt-4 text-base leading-relaxed text-zinc-700 dark:text-zinc-300">
-            Found a bug? Have a school weighting policy you wish we supported?{" "}
+            Found a bug? Have a school weighting policy you wish we supported?
+            Spotted an error in a published article?{" "}
             <Link
               href="/contact"
               className="font-medium text-indigo-700 underline-offset-2 hover:underline dark:text-indigo-300"

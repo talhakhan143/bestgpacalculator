@@ -150,7 +150,7 @@ export function ArticleSchema({
   url,
   datePublished,
   dateModified,
-  authorName = "BestGPACalculator Editorial",
+  authorName = "BestGPACalculator Editorial Team",
 }: {
   headline: string;
   description: string;
@@ -167,7 +167,25 @@ export function ArticleSchema({
     url,
     datePublished,
     dateModified: dateModified ?? datePublished,
-    author: { "@type": "Organization", name: authorName },
+    author: {
+      "@type": "Person",
+      name: authorName,
+      jobTitle: "Editorial Team",
+      knowsAbout: [
+        "GPA calculation",
+        "weighted vs unweighted GPA",
+        "AP and IB course weighting",
+        "college admissions",
+        "high school transcripts",
+        "academic standing and probation",
+        "international grade conversion",
+      ],
+      worksFor: {
+        "@type": "Organization",
+        name: SITE_NAME,
+        url: SITE_URL,
+      },
+    },
     publisher: {
       "@type": "Organization",
       name: SITE_NAME,
