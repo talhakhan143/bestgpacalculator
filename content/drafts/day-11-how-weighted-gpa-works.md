@@ -5,7 +5,7 @@ admin-fields:
   excerpt: "A weighted GPA adds extra points to AP, Honors, IB, and dual-enrollment courses to reward rigor. Most US high schools use a 5.0 scale where an A in AP equals 5.0 and an A in Honors equals 4.5. Here's exactly how the math runs."
   tags: "weighted gpa, ap classes, honors classes, gpa boost, high school gpa"
   emoji: "📈"
-  coverImage: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&w=1600&q=70"
+  coverImage: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&w=1200&q=70"
   publish: true
 ---
 
@@ -17,7 +17,7 @@ The system sounds simple, but the details vary so much between schools that two 
 
 A weighted GPA adds bonus points to grades earned in advanced classes — usually +1.0 for AP and IB, +0.5 for Honors. An A in AP becomes 5.0 instead of 4.0. Schools average all weighted grades together to produce a weighted GPA that can exceed 4.0, often topping out at 5.0.
 
-## The two standard weighting systems
+## What are the two standard weighting systems?
 
 Most US high schools use one of two systems. There are exceptions, but if you're trying to predict your transcript before it's released, start with these.
 
@@ -44,7 +44,7 @@ This is less common but worth knowing because it produces inflated-looking numbe
 
 The actual rigor is identical — only the reporting scale is different. Colleges know this and recompute everyone on a common scale before comparing applicants.
 
-## How the math actually runs
+## How does the weighted GPA math actually run?
 
 To calculate a weighted GPA, you assign each course a weighted grade point value, multiply by the number of credits (most US high school courses are 1 credit per semester), sum, and divide by total credits.
 
@@ -71,7 +71,7 @@ The student's unweighted GPA for the same semester would be (4.0 + 3.0 + 4.0 + 4
 
 Run any combination through the [weighted GPA calculator](/weighted-gpa-calculator) and it'll show both numbers side by side.
 
-## Where weighting gets tricky
+## Why does weighted GPA get tricky?
 
 The clean math above breaks down quickly because schools don't agree on three things.
 
@@ -91,7 +91,7 @@ This matters for borderline students. If your school does precise modifiers, an 
 
 A small number of schools weight only the second semester of an AP course — the rationale being that the first half is "lecture intensive" and the back half is "exam preparation." This is unusual but worth checking on your school's grading policy page.
 
-## Why colleges recompute the GPA anyway
+## Why do colleges recompute weighted GPA anyway?
 
 A weighted GPA from your high school is a useful number on your transcript, but most US college admissions offices don't use the raw weighted GPA for admissions math.
 
@@ -108,7 +108,7 @@ The College Board confirms this practice in its [Big Future admissions guide](ht
 
 Translation: take the hardest classes available at your school. Don't worry about whether your school's weighting is "generous" or "stingy" because the college admissions office is going to normalize it.
 
-## The 4.0 unweighted GPA — what it pairs with
+## What does the unweighted GPA pair with?
 
 Most US colleges report admit medians as *unweighted* GPAs, because that's the only scale that works across schools with different weighting policies.
 
@@ -116,7 +116,7 @@ Yale's profile says "median GPA of admitted students: 3.95" — that's unweighte
 
 If you want to know how you compare to admit medians, look at your unweighted GPA, not your weighted one. The [unweighted GPA calculator](/unweighted-gpa-calculator) will give you that number from your transcript.
 
-## When weighted GPA actually matters
+## When does weighted GPA actually matter?
 
 Three real-world uses:
 
@@ -128,7 +128,7 @@ Three real-world uses:
 
 For most private college admissions decisions, the weighted GPA is just one signal alongside course rigor, test scores, essays, and recommendations. It's not the single number that decides everything.
 
-## The strategy implications
+## What are the strategy implications for course choice?
 
 If you're choosing courses, here's what the math actually tells you:
 

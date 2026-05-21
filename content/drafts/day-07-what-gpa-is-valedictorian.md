@@ -5,7 +5,7 @@ admin-fields:
   excerpt: "There's no national GPA cutoff for valedictorian — your school sets it. At competitive high schools, the title routinely goes to students with weighted GPAs above 4.5. Here's how to find the real number for your school."
   tags: "valedictorian, gpa, high school ranking, class rank"
   emoji: "🏆"
-  coverImage: "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&w=1600&q=70"
+  coverImage: "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&w=1200&q=70"
   publish: true
 ---
 

@@ -5,7 +5,7 @@ admin-fields:
   excerpt: "The 4.0 GPA scale converts letter grades into grade points: A = 4.0, B = 3.0, C = 2.0, D = 1.0, F = 0.0. With plus/minus, an A− is 3.7 and a B+ is 3.3. Here's the complete chart, plus how schools differ on the edges."
   tags: "4.0 scale, gpa scale, letter grades, gpa calculation, unweighted"
   emoji: "🎯"
-  coverImage: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&w=1600&q=70"
+  coverImage: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&w=1200&q=70"
   publish: true
 ---
 
@@ -17,7 +17,7 @@ The execution is messier than the idea, because schools disagree on three things
 
 The 4.0 GPA scale maps letter grades to grade points: A = 4.0, B = 3.0, C = 2.0, D = 1.0, F = 0.0. Plus/minus modifiers add ±0.3 (so A− = 3.7, B+ = 3.3). Most colleges treat A+ as 4.0 — only a minority give it 4.3 — making 4.0 the practical ceiling.
 
-## The full standard chart
+## What does the full 4.0 GPA chart look like?
 
 This is the standard 4.0 scale used by most US schools and accepted by virtually every college admissions office:
 
@@ -39,7 +39,7 @@ This is the standard 4.0 scale used by most US schools and accepted by virtually
 
 The percentage cutoffs are conventions, not laws. A few state systems (notably some districts in California and Texas) use 90–100 = A, 80–89 = B, 70–79 = C, 60–69 = D, with no plus/minus. Some use 93–100 = A. The cutoff your school uses determines where the boundaries sit, but the GPA point values are nearly universal once a letter grade is assigned.
 
-## How to read the math
+## How do you read the 4.0 GPA math?
 
 A 4.0 GPA = straight A's, every class, no exceptions. A 3.5 GPA usually means a mix of A's and B's. A 2.0 GPA = straight C's.
 
@@ -68,7 +68,7 @@ GPA = 22.0 / 6 = **3.67**
 
 For college courses, the math is identical but each course is usually worth 3 or 4 credit hours, so each grade carries more weight. A 4-credit A counts more than a 3-credit B in the final average. Run any combination through the [unweighted GPA calculator](/unweighted-gpa-calculator) and it'll handle the credits.
 
-## The A+ controversy
+## Why is the A+ at 4.0 controversial?
 
 Most US schools — including most Ivies and selective colleges — treat A+ as 4.0, not 4.3.
 
@@ -78,7 +78,7 @@ A minority of schools — notably Stanford, Caltech, a few private high schools 
 
 When you fill out the Common App and it asks for your unweighted GPA "out of 4.0," the answer is 4.0 max — not 4.3 — even if your school's transcript lists A+ as 4.3.
 
-## Plus/minus vs no plus/minus
+## How do plus and minus grades affect the 4.0 scale?
 
 About 70% of US high schools use the full plus/minus scale shown in the table above. The other 30% use a simpler version where:
 
@@ -98,7 +98,7 @@ College admissions offices know this and recompute when needed. The Common App a
 
 If your school uses plus/minus and a Common App question is asking for unweighted GPA, give the number from your transcript with the precision your school uses. The college will normalize from there.
 
-## How the 4.0 scale compares internationally
+## How does the 4.0 scale compare internationally?
 
 The 4.0 scale is a US convention. Most other countries don't use it.
 
@@ -115,7 +115,7 @@ WES (World Education Services) is the standard credential evaluator for internat
 
 For converting common European percentages, the [percentage to GPA calculator](/percentage-to-gpa-calculator) handles the standard US mapping (90+ = A = 4.0). For [UK to US conversion specifically](/blog/uk-grade-to-gpa-conversion), the classification matters more than the percentage.
 
-## The high school vs college 4.0 difference
+## How does the 4.0 scale differ between high school and college?
 
 The grade-point values are the same, but the GPA math differs in one important way: credit hours.
 
@@ -142,7 +142,7 @@ The 5-credit Organic Chem class with the A− has more impact than the 3-credit 
 
 Use the [college GPA calculator](/college-gpa-calculator) to model your transcript — it handles the credit-hour math automatically.
 
-## Edge cases and exceptions
+## What are the edge cases in the 4.0 GPA scale?
 
 A few things people get wrong about the 4.0 scale:
 
@@ -154,7 +154,7 @@ A few things people get wrong about the 4.0 scale:
 
 **Incompletes (I) eventually convert.** An I that becomes a permanent grade enters the GPA at that grade's value. An I that stays unresolved past the deadline usually becomes an F at most institutions.
 
-## Why the 4.0 scale persists
+## Why does the 4.0 scale persist?
 
 It's been the US convention since the early 1900s. The math is clean (every letter has a defined number), the ceiling is comparable across institutions, and most colleges and employers know how to read it.
 

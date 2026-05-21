@@ -5,7 +5,7 @@ admin-fields:
   excerpt: "Most percentage-to-GPA charts disagree because there is no single US standard. Here's the chart most American schools use, plus the international versions for UK, India, and Pakistan grades."
   tags: "percentage to gpa, conversion chart, gpa scale, international gpa"
   emoji: "📊"
-  coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&w=1600&q=70"
+  coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&w=1200&q=70"
   publish: true
 ---
 

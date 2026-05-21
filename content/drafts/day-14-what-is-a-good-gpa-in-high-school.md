@@ -5,7 +5,7 @@ admin-fields:
   excerpt: "A 'good' GPA depends entirely on where you want to go. For state flagships, 3.5+ unweighted is competitive. For top-25 privates, 3.9+ unweighted is the median. Here's the full breakdown by college selectivity tier."
   tags: "good gpa, high school gpa, college admissions, gpa benchmarks"
   emoji: "🎓"
-  coverImage: "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&w=1600&q=70"
+  coverImage: "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&w=1200&q=70"
   publish: true
 ---
 
@@ -17,7 +17,7 @@ This post lays out the actual GPA benchmarks colleges report — pulled from the
 
 A "good" high school GPA depends on the college tier you're targeting. Roughly: 3.0+ unweighted opens most state universities, 3.5+ unweighted is competitive for selective publics and mid-tier privates, 3.7+ for top-50 universities, and 3.9+ unweighted for top-20 schools where the admit median is near-perfect.
 
-## What "good GPA" actually means
+## What does "good GPA" actually mean?
 
 There's no single answer because GPA is a relative measure. The same number means different things depending on context:
 
@@ -28,7 +28,7 @@ There's no single answer because GPA is a relative measure. The same number mean
 
 This post focuses on college admissions because that's the question that drives most "good GPA" searches. The honest benchmarks below come from Common Data Set reports — the document every US college files annually showing the GPA distribution of admitted students.
 
-## GPA benchmarks by college tier
+## What are the GPA benchmarks by college tier?
 
 These are unweighted GPAs on the 4.0 scale. Each tier shows the typical admit-range median and the 25th-percentile floor (where the bottom quarter of admitted students sit). Below the floor, admission is increasingly rare.
 
@@ -43,7 +43,7 @@ These are unweighted GPAs on the 4.0 scale. Each tier shows the typical admit-ra
 
 These ranges come from publicly available Common Data Sets and accepted-student profiles. They're medians, not minimums — students with lower GPAs do get admitted, and students with higher GPAs do get rejected. The numbers just describe the middle of the admitted pool.
 
-## What "median GPA 3.95" actually means
+## What does "median GPA 3.95" actually mean?
 
 When MIT or Stanford reports a median admit GPA of 3.95, that doesn't mean "below 3.95 won't be admitted." It means half of admitted students were above 3.95 and half below.
 
@@ -51,7 +51,7 @@ The 25th-percentile number is more useful for thinking about your odds. If MIT's
 
 So a 3.85 GPA isn't an automatic disqualifier at MIT — it just means you'd need *something else* to be strong. A 4.0 from a less selective high school with no AP courses is also weaker than a 3.85 from a rigorous high school with seven APs — colleges read the unweighted GPA *and* the course list.
 
-## How rigor affects the "good GPA" calculus
+## How does course rigor affect a good GPA?
 
 A 3.8 unweighted GPA earned across mostly AP and Honors courses is, in college admissions terms, stronger than a 4.0 unweighted GPA earned across only regular-track courses.
 
@@ -61,7 +61,7 @@ The College Board's [Big Future course guidance](https://bigfuture.collegeboard.
 
 What this means: if your GPA is 0.1–0.2 points below the median for your target school but your course rigor is strong, you're in the same competitive band. If your GPA matches the median but your course list shows few APs/Honors, you may actually be weaker.
 
-## The class rank dimension
+## How does class rank affect the GPA picture?
 
 Most colleges also look at your class rank, which is often the more informative number than the GPA itself. A 3.7 unweighted GPA that puts you in the top 10% of your class is a stronger signal than a 3.9 GPA that puts you in the top 30%.
 
@@ -71,7 +71,7 @@ This is also why some elite universities (UT Austin via auto-admit, several stat
 
 If your school doesn't report rank explicitly (many high schools have stopped), the counselor's recommendation usually communicates the equivalent ("top 10% of the class" type language).
 
-## Specific tier benchmarks
+## What are the specific tier benchmarks?
 
 ### Ivy League and equivalent (Stanford, MIT, Caltech, Duke, Chicago)
 
@@ -115,7 +115,7 @@ If your school doesn't report rank explicitly (many high schools have stopped), 
 - Course rigor: not weighted heavily
 - Designed for broad access; if you graduate high school with at least 2.0, options exist
 
-## Honest reality: where most students are
+## Where do most high school students actually land on GPA?
 
 The "average" US high school graduate has roughly a 3.0 unweighted GPA. Half are above, half below. A 3.5 unweighted GPA puts you in the top 30% of US graduates. A 3.8 in the top 10%. A 4.0 in the top 3–5%.
 
@@ -123,7 +123,7 @@ This means: a "good" GPA for the average student aiming at the average state uni
 
 If you're asking "is my GPA good," compare against the colleges you actually want to apply to. Don't compare against a friend whose target schools are different.
 
-## The "what's a good GPA for [X]" quick lookup
+## What is a good GPA for each specific goal?
 
 A specific table for the most-searched scenarios:
 
@@ -139,7 +139,7 @@ A specific table for the most-searched scenarios:
 | Valedictorian | Highest weighted GPA in your class, typically 4.5+ weighted |
 | Most scholarships | 3.0+ unweighted, varies |
 
-## What to do if your GPA isn't where you want
+## What can you do if your GPA isn't where you want it?
 
 Three concrete moves:
 

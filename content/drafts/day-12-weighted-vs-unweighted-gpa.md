@@ -5,7 +5,7 @@ admin-fields:
   excerpt: "Unweighted GPA tops out at 4.0 and treats every class the same. Weighted GPA can climb to 5.0 or higher by giving extra points to AP, Honors, and IB courses. Colleges look at both, but for very different reasons."
   tags: "weighted gpa, unweighted gpa, gpa comparison, college admissions"
   emoji: "⚖️"
-  coverImage: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&w=1600&q=70"
+  coverImage: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&w=1200&q=70"
   publish: true
 ---
 
@@ -17,7 +17,7 @@ The short answer: colleges use both, in different parts of the decision. Knowing
 
 Unweighted GPA averages your grades on a 4.0 scale where every class is equal. Weighted GPA adds bonus points for AP, Honors, IB, and dual-enrollment courses, often topping at 5.0 or higher. Colleges report admit medians as unweighted but evaluate rigor through weighted context. Both matter — for different reasons.
 
-## How the two scales differ in one table
+## How do the two GPA scales differ?
 
 | Feature | Unweighted GPA | Weighted GPA |
 |---|---|---|
@@ -31,7 +31,7 @@ Unweighted GPA averages your grades on a 4.0 scale where every class is equal. W
 
 The simplest way to think about it: the unweighted number is a measure of how you performed, and the weighted number is a measure of how hard you went after rigor *combined with* how you performed.
 
-## Quick math example — same transcript, two numbers
+## How do both GPAs compare on the same transcript?
 
 A semester with six classes:
 
@@ -51,7 +51,7 @@ Same student. Same transcript. Two numbers that lead to different conclusions if
 
 Run your own transcript through both calculators side by side: [unweighted](/unweighted-gpa-calculator) and [weighted](/weighted-gpa-calculator). The gap between them is a measure of your AP/Honors load.
 
-## When colleges look at unweighted GPA
+## When do colleges look at unweighted GPA?
 
 Three places where the unweighted number does the work:
 
@@ -63,7 +63,7 @@ Three places where the unweighted number does the work:
 
 If you're a junior wondering "what colleges am I competitive for," start with your unweighted GPA and compare against published admit medians.
 
-## When colleges look at weighted GPA (and course rigor)
+## When do colleges look at weighted GPA and course rigor?
 
 Weighted GPA isn't ignored — it's just used differently. It's a proxy for the rigor question that colleges always ask: *did this student take the hardest classes available to them?*
 
@@ -73,7 +73,7 @@ The weighted GPA is one signal of that rigor. So is your school's profile (sent 
 
 Most selective colleges recompute every applicant's transcript on a common internal scale anyway — so the headline weighted number is informative but not load-bearing. What's load-bearing is the *underlying transcript*: how many APs you took, in which subjects, with what grades.
 
-## When weighted matters more than unweighted
+## When does weighted matter more than unweighted?
 
 There are specific situations where weighted GPA is the deciding number:
 
@@ -87,7 +87,7 @@ There are specific situations where weighted GPA is the deciding number:
 
 So if a near-term decision (NHS application, scholarship eligibility, class rank for top 10%) depends on a specific GPA threshold, the weighted number is usually the one that matters.
 
-## The hidden trap: a high weighted GPA with a soft unweighted
+## What is the hidden trap of a high weighted GPA?
 
 Some students chase the weighted number by overloading on AP courses and earning B's and C's. The transcript looks impressive at a glance — a 4.5 weighted GPA can sound elite — but the underlying unweighted GPA tells a different story.
 
@@ -100,7 +100,7 @@ That 4.0 weighted GPA on a transcript would look fine until the college recomput
 
 The lesson: a high weighted GPA only helps you if the underlying unweighted GPA holds up. Take harder courses to the extent you can succeed in them, not past that point.
 
-## The 4.0 unweighted ceiling problem
+## What is the 4.0 unweighted ceiling problem?
 
 Unweighted GPA tops out at 4.0. This creates a measurement problem at the top of distributions — there's no way to distinguish a 4.0 student who took five APs from a 4.0 student who took zero APs. Both look like "perfect."
 
@@ -121,7 +121,7 @@ For US-context applications and resumes, the convention is:
 
 For college students writing a job resume, neither weighted nor unweighted high school GPA goes on — college GPA replaces it once you have one full year done.
 
-## The strategy: optimize for both, in that order
+## How do you optimize for both GPAs?
 
 If you're a high school student trying to maximize college outcomes, the priority order is:
 

@@ -5,7 +5,7 @@ admin-fields:
   excerpt: "It depends on three numbers: your current GPA, how many credits you already have, and how many credits the new A's are worth. Here's the math, a chart, and the calculator that does it for you."
   tags: "raise gpa, gpa math, improve gpa, how to raise gpa"
   emoji: "📈"
-  coverImage: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&w=1600&q=70"
+  coverImage: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&w=1200&q=70"
   publish: true
 ---
 

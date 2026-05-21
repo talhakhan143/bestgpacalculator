@@ -5,7 +5,7 @@ admin-fields:
   excerpt: "In college, a 'good' GPA depends on what comes next. For most jobs, 3.0+ clears the screen. For top consulting and finance, 3.7+. For top law/medical school, 3.8+. Here's the full benchmark by post-college goal."
   tags: "good gpa college, college gpa, grad school gpa, employer gpa"
   emoji: "🏛️"
-  coverImage: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&w=1600&q=70"
+  coverImage: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&w=1200&q=70"
   publish: true
 ---
 
@@ -17,7 +17,7 @@ The honest answer always depends on what you're trying to do next. This post wal
 
 "Good" depends on what's next. For most US jobs, 3.0+ clears initial screens. For top consulting (McKinsey, Bain) and finance (Goldman, IB), 3.7+ is the typical bar. For top medical school, 3.7+ with 3.8+ science GPA. For top law school (T14), 3.8+. For graduating with honors, typically 3.5+ (cum laude).
 
-## How "good" shifts after high school
+## How does a "good GPA" shift after high school?
 
 In high school, GPA is mostly judged against college admissions. In college, GPA gets judged against three very different audiences:
 
@@ -118,7 +118,7 @@ A few schools have additional designations:
 
 If graduating with honors is a goal, the [GPA goal calculator](/gpa-goal-calculator) will tell you what semester GPAs you need from here to hit a cumulative target.
 
-## The major-specific dimension
+## How does major affect a good college GPA?
 
 Some majors are graded much more harshly than others. A 3.4 in chemical engineering is, in employer terms, often equivalent to a 3.6 in business administration or a 3.7 in communications.
 
@@ -131,7 +131,7 @@ What this means for you:
 - If you're in a tough major and your GPA is 0.2 below the "general" threshold for your target, you may still be in range.
 - If you're in an easier major, your GPA needs to be at the higher end of the published range to stand out.
 
-## The international comparison
+## How do international GPAs compare?
 
 Foreign undergraduate degrees translate to US GPA through credential evaluators (WES is the most common). Rough translations:
 
@@ -145,7 +145,7 @@ Foreign undergraduate degrees translate to US GPA through credential evaluators 
 
 For US grad school applications from a non-US undergrad, the WES report is what admissions committees actually see. See [UK to US GPA conversion](/blog/uk-grade-to-gpa-conversion) for the full UK breakdown.
 
-## The "good" GPA for your specific situation
+## What is a good GPA for your specific situation?
 
 Pick your row from the table below for a practical answer:
 
@@ -163,7 +163,7 @@ Pick your row from the table below for a practical answer:
 | STEM PhD (top program) | 3.8+ |
 | Cum laude / Latin honors | 3.5+ |
 
-## What to do if you're below where you want
+## What can you do if your GPA is below target?
 
 Three things, in order of leverage:
 

@@ -5,7 +5,7 @@ admin-fields:
   excerpt: "Overall GPA averages every class you've taken. Major GPA averages only the courses inside your major. They tell different stories — and grad schools, employers, and scholarship committees often care more about one than the other."
   tags: "major gpa, overall gpa, college gpa, grad school"
   emoji: "🎓"
-  coverImage: "https://images.unsplash.com/photo-1496469888073-80de7e952517?auto=format&w=1600&q=70"
+  coverImage: "https://images.unsplash.com/photo-1496469888073-80de7e952517?auto=format&w=1200&q=70"
   publish: true
 ---
 

@@ -5,7 +5,7 @@ admin-fields:
   excerpt: "Sometimes — but the GPA lift depends on what kind of class you take, whether it counts at your home school, and your school's grade replacement policy. Here's how to figure out if it's worth the summer."
   tags: "summer school, raise gpa, retake class, grade replacement"
   emoji: "☀️"
-  coverImage: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&w=1600&q=70"
+  coverImage: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&w=1200&q=70"
   publish: true
 ---
 

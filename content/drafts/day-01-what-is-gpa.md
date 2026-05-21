@@ -5,25 +5,27 @@ admin-fields:
   excerpt: "GPA stands for Grade Point Average — a single number on a 4.0 scale that summarizes your academic performance. Here's exactly what it means, how it works, and how to read your transcript."
   tags: "gpa, what is gpa, gpa basics, grade point average, high school, college"
   emoji: "📚"
-  coverImage: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&w=1600&q=70"
+  coverImage: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&w=1200&q=70"
   publish: true
 ---
 
+**GPA stands for Grade Point Average — a single number on a 4.0 scale (US standard) that summarizes your academic performance across every class on your transcript.** Letter grades convert to grade points (A = 4.0, B = 3.0, C = 2.0, D = 1.0, F = 0.0), credits weight each course, and the average becomes your GPA.
+
 ## What is GPA?
 
-**GPA stands for Grade Point Average.** It is a single number, almost always on a **4.0 scale in the United States**, that represents the average of your grades across all your classes. Every letter grade you earn is converted to a "grade point" (A = 4.0, B = 3.0, and so on), and your GPA is the weighted average of those points across all the courses on your transcript.
+GPA is the single number admissions officers, scholarship committees, and graduate programs look at first. It is almost always on a **4.0 scale in the United States**, and represents the average of your grades across all your classes. Every letter grade you earn is converted to a "grade point" (A = 4.0, B = 3.0, and so on), and your GPA is the weighted average of those points across all the courses on your transcript.
 
-Your GPA is the number admissions officers, scholarship committees, and graduate programs look at first. A higher GPA generally signals stronger academic performance, but the way it is calculated — and the way it should be read — depends on whether your transcript reports an **unweighted** or **weighted** GPA, how many credits each class is worth, and what scale your school uses.
+A higher GPA generally signals stronger academic performance, but the way it is calculated — and the way it should be read — depends on whether your transcript reports an **unweighted** or **weighted** GPA, how many credits each class is worth, and what scale your school uses.
 
 This guide walks through exactly what GPA means, how it is calculated, what scale your school is likely using, and how to interpret your number in real-world admissions and academic decisions. When you are ready to run the math, you can use our free [GPA calculator](/how-to-calculate-gpa) to convert your grades to a number in under a minute.
 
-## GPA in one sentence
+## What is the GPA formula?
 
 > **GPA = (sum of grade points × credit hours) ÷ (total credit hours)**
 
 That single formula is the engine behind every GPA calculation in US high schools and colleges. Everything else — weighting, scale choice, plus/minus systems — is just a variation on how to assign the grade points before the formula runs.
 
-## The standard 4.0 GPA scale
+## What is the standard 4.0 GPA scale?
 
 In the standard US system, letter grades map to grade points like this:
 
@@ -44,7 +46,7 @@ In the standard US system, letter grades map to grade points like this:
 
 Most US colleges treat **A+ = 4.0** rather than 4.3, capping unweighted GPA at 4.0. A few schools — and most weighted high school scales — allow GPAs above 4.0 by adding bonus points for harder classes.
 
-## How GPA is actually calculated
+## How is GPA actually calculated?
 
 Take this real-world example for one semester:
 
@@ -61,7 +63,7 @@ GPA = 53.0 ÷ 15 = **3.53**
 
 That is your **semester GPA**. Stack multiple semesters together and run the same formula across every class you have ever taken, and you get your **cumulative GPA** — the number colleges actually use to evaluate you. Our [cumulative GPA calculator](/cumulative-gpa-calculator) does this stacking automatically so you do not have to retype every semester.
 
-## Weighted vs unweighted GPA
+## What's the difference between weighted and unweighted GPA?
 
 The biggest source of confusion in GPA is the difference between the two scales.
 
@@ -78,13 +80,13 @@ This is why a student taking a heavy AP load can finish high school with a weigh
 
 If your school reports both, you can quickly produce them with our [weighted GPA calculator](/weighted-gpa-calculator) and [unweighted GPA calculator](/unweighted-gpa-calculator).
 
-## Credit hours matter more than people think
+## Why do credit hours matter for GPA?
 
 Two students can both have GPAs of 3.5 and yet be very different on paper. A 3.5 across all 4-credit lab science courses is a heavier achievement than a 3.5 padded by 1-credit electives. The formula already accounts for this because credits act as multipliers — but it means a single high grade in a 1-credit gym class barely moves your overall number, while a single B- in a 5-credit course pulls it down meaningfully.
 
 If your school does not assign credit hours at all (common in middle school and some smaller high schools), use our [GPA calculator without credits](/gpa-calculator-without-credits) — it treats every class as equally weighted, which is the right behavior for credit-free transcripts.
 
-## Reading your transcript
+## How do you read a GPA on a transcript?
 
 A US transcript usually shows:
 
@@ -107,7 +109,7 @@ Short answer: it depends entirely on what you are doing with it. As a general be
 
 We have a full breakdown of high school benchmarks in [what is a good GPA in high school](/blog/what-is-a-good-gpa-in-high-school) and college benchmarks in [what is a good GPA in college](/blog/what-is-a-good-gpa-in-college).
 
-## When GPA does *not* matter as much as you think
+## When does GPA matter less than you think?
 
 GPA is the headline number, but admissions and scholarship committees do not look at it in isolation. Two factors consistently override raw GPA:
 
@@ -116,7 +118,7 @@ GPA is the headline number, but admissions and scholarship committees do not loo
 
 Standardized test scores (SAT/ACT), essays, extracurriculars, and recommendation letters round out the picture. GPA gets you past the first filter — the rest of your application is what gets you accepted.
 
-## How to calculate your GPA right now
+## How do you calculate your GPA right now?
 
 The fastest way is to type your grades into a calculator. Pick the one that matches your transcript:
 
