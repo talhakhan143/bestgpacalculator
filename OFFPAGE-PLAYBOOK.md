@@ -398,7 +398,7 @@ Account: branwalkdencwoe8911@gmail.com (Quora display: Branwalk Dencwoe / Medium
 
 Backlinks live:
 - [x] Quora #1: posted 2026-05-22 / https://www.quora.com/What-is-considered-a-good-GPA-for-college-admissions-Is-there-a-standard-GPA-that-most-schools-use-to-evaluate-applicants/answer/Branwalk-Dencwoe — anchor: /blog/what-is-a-good-gpa-in-high-school
-- [ ] Quora #2: target 2026-05-23+ (24h gap rule)
+- [x] Quora #2: posted 2026-05-23 / https://www.quora.com/How-does-the-system-with-weighted-GPA-work-Is-this-weighing-of-AP-subjects-standard-across-schools-Our-school-does-not-use-it-and-we-feel-that-it-creates-a-disadvantage-Am-I-right-to-see-it-this-way/answer/Branwalk-Dencwoe — anchor: /blog/how-weighted-gpa-works
 - [ ] Quora #3: target 2026-05-25+
 - [ ] Quora #4: target 2026-05-27+
 - [ ] Quora #5: target 2026-05-29+
@@ -427,7 +427,8 @@ Notes:
 - 2026-05-22: Off-page kickoff a week ahead of June 3-10 timing per user override.
 - Quora account Branwalk Dencwoe is fresh — needs to build trust via 24h gaps + low-link comments before scaling up.
 - Medium first cross-post = Day 11 cornerstone (silo 1 anchor). Next cross-post candidates: Day 12 weighted-vs-unweighted, Day 14 good-gpa-high-school. 1 cross-post per 2-3 days to avoid Medium spam flag.
-- 2026-05-23: Published Day 21 (academic-probation-gpa) AM + Day 22 (how-do-honors-classes-affect-gpa) PM. Total posts: 22. GSC URL Inspect submitted Day 18/19/20/21/22 (5 URLs, all "Indexing requested"). IndexNow: both 200 ok. Quora #2 deferred to ≥6pm PKT (24h gap from #1).
+- 2026-05-23: Published Day 21 (academic-probation-gpa) AM + Day 22 (how-do-honors-classes-affect-gpa) PM. Total posts: 22. GSC URL Inspect submitted Day 18/19/20/21/22 (5 URLs, all "Indexing requested"). IndexNow: both 200 ok.
+- 2026-05-23 PM: Quora #2 posted (Thread 2 weighted GPA). Anchor → /blog/how-weighted-gpa-works. 4 referring domains live now: quora.com (2 answers), medium.com, dev.to.
 ```
 
 ---
