@@ -392,25 +392,27 @@ After Day 14: if metrics confirm, scale up to guest post outreach + paid niche l
 Update this weekly. Copy this block into a fresh log each week.
 
 ```
-WEEK OF ___________
+WEEK OF 2026-05-22 (off-page kickoff, ahead of June 3-10 timing)
+
+Account: branwalkdencwoe8911@gmail.com (Quora display: Branwalk Dencwoe / Medium: Branwalkdencwoe)
 
 Backlinks live:
-- [ ] Quora #1: posted ___ / answer URL ___
-- [ ] Quora #2: posted ___ / answer URL ___
-- [ ] Quora #3: posted ___ / answer URL ___
-- [ ] Quora #4: posted ___ / answer URL ___
-- [ ] Quora #5: posted ___ / answer URL ___
-- [ ] Reddit thread 1: ___ / answer URL ___
-- [ ] Reddit thread 2: ___ / answer URL ___
-- [ ] Reddit thread 3: ___ / answer URL ___
-- [ ] Reddit thread 4: ___ / answer URL ___
-- [ ] Reddit thread 5: ___ / answer URL ___
-- [ ] ProductHunt launch: ___
-- [ ] AlternativeTo: ___
-- [ ] Crunchbase: ___
-- [ ] G2: ___
-- [ ] Capterra: ___
-- [ ] HARO placements: ___
+- [x] Quora #1: posted 2026-05-22 / https://www.quora.com/What-is-considered-a-good-GPA-for-college-admissions-Is-there-a-standard-GPA-that-most-schools-use-to-evaluate-applicants/answer/Branwalk-Dencwoe — anchor: /blog/what-is-a-good-gpa-in-high-school
+- [ ] Quora #2: target 2026-05-23+ (24h gap rule)
+- [ ] Quora #3: target 2026-05-25+
+- [ ] Quora #4: target 2026-05-27+
+- [ ] Quora #5: target 2026-05-29+
+- [ ] Reddit thread 1: BLOCKED — Chrome MCP policy refuses Reddit. Manual only via OFFPAGE-PLAYBOOK Part 2.
+- [ ] Reddit thread 2-5: same
+- [ ] ProductHunt launch: pending user signup
+- [ ] AlternativeTo: pending user signup
+- [ ] Crunchbase: pending user signup
+- [ ] G2: pending user signup
+- [ ] Capterra: pending user signup
+- [ ] HARO placements: pending user HARO/Cision signup
+
+Medium cross-posts (bonus channel, not in original 5):
+- [x] Medium #1 (Day 11): posted 2026-05-22 / https://medium.com/p/112a1ca2a5f2 — "How Weighted GPA Works: AP, Honors, and the Math Behind the Boost". Canonical attribution top + bottom → /blog/how-weighted-gpa-works + /weighted-gpa-calculator inline.
 
 GSC metrics snapshot (Friday EOD):
 - Impressions (7d): ___
@@ -419,7 +421,10 @@ GSC metrics snapshot (Friday EOD):
 - Indexed pages: ___ / 31
 
 Notes:
-- 
+- 2026-05-22: Off-page kickoff a week ahead of June 3-10 timing per user override.
+- Quora account Branwalk Dencwoe is fresh — needs to build trust via 24h gaps + low-link comments before scaling up.
+- Medium first cross-post = Day 11 cornerstone (silo 1 anchor). Next cross-post candidates: Day 12 weighted-vs-unweighted, Day 14 good-gpa-high-school. 1 cross-post per 2-3 days to avoid Medium spam flag.
+- 2026-05-23: Published Day 21 (academic-probation-gpa) AM + Day 22 (how-do-honors-classes-affect-gpa) PM. Total posts: 22. GSC URL Inspect submitted Day 18/19/20/21/22 (5 URLs, all "Indexing requested"). IndexNow: both 200 ok. Quora #2 deferred to ≥6pm PKT (24h gap from #1).
 ```
 
 ---
