@@ -414,6 +414,9 @@ Backlinks live:
 Medium cross-posts (bonus channel, not in original 5):
 - [x] Medium #1 (Day 11): posted 2026-05-22 / https://medium.com/p/112a1ca2a5f2 — "How Weighted GPA Works: AP, Honors, and the Math Behind the Boost". Canonical attribution top + bottom → /blog/how-weighted-gpa-works + /weighted-gpa-calculator inline.
 
+Dev.to cross-posts (added 2026-05-23 — rotation strategy for fresh domain):
+- [x] Dev.to #1 (Day 13): posted 2026-05-23 / https://dev.to/branwalk_dencwoe_15cf27c0/the-40-gpa-scale-explained-letter-grades-percentages-and-the-math-3ia5 — "The 4.0 GPA Scale Explained". Frontmatter canonical_url → /blog/4-0-gpa-scale-explained. Tags: education, gpa, college, math.
+
 GSC metrics snapshot (Friday EOD):
 - Impressions (7d): ___
 - Clicks (7d): ___
