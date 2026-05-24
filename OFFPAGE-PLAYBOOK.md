@@ -417,6 +417,9 @@ Medium cross-posts (bonus channel, not in original 5):
 Dev.to cross-posts (added 2026-05-23 — rotation strategy for fresh domain):
 - [x] Dev.to #1 (Day 13): posted 2026-05-23 / https://dev.to/branwalk_dencwoe_15cf27c0/the-40-gpa-scale-explained-letter-grades-percentages-and-the-math-3ia5 — "The 4.0 GPA Scale Explained". Frontmatter canonical_url → /blog/4-0-gpa-scale-explained. Tags: education, gpa, college, math.
 
+Blogger cross-posts (added 2026-05-24 — new platform, DR 100):
+- [x] Blogger #1 (Day 14): posted 2026-05-24 / https://bestgpacalculator.blogspot.com/2026/05/what-is-good-gpa-in-high-school.html — "What Is a Good GPA in High School? Benchmarks by College Goal". Top + bottom in-body attribution + canonical anchor to /blog/what-is-a-good-gpa-in-high-school. Internal links to /unweighted-gpa-calculator, /gpa-goal-calculator, /blog/nhs-gpa-requirements, /blog/weighted-vs-unweighted-gpa. Labels: GPA, high school GPA, college admissions, good GPA, education. (Blog: bestgpacalculator.blogspot.com — DR 100, Google-owned.)
+
 GSC metrics snapshot (Friday EOD):
 - Impressions (7d): ___
 - Clicks (7d): ___
@@ -429,6 +432,7 @@ Notes:
 - Medium first cross-post = Day 11 cornerstone (silo 1 anchor). Next cross-post candidates: Day 12 weighted-vs-unweighted, Day 14 good-gpa-high-school. 1 cross-post per 2-3 days to avoid Medium spam flag.
 - 2026-05-23: Published Day 21 (academic-probation-gpa) AM + Day 22 (how-do-honors-classes-affect-gpa) PM. Total posts: 22. GSC URL Inspect submitted Day 18/19/20/21/22 (5 URLs, all "Indexing requested"). IndexNow: both 200 ok.
 - 2026-05-23 PM: Quora #2 posted (Thread 2 weighted GPA). Anchor → /blog/how-weighted-gpa-works. 4 referring domains live now: quora.com (2 answers), medium.com, dev.to.
+- 2026-05-24 AM: Blogger #1 posted (Day 14 good-gpa-high-school). Anchor → /blog/what-is-a-good-gpa-in-high-school. 4 referring domains live: quora.com (2 answers), medium.com, dev.to, blogspot.com. 5 backlinks total.
 ```
 
 ---
