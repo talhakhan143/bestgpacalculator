@@ -399,9 +399,9 @@ Account: branwalkdencwoe8911@gmail.com (Quora display: Branwalk Dencwoe / Medium
 Backlinks live:
 - [x] Quora #1: posted 2026-05-22 / https://www.quora.com/What-is-considered-a-good-GPA-for-college-admissions-Is-there-a-standard-GPA-that-most-schools-use-to-evaluate-applicants/answer/Branwalk-Dencwoe — anchor: /blog/what-is-a-good-gpa-in-high-school
 - [x] Quora #2: posted 2026-05-23 / https://www.quora.com/How-does-the-system-with-weighted-GPA-work-Is-this-weighing-of-AP-subjects-standard-across-schools-Our-school-does-not-use-it-and-we-feel-that-it-creates-a-disadvantage-Am-I-right-to-see-it-this-way/answer/Branwalk-Dencwoe — anchor: /blog/how-weighted-gpa-works
-- [ ] Quora #3: target 2026-05-25+
-- [ ] Quora #4: target 2026-05-27+
-- [ ] Quora #5: target 2026-05-29+
+- [x] Quora #3: posted 2026-05-24 PM / https://www.quora.com/What-does-weighted-versus-unweighted-mean-when-calculating-a-GPA/answer/Branwalk-Dencwoe — anchor: /blog/weighted-vs-unweighted-gpa (Thread 3, ~30h gap from Quora #2)
+- [ ] Quora #4: target 2026-05-25 PM+
+- [ ] Quora #5: target 2026-05-27+
 - [ ] Reddit thread 1: BLOCKED — Chrome MCP policy refuses Reddit. Manual only via OFFPAGE-PLAYBOOK Part 2.
 - [ ] Reddit thread 2-5: same
 - [ ] ProductHunt launch: pending user signup
@@ -413,6 +413,7 @@ Backlinks live:
 
 Medium cross-posts (bonus channel, not in original 5):
 - [x] Medium #1 (Day 11): posted 2026-05-22 / https://medium.com/p/112a1ca2a5f2 — "How Weighted GPA Works: AP, Honors, and the Math Behind the Boost". Canonical attribution top + bottom → /blog/how-weighted-gpa-works + /weighted-gpa-calculator inline.
+- [x] Medium #2 (Day 12): posted 2026-05-24 PM / https://medium.com/p/a4c27a638733 — "Weighted vs Unweighted GPA: Which One Colleges Actually Care About". Top + bottom in-body attribution to /blog/weighted-vs-unweighted-gpa. Inline absolute URLs to /unweighted-gpa-calculator + /weighted-gpa-calculator. Topics: Gpa, Education, College Admissions. (2-day gap from Medium #1.)
 
 Dev.to cross-posts (added 2026-05-23 — rotation strategy for fresh domain):
 - [x] Dev.to #1 (Day 13): posted 2026-05-23 / https://dev.to/branwalk_dencwoe_15cf27c0/the-40-gpa-scale-explained-letter-grades-percentages-and-the-math-3ia5 — "The 4.0 GPA Scale Explained". Frontmatter canonical_url → /blog/4-0-gpa-scale-explained. Tags: education, gpa, college, math.
@@ -433,6 +434,9 @@ Notes:
 - 2026-05-23: Published Day 21 (academic-probation-gpa) AM + Day 22 (how-do-honors-classes-affect-gpa) PM. Total posts: 22. GSC URL Inspect submitted Day 18/19/20/21/22 (5 URLs, all "Indexing requested"). IndexNow: both 200 ok.
 - 2026-05-23 PM: Quora #2 posted (Thread 2 weighted GPA). Anchor → /blog/how-weighted-gpa-works. 4 referring domains live now: quora.com (2 answers), medium.com, dev.to.
 - 2026-05-24 AM: Blogger #1 posted (Day 14 good-gpa-high-school). Anchor → /blog/what-is-a-good-gpa-in-high-school. 4 referring domains live: quora.com (2 answers), medium.com, dev.to, blogspot.com. 5 backlinks total.
+- 2026-05-24 PM: Published Day 25 (deans-list-gpa-requirements, C cornerstone, 2,048w). Total posts: 25. GSC URL Inspect submitted Day 23 + Day 24 AM (cumulative-gpa). Day 24 PM (deans-list) hit transient "Oops! Something went wrong" GSC error — retry kal AM. IndexNow: 200 ok.
+- 2026-05-24 PM: Quora #3 posted (Thread 3 weighted-vs-unweighted explainer). Anchor → /blog/weighted-vs-unweighted-gpa. 4 referring domains still (quora.com=3 answers, medium.com=2, dev.to, blogspot.com). 7 backlinks total.
+- 2026-05-24 PM: Medium #2 posted (Day 12 weighted-vs-unweighted-gpa). Anchor → /blog/weighted-vs-unweighted-gpa. Both Quora #3 + Medium #2 point at the same post — concentrated authority signal on Day 12 cornerstone.
 ```
 
 ---
