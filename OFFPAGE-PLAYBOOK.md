@@ -417,6 +417,7 @@ Medium cross-posts (bonus channel, not in original 5):
 
 Dev.to cross-posts (added 2026-05-23 — rotation strategy for fresh domain):
 - [x] Dev.to #1 (Day 13): posted 2026-05-23 / https://dev.to/branwalk_dencwoe_15cf27c0/the-40-gpa-scale-explained-letter-grades-percentages-and-the-math-3ia5 — "The 4.0 GPA Scale Explained". Frontmatter canonical_url → /blog/4-0-gpa-scale-explained. Tags: education, gpa, college, math.
+- [x] Dev.to #2 (Day 27): posted 2026-05-25 AM / https://dev.to/branwalk_dencwoe_15cf27c0/gpa-scale-explained-40-50-and-weighted-systems-2026-guide-17cf — "GPA Scale Explained — 4.0, 5.0, and Weighted Systems (2026 Guide)". Frontmatter canonical_url → /blog/gpa-scale-explained. Tags: education, gpa, college, math. (2-day gap from Dev.to #1.)
 
 Blogger cross-posts (added 2026-05-24 — new platform, DR 100):
 - [x] Blogger #1 (Day 14): posted 2026-05-24 / https://bestgpacalculator.blogspot.com/2026/05/what-is-good-gpa-in-high-school.html — "What Is a Good GPA in High School? Benchmarks by College Goal". Top + bottom in-body attribution + canonical anchor to /blog/what-is-a-good-gpa-in-high-school. Internal links to /unweighted-gpa-calculator, /gpa-goal-calculator, /blog/nhs-gpa-requirements, /blog/weighted-vs-unweighted-gpa. Labels: GPA, high school GPA, college admissions, good GPA, education. (Blog: bestgpacalculator.blogspot.com — DR 100, Google-owned.)
@@ -437,6 +438,8 @@ Notes:
 - 2026-05-24 PM: Published Day 25 (deans-list-gpa-requirements, C cornerstone, 2,048w). Total posts: 25. GSC URL Inspect submitted Day 23 + Day 24 AM (cumulative-gpa). Day 24 PM (deans-list) hit transient "Oops! Something went wrong" GSC error — retry kal AM. IndexNow: 200 ok.
 - 2026-05-24 PM: Quora #3 posted (Thread 3 weighted-vs-unweighted explainer). Anchor → /blog/weighted-vs-unweighted-gpa. 4 referring domains still (quora.com=3 answers, medium.com=2, dev.to, blogspot.com). 7 backlinks total.
 - 2026-05-24 PM: Medium #2 posted (Day 12 weighted-vs-unweighted-gpa). Anchor → /blog/weighted-vs-unweighted-gpa. Both Quora #3 + Medium #2 point at the same post — concentrated authority signal on Day 12 cornerstone.
+- 2026-05-25 AM: Published Day 26 AM (should-i-put-gpa-on-resume, Q ~1,700w) + Day 27 PM (gpa-scale-explained, C cornerstone ~2,000w, silo 2 GPA Scales, KD 50, 33k/mo). Total posts: 27. IndexNow: 200 ok for both. GSC URL Inspect pending — user to submit manually.
+- 2026-05-25 AM: Dev.to #2 posted (Day 27 gpa-scale-explained, same-hour cross-post). Anchor → /blog/gpa-scale-explained. 4 referring domains: quora.com=3, medium.com=2, dev.to=2, blogspot.com=1. 8 backlinks total.
 ```
 
 ---
