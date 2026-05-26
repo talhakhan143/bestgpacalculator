@@ -400,6 +400,7 @@ Backlinks live:
 - [x] Quora #1: posted 2026-05-22 / https://www.quora.com/What-is-considered-a-good-GPA-for-college-admissions-Is-there-a-standard-GPA-that-most-schools-use-to-evaluate-applicants/answer/Branwalk-Dencwoe — anchor: /blog/what-is-a-good-gpa-in-high-school
 - [x] Quora #2: posted 2026-05-23 / https://www.quora.com/How-does-the-system-with-weighted-GPA-work-Is-this-weighing-of-AP-subjects-standard-across-schools-Our-school-does-not-use-it-and-we-feel-that-it-creates-a-disadvantage-Am-I-right-to-see-it-this-way/answer/Branwalk-Dencwoe — anchor: /blog/how-weighted-gpa-works
 - [x] Quora #3: posted 2026-05-24 PM / https://www.quora.com/What-does-weighted-versus-unweighted-mean-when-calculating-a-GPA/answer/Branwalk-Dencwoe — anchor: /blog/weighted-vs-unweighted-gpa (Thread 3, ~30h gap from Quora #2)
+- [x] Quora #4: posted 2026-05-26 AM / https://www.quora.com/What-GPA-do-you-need-to-get-into-an-Ivy-League-school/answer/Branwalk-Dencwoe — anchor: /blog/ivy-league-gpa-requirements + inline /blog/weighted-vs-unweighted-gpa (Thread 4, ~36h gap from Quora #3, Q has 10 existing answers + 2 followers, "Higher Education" topic)
 - [ ] Quora #4: target 2026-05-25 PM+
 - [ ] Quora #5: target 2026-05-27+
 - [ ] Reddit thread 1: BLOCKED — Chrome MCP policy refuses Reddit. Manual only via OFFPAGE-PLAYBOOK Part 2.
@@ -414,6 +415,7 @@ Backlinks live:
 Medium cross-posts (bonus channel, not in original 5):
 - [x] Medium #1 (Day 11): posted 2026-05-22 / https://medium.com/p/112a1ca2a5f2 — "How Weighted GPA Works: AP, Honors, and the Math Behind the Boost". Canonical attribution top + bottom → /blog/how-weighted-gpa-works + /weighted-gpa-calculator inline.
 - [x] Medium #2 (Day 12): posted 2026-05-24 PM / https://medium.com/p/a4c27a638733 — "Weighted vs Unweighted GPA: Which One Colleges Actually Care About". Top + bottom in-body attribution to /blog/weighted-vs-unweighted-gpa. Inline absolute URLs to /unweighted-gpa-calculator + /weighted-gpa-calculator. Topics: Gpa, Education, College Admissions. (2-day gap from Medium #1.)
+- [x] Medium #3 (Day 28): posted 2026-05-26 AM / https://medium.com/p/768e16e4f489 — "Ivy League GPA Requirements: Average GPA at All 8 Schools (2026)". Top + bottom in-body attribution to /blog/ivy-league-gpa-requirements. Inline absolute URLs to /weighted-gpa-calculator + /unweighted-gpa-calculator + /gpa-goal-calculator + /blog/weighted-vs-unweighted-gpa + /blog/ivy-league-average-gpa + /blog/deans-list-gpa-requirements. Topics: Gpa, Ivy League Michigan (auto-suggest pick), College Admissions, Education, College. (2-day gap from Medium #2.)
 
 Dev.to cross-posts (added 2026-05-23 — rotation strategy for fresh domain):
 - [x] Dev.to #1 (Day 13): posted 2026-05-23 / https://dev.to/branwalk_dencwoe_15cf27c0/the-40-gpa-scale-explained-letter-grades-percentages-and-the-math-3ia5 — "The 4.0 GPA Scale Explained". Frontmatter canonical_url → /blog/4-0-gpa-scale-explained. Tags: education, gpa, college, math.
@@ -440,6 +442,8 @@ Notes:
 - 2026-05-24 PM: Medium #2 posted (Day 12 weighted-vs-unweighted-gpa). Anchor → /blog/weighted-vs-unweighted-gpa. Both Quora #3 + Medium #2 point at the same post — concentrated authority signal on Day 12 cornerstone.
 - 2026-05-25 AM: Published Day 26 AM (should-i-put-gpa-on-resume, Q ~1,700w) + Day 27 PM (gpa-scale-explained, C cornerstone ~2,000w, silo 2 GPA Scales, KD 50, 33k/mo). Total posts: 27. IndexNow: 200 ok for both. GSC URL Inspect pending — user to submit manually.
 - 2026-05-25 AM: Dev.to #2 posted (Day 27 gpa-scale-explained, same-hour cross-post). Anchor → /blog/gpa-scale-explained. 4 referring domains: quora.com=3, medium.com=2, dev.to=2, blogspot.com=1. 8 backlinks total.
+- 2026-05-26 AM: Published Day 28 AM (ivy-league-gpa-requirements, C cornerstone ~1,850w, silo 6 anchor, KD 55, 22k/mo) + Day 29 PM (how-to-raise-gpa, C cornerstone ~2,200w, silo 4, KD 48, 24k/mo). Total posts: 29. IndexNow: 200 ok for both.
+- 2026-05-26 AM: Medium #3 posted (Day 28 ivy-league-gpa-requirements cross-post). Anchor → /blog/ivy-league-gpa-requirements. Quora #4 posted same morning, same anchor — concentrated authority on Day 28 cornerstone. 4 referring domains: quora.com=4, medium.com=3, dev.to=2, blogspot.com=1. 10 backlinks total.
 ```
 
 ---
