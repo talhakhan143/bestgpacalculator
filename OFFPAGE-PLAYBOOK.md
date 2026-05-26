@@ -424,6 +424,9 @@ Dev.to cross-posts (added 2026-05-23 — rotation strategy for fresh domain):
 Blogger cross-posts (added 2026-05-24 — new platform, DR 100):
 - [x] Blogger #1 (Day 14): posted 2026-05-24 / https://bestgpacalculator.blogspot.com/2026/05/what-is-good-gpa-in-high-school.html — "What Is a Good GPA in High School? Benchmarks by College Goal". Top + bottom in-body attribution + canonical anchor to /blog/what-is-a-good-gpa-in-high-school. Internal links to /unweighted-gpa-calculator, /gpa-goal-calculator, /blog/nhs-gpa-requirements, /blog/weighted-vs-unweighted-gpa. Labels: GPA, high school GPA, college admissions, good GPA, education. (Blog: bestgpacalculator.blogspot.com — DR 100, Google-owned.)
 
+Hashnode cross-posts (added 2026-05-26 — new platform, DR 81, publication "BestGPACalculator Blog" at bestgpacalculator.hashnode.dev):
+- [x] Hashnode #1 (Day 24): posted 2026-05-26 late-AM (user clicked Update manually) / https://bestgpacalculator.hashnode.dev/ host — "How to Calculate Cumulative GPA: Step-by-Step Formula With Examples" (~1,963w). Top + bottom in-body attribution to /blog/how-to-calculate-cumulative-gpa. Multiple inline absolute URLs to /cumulative-gpa-calculator + /semester-gpa-calculator + /blog/4-0-gpa-scale-explained + /blog/how-weighted-gpa-works + /blog/weighted-vs-unweighted-gpa + /blog/does-retaking-a-class-replace-gpa + /blog/major-gpa-vs-overall-gpa. Exact post slug TBD — user to share or I'll fetch next session.
+
 GSC metrics snapshot (Friday EOD):
 - Impressions (7d): ___
 - Clicks (7d): ___
@@ -444,6 +447,7 @@ Notes:
 - 2026-05-25 AM: Dev.to #2 posted (Day 27 gpa-scale-explained, same-hour cross-post). Anchor → /blog/gpa-scale-explained. 4 referring domains: quora.com=3, medium.com=2, dev.to=2, blogspot.com=1. 8 backlinks total.
 - 2026-05-26 AM: Published Day 28 AM (ivy-league-gpa-requirements, C cornerstone ~1,850w, silo 6 anchor, KD 55, 22k/mo) + Day 29 PM (how-to-raise-gpa, C cornerstone ~2,200w, silo 4, KD 48, 24k/mo). Total posts: 29. IndexNow: 200 ok for both.
 - 2026-05-26 AM: Medium #3 posted (Day 28 ivy-league-gpa-requirements cross-post). Anchor → /blog/ivy-league-gpa-requirements. Quora #4 posted same morning, same anchor — concentrated authority on Day 28 cornerstone. 4 referring domains: quora.com=4, medium.com=3, dev.to=2, blogspot.com=1. 10 backlinks total.
+- 2026-05-26 late-AM: Hashnode #1 posted (Day 24 how-to-calculate-cumulative-gpa, ~1,963w). New publication "BestGPACalculator Blog" at bestgpacalculator.hashnode.dev. Anchor → /blog/how-to-calculate-cumulative-gpa. 5 referring domains now: quora.com=4, medium.com=3, dev.to=2, blogspot.com=1, hashnode.dev=1. 11 backlinks total. (User did final Publish/Update click manually.)
 ```
 
 ---
