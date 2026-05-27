@@ -5,7 +5,7 @@ admin-fields:
   excerpt: "At most US high schools, Honors classes add +0.5 to the standard 4.0 scale, so an A in Honors = 4.5 instead of 4.0. The lift is real but smaller than AP (+1.0). Here's the exact math, what colleges actually do with it, and when Honors is worth the harder grading."
   tags: "honors gpa, honors class gpa weight, honors vs regular class, honors gpa calculator"
   emoji: "🎓"
-  coverImage: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&w=1200&q=70"
+  coverImage: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&w=1200&q=70"
   publish: true
 ---
 
