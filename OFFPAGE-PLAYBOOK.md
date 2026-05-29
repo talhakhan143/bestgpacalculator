@@ -392,25 +392,40 @@ After Day 14: if metrics confirm, scale up to guest post outreach + paid niche l
 Update this weekly. Copy this block into a fresh log each week.
 
 ```
-WEEK OF ___________
+WEEK OF 2026-05-22 (off-page kickoff, ahead of June 3-10 timing)
+
+Account: branwalkdencwoe8911@gmail.com (Quora display: Branwalk Dencwoe / Medium: Branwalkdencwoe)
 
 Backlinks live:
-- [ ] Quora #1: posted ___ / answer URL ___
-- [ ] Quora #2: posted ___ / answer URL ___
-- [ ] Quora #3: posted ___ / answer URL ___
-- [ ] Quora #4: posted ___ / answer URL ___
-- [ ] Quora #5: posted ___ / answer URL ___
-- [ ] Reddit thread 1: ___ / answer URL ___
-- [ ] Reddit thread 2: ___ / answer URL ___
-- [ ] Reddit thread 3: ___ / answer URL ___
-- [ ] Reddit thread 4: ___ / answer URL ___
-- [ ] Reddit thread 5: ___ / answer URL ___
-- [ ] ProductHunt launch: ___
-- [ ] AlternativeTo: ___
-- [ ] Crunchbase: ___
-- [ ] G2: ___
-- [ ] Capterra: ___
-- [ ] HARO placements: ___
+- [x] Quora #1: posted 2026-05-22 / https://www.quora.com/What-is-considered-a-good-GPA-for-college-admissions-Is-there-a-standard-GPA-that-most-schools-use-to-evaluate-applicants/answer/Branwalk-Dencwoe — anchor: /blog/what-is-a-good-gpa-in-high-school
+- [x] Quora #2: posted 2026-05-23 / https://www.quora.com/How-does-the-system-with-weighted-GPA-work-Is-this-weighing-of-AP-subjects-standard-across-schools-Our-school-does-not-use-it-and-we-feel-that-it-creates-a-disadvantage-Am-I-right-to-see-it-this-way/answer/Branwalk-Dencwoe — anchor: /blog/how-weighted-gpa-works
+- [x] Quora #3: posted 2026-05-24 PM / https://www.quora.com/What-does-weighted-versus-unweighted-mean-when-calculating-a-GPA/answer/Branwalk-Dencwoe — anchor: /blog/weighted-vs-unweighted-gpa (Thread 3, ~30h gap from Quora #2)
+- [x] Quora #4: posted 2026-05-26 AM / https://www.quora.com/What-GPA-do-you-need-to-get-into-an-Ivy-League-school/answer/Branwalk-Dencwoe — anchor: /blog/ivy-league-gpa-requirements + inline /blog/weighted-vs-unweighted-gpa (Thread 4, ~36h gap from Quora #3, Q has 10 existing answers + 2 followers, "Higher Education" topic)
+- [ ] Quora #4: target 2026-05-25 PM+
+- [ ] Quora #5: target 2026-05-27+
+- [ ] Reddit thread 1: BLOCKED — Chrome MCP policy refuses Reddit. Manual only via OFFPAGE-PLAYBOOK Part 2.
+- [ ] Reddit thread 2-5: same
+- [ ] ProductHunt launch: pending user signup
+- [ ] AlternativeTo: pending user signup
+- [ ] Crunchbase: pending user signup
+- [ ] G2: pending user signup
+- [ ] Capterra: pending user signup
+- [ ] HARO placements: pending user HARO/Cision signup
+
+Medium cross-posts (bonus channel, not in original 5):
+- [x] Medium #1 (Day 11): posted 2026-05-22 / https://medium.com/p/112a1ca2a5f2 — "How Weighted GPA Works: AP, Honors, and the Math Behind the Boost". Canonical attribution top + bottom → /blog/how-weighted-gpa-works + /weighted-gpa-calculator inline.
+- [x] Medium #2 (Day 12): posted 2026-05-24 PM / https://medium.com/p/a4c27a638733 — "Weighted vs Unweighted GPA: Which One Colleges Actually Care About". Top + bottom in-body attribution to /blog/weighted-vs-unweighted-gpa. Inline absolute URLs to /unweighted-gpa-calculator + /weighted-gpa-calculator. Topics: Gpa, Education, College Admissions. (2-day gap from Medium #1.)
+- [x] Medium #3 (Day 28): posted 2026-05-26 AM / https://medium.com/p/768e16e4f489 — "Ivy League GPA Requirements: Average GPA at All 8 Schools (2026)". Top + bottom in-body attribution to /blog/ivy-league-gpa-requirements. Inline absolute URLs to /weighted-gpa-calculator + /unweighted-gpa-calculator + /gpa-goal-calculator + /blog/weighted-vs-unweighted-gpa + /blog/ivy-league-average-gpa + /blog/deans-list-gpa-requirements. Topics: Gpa, Ivy League Michigan (auto-suggest pick), College Admissions, Education, College. (2-day gap from Medium #2.)
+
+Dev.to cross-posts (added 2026-05-23 — rotation strategy for fresh domain):
+- [x] Dev.to #1 (Day 13): posted 2026-05-23 / https://dev.to/branwalk_dencwoe_15cf27c0/the-40-gpa-scale-explained-letter-grades-percentages-and-the-math-3ia5 — "The 4.0 GPA Scale Explained". Frontmatter canonical_url → /blog/4-0-gpa-scale-explained. Tags: education, gpa, college, math.
+- [x] Dev.to #2 (Day 27): posted 2026-05-25 AM / https://dev.to/branwalk_dencwoe_15cf27c0/gpa-scale-explained-40-50-and-weighted-systems-2026-guide-17cf — "GPA Scale Explained — 4.0, 5.0, and Weighted Systems (2026 Guide)". Frontmatter canonical_url → /blog/gpa-scale-explained. Tags: education, gpa, college, math. (2-day gap from Dev.to #1.)
+
+Blogger cross-posts (added 2026-05-24 — new platform, DR 100):
+- [x] Blogger #1 (Day 14): posted 2026-05-24 / https://bestgpacalculator.blogspot.com/2026/05/what-is-good-gpa-in-high-school.html — "What Is a Good GPA in High School? Benchmarks by College Goal". Top + bottom in-body attribution + canonical anchor to /blog/what-is-a-good-gpa-in-high-school. Internal links to /unweighted-gpa-calculator, /gpa-goal-calculator, /blog/nhs-gpa-requirements, /blog/weighted-vs-unweighted-gpa. Labels: GPA, high school GPA, college admissions, good GPA, education. (Blog: bestgpacalculator.blogspot.com — DR 100, Google-owned.)
+
+Hashnode cross-posts (added 2026-05-26 — new platform, DR 81, publication "BestGPACalculator Blog" at bestgpacalculator.hashnode.dev):
+- [x] Hashnode #1 (Day 24): posted 2026-05-26 late-AM (user clicked Update manually) / https://bestgpacalculator.hashnode.dev/ host — "How to Calculate Cumulative GPA: Step-by-Step Formula With Examples" (~1,963w). Top + bottom in-body attribution to /blog/how-to-calculate-cumulative-gpa. Multiple inline absolute URLs to /cumulative-gpa-calculator + /semester-gpa-calculator + /blog/4-0-gpa-scale-explained + /blog/how-weighted-gpa-works + /blog/weighted-vs-unweighted-gpa + /blog/does-retaking-a-class-replace-gpa + /blog/major-gpa-vs-overall-gpa. Exact post slug TBD — user to share or I'll fetch next session.
 
 GSC metrics snapshot (Friday EOD):
 - Impressions (7d): ___
@@ -419,7 +434,20 @@ GSC metrics snapshot (Friday EOD):
 - Indexed pages: ___ / 31
 
 Notes:
-- 
+- 2026-05-22: Off-page kickoff a week ahead of June 3-10 timing per user override.
+- Quora account Branwalk Dencwoe is fresh — needs to build trust via 24h gaps + low-link comments before scaling up.
+- Medium first cross-post = Day 11 cornerstone (silo 1 anchor). Next cross-post candidates: Day 12 weighted-vs-unweighted, Day 14 good-gpa-high-school. 1 cross-post per 2-3 days to avoid Medium spam flag.
+- 2026-05-23: Published Day 21 (academic-probation-gpa) AM + Day 22 (how-do-honors-classes-affect-gpa) PM. Total posts: 22. GSC URL Inspect submitted Day 18/19/20/21/22 (5 URLs, all "Indexing requested"). IndexNow: both 200 ok.
+- 2026-05-23 PM: Quora #2 posted (Thread 2 weighted GPA). Anchor → /blog/how-weighted-gpa-works. 4 referring domains live now: quora.com (2 answers), medium.com, dev.to.
+- 2026-05-24 AM: Blogger #1 posted (Day 14 good-gpa-high-school). Anchor → /blog/what-is-a-good-gpa-in-high-school. 4 referring domains live: quora.com (2 answers), medium.com, dev.to, blogspot.com. 5 backlinks total.
+- 2026-05-24 PM: Published Day 25 (deans-list-gpa-requirements, C cornerstone, 2,048w). Total posts: 25. GSC URL Inspect submitted Day 23 + Day 24 AM (cumulative-gpa). Day 24 PM (deans-list) hit transient "Oops! Something went wrong" GSC error — retry kal AM. IndexNow: 200 ok.
+- 2026-05-24 PM: Quora #3 posted (Thread 3 weighted-vs-unweighted explainer). Anchor → /blog/weighted-vs-unweighted-gpa. 4 referring domains still (quora.com=3 answers, medium.com=2, dev.to, blogspot.com). 7 backlinks total.
+- 2026-05-24 PM: Medium #2 posted (Day 12 weighted-vs-unweighted-gpa). Anchor → /blog/weighted-vs-unweighted-gpa. Both Quora #3 + Medium #2 point at the same post — concentrated authority signal on Day 12 cornerstone.
+- 2026-05-25 AM: Published Day 26 AM (should-i-put-gpa-on-resume, Q ~1,700w) + Day 27 PM (gpa-scale-explained, C cornerstone ~2,000w, silo 2 GPA Scales, KD 50, 33k/mo). Total posts: 27. IndexNow: 200 ok for both. GSC URL Inspect pending — user to submit manually.
+- 2026-05-25 AM: Dev.to #2 posted (Day 27 gpa-scale-explained, same-hour cross-post). Anchor → /blog/gpa-scale-explained. 4 referring domains: quora.com=3, medium.com=2, dev.to=2, blogspot.com=1. 8 backlinks total.
+- 2026-05-26 AM: Published Day 28 AM (ivy-league-gpa-requirements, C cornerstone ~1,850w, silo 6 anchor, KD 55, 22k/mo) + Day 29 PM (how-to-raise-gpa, C cornerstone ~2,200w, silo 4, KD 48, 24k/mo). Total posts: 29. IndexNow: 200 ok for both.
+- 2026-05-26 AM: Medium #3 posted (Day 28 ivy-league-gpa-requirements cross-post). Anchor → /blog/ivy-league-gpa-requirements. Quora #4 posted same morning, same anchor — concentrated authority on Day 28 cornerstone. 4 referring domains: quora.com=4, medium.com=3, dev.to=2, blogspot.com=1. 10 backlinks total.
+- 2026-05-26 late-AM: Hashnode #1 posted (Day 24 how-to-calculate-cumulative-gpa, ~1,963w). New publication "BestGPACalculator Blog" at bestgpacalculator.hashnode.dev. Anchor → /blog/how-to-calculate-cumulative-gpa. 5 referring domains now: quora.com=4, medium.com=3, dev.to=2, blogspot.com=1, hashnode.dev=1. 11 backlinks total. (User did final Publish/Update click manually.)
 ```
 
 ---
