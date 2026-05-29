@@ -5,36 +5,53 @@ const BASE = "https://bestgpacalculator.online";
 
 export const revalidate = 300;
 
-const ROUTE_LAST_MODIFIED: Record<string, string> = {
-  "": "2026-05-20",
-  "/weighted-gpa-calculator": "2026-05-14",
-  "/unweighted-gpa-calculator": "2026-05-13",
-  "/high-school-gpa-calculator": "2026-05-14",
-  "/college-gpa-calculator": "2026-05-13",
-  "/middle-school-gpa-calculator": "2026-05-12",
-  "/cumulative-gpa-calculator": "2026-05-13",
-  "/semester-gpa-calculator": "2026-05-12",
-  "/current-gpa-calculator": "2026-05-12",
-  "/ap-gpa-calculator": "2026-05-14",
-  "/honors-gpa-calculator": "2026-05-13",
-  "/percentage-to-gpa-calculator": "2026-05-13",
-  "/gpa-calculator-without-credits": "2026-05-12",
-  "/ap-score-to-gpa-calculator": "2026-05-14",
-  "/gpa-goal-calculator": "2026-05-14",
-  "/how-to-calculate-gpa": "2026-05-15",
-  "/about": "2026-05-20",
-  "/contact": "2026-05-15",
-  "/privacy": "2026-05-15",
-  "/terms": "2026-05-15",
+type Priority = 0.3 | 0.5 | 0.7 | 0.8 | 0.9 | 1.0;
+type ChangeFreq = "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never";
+
+interface RouteMeta {
+  lastMod: string;
+  priority: Priority;
+  changeFrequency: ChangeFreq;
+}
+
+const ROUTES: Record<string, RouteMeta> = {
+  "": { lastMod: "2026-05-29", priority: 1.0, changeFrequency: "daily" },
+
+  // Calculator hub pages — highest commercial intent
+  "/weighted-gpa-calculator": { lastMod: "2026-05-14", priority: 0.9, changeFrequency: "monthly" },
+  "/unweighted-gpa-calculator": { lastMod: "2026-05-13", priority: 0.9, changeFrequency: "monthly" },
+  "/high-school-gpa-calculator": { lastMod: "2026-05-14", priority: 0.9, changeFrequency: "monthly" },
+  "/college-gpa-calculator": { lastMod: "2026-05-13", priority: 0.9, changeFrequency: "monthly" },
+  "/cumulative-gpa-calculator": { lastMod: "2026-05-13", priority: 0.9, changeFrequency: "monthly" },
+  "/semester-gpa-calculator": { lastMod: "2026-05-12", priority: 0.8, changeFrequency: "monthly" },
+  "/middle-school-gpa-calculator": { lastMod: "2026-05-12", priority: 0.8, changeFrequency: "monthly" },
+  "/current-gpa-calculator": { lastMod: "2026-05-12", priority: 0.8, changeFrequency: "monthly" },
+  "/ap-gpa-calculator": { lastMod: "2026-05-14", priority: 0.8, changeFrequency: "monthly" },
+  "/honors-gpa-calculator": { lastMod: "2026-05-13", priority: 0.8, changeFrequency: "monthly" },
+  "/percentage-to-gpa-calculator": { lastMod: "2026-05-13", priority: 0.8, changeFrequency: "monthly" },
+  "/gpa-calculator-without-credits": { lastMod: "2026-05-12", priority: 0.7, changeFrequency: "monthly" },
+  "/ap-score-to-gpa-calculator": { lastMod: "2026-05-14", priority: 0.7, changeFrequency: "monthly" },
+  "/gpa-goal-calculator": { lastMod: "2026-05-14", priority: 0.9, changeFrequency: "monthly" },
+
+  // Guide pages
+  "/how-to-calculate-gpa": { lastMod: "2026-05-15", priority: 0.8, changeFrequency: "monthly" },
+  "/about": { lastMod: "2026-05-20", priority: 0.5, changeFrequency: "yearly" },
+
+  // Low-value legal pages
+  "/contact": { lastMod: "2026-05-15", priority: 0.3, changeFrequency: "yearly" },
+  "/privacy": { lastMod: "2026-05-15", priority: 0.3, changeFrequency: "yearly" },
+  "/terms": { lastMod: "2026-05-15", priority: 0.3, changeFrequency: "yearly" },
 };
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const buildDate = new Date();
 
-  const staticEntries: MetadataRoute.Sitemap = Object.entries(ROUTE_LAST_MODIFIED).map(
-    ([path, lastMod]) => ({
+  const staticEntries: MetadataRoute.Sitemap = Object.entries(ROUTES).map(
+    ([path, meta]) => ({
       url: `${BASE}${path}`,
-      lastModified: new Date(lastMod),
+      lastModified: new Date(meta.lastMod),
+      priority: meta.priority,
+      changeFrequency: meta.changeFrequency,
     }),
   );
 
@@ -51,6 +68,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     blogEntries = posts.map((p) => ({
       url: `${BASE}/blog/${p.slug}`,
       lastModified: p.updatedAt ?? buildDate,
+      priority: 0.7 as Priority,
+      changeFrequency: "weekly" as ChangeFreq,
     }));
   } catch {
     blogEntries = [];
@@ -59,6 +78,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const blogIndexEntry: MetadataRoute.Sitemap[number] = {
     url: `${BASE}/blog`,
     lastModified: latestPostDate,
+    priority: 0.8,
+    changeFrequency: "daily",
   };
 
   return [...staticEntries, blogIndexEntry, ...blogEntries];
