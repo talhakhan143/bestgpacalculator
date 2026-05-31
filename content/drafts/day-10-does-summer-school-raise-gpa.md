@@ -9,6 +9,8 @@ admin-fields:
   publish: true
 ---
 
+**Quick answer:** Summer school can raise your GPA only if you take the class at your home institution under your school's grade-replacement policy for a course you previously failed or earned a low grade in. Outside summer courses that "transfer in" usually add credits but don't change your GPA. The replacement policy is the deciding factor — check yours before signing up.
+
 Most students hear "summer school" and assume it's a quick GPA fix. Take a class, get an A, average goes up. The reality is messier — whether a summer course actually moves your GPA depends on three things that nobody tells you at signup.
 
 The honest summary: a summer course at your home institution, taken under your school's grade replacement policy for a course you previously failed, is the highest-leverage GPA move available. A summer course at an outside school that "transfers in" usually does nothing to your GPA, just to your credit count. Most students sign up for the wrong kind.

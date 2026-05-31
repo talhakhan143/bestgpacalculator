@@ -9,9 +9,9 @@ import Link from "next/link";
 import { InlineCalcCta, Citation, DefinitionBlock, KeyFacts, ArticleMeta } from "@/components/sections/InContentLinks";
 
 export const metadata: Metadata = {
-  title: "Cumulative GPA Calculator — Add a New Semester",
+  title: "Cumulative GPA Calculator: Free, Adds New Semester",
   description:
-    "Calculate your new cumulative GPA. Enter your prior GPA and credits, add the current semester's classes, and see your updated cumulative instantly.",
+    "Free cumulative GPA calculator. Enter prior GPA + credits, add this semester's classes, see your new cumulative in 10 seconds. Used by 1000s of students. No signup.",
   alternates: { canonical: "/cumulative-gpa-calculator" },
 };
 

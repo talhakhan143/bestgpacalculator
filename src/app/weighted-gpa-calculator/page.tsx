@@ -8,9 +8,9 @@ import { RelatedCalculators } from "@/components/sections/RelatedCalculators";
 import { InlineCalcCta, Citation, DefinitionBlock, KeyFacts, ArticleMeta } from "@/components/sections/InContentLinks";
 
 export const metadata: Metadata = {
-  title: "Weighted GPA Calculator — AP, Honors, IB",
+  title: "Weighted GPA Calculator: Free, Instant + AP/Honors",
   description:
-    "Calculate your weighted high school GPA with AP, Honors, IB, and dual-enrollment bonuses. Five weighting scales supported. Free, no signup, mobile-first.",
+    "Free weighted GPA calculator with AP, Honors, IB, and dual-enrollment bonus support. Get your weighted GPA in 10 seconds — five weighting scales, no signup, mobile-first.",
   alternates: { canonical: "/weighted-gpa-calculator" },
 };
 

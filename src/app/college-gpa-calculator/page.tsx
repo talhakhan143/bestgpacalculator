@@ -10,9 +10,9 @@ import { InlineCalcCta, Citation, DefinitionBlock, KeyFacts, ArticleMeta } from 
 import { newClass } from "@/lib/gpa-math";
 
 export const metadata: Metadata = {
-  title: "College GPA Calculator — 4.0 Scale + Credits",
+  title: "College GPA Calculator: Free + Credit-Weighted (2026)",
   description:
-    "Free college GPA calculator. Standard 4.0 scale with credit hours. Calculate semester GPA or cumulative across all semesters. No signup, instant results.",
+    "Free college GPA calculator on the 4.0 scale with full credit-hour support. Calculate semester GPA or cumulative across every semester in seconds. No signup, no email, instant.",
   alternates: { canonical: "/college-gpa-calculator" },
 };
 

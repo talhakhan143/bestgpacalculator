@@ -9,9 +9,9 @@ import Link from "next/link";
 import { InlineCalcCta, Citation, DefinitionBlock, KeyFacts, ArticleMeta } from "@/components/sections/InContentLinks";
 
 export const metadata: Metadata = {
-  title: "AP Score Calculator — College Credit Predictor",
+  title: "AP Score Calculator: How Many Credits = 4 or 5?",
   description:
-    "Estimate college credits, weighted GPA boost, and semesters saved from your AP exam scores (1-5). Free calculator covering 30+ AP subjects.",
+    "Free AP score calculator. Estimate college credits, weighted GPA boost, and semesters saved from your AP exam scores (1-5). Covers 30+ AP subjects including Calc BC, APUSH, Bio.",
   alternates: { canonical: "/ap-score-to-gpa-calculator" },
 };
 

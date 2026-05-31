@@ -9,9 +9,9 @@ import Link from "next/link";
 import { InlineCalcCta, Citation, DefinitionBlock, KeyFacts, ArticleMeta } from "@/components/sections/InContentLinks";
 
 export const metadata: Metadata = {
-  title: "AP GPA Calculator — How AP Classes Boost Your GPA",
+  title: "AP GPA Calculator: How Much Does AP Boost GPA?",
   description:
-    "AP GPA calculator with bonus points for Advanced Placement courses. See exactly how each AP class raises your weighted GPA. Free, mobile-friendly.",
+    "Free AP GPA calculator with +1.0 Advanced Placement bonus weighting. See exactly how each AP class raises your weighted GPA above 4.0. Built for AP students chasing top schools.",
   alternates: { canonical: "/ap-gpa-calculator" },
 };
 

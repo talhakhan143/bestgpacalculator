@@ -9,9 +9,9 @@ import Link from "next/link";
 import { InlineCalcCta, Citation, DefinitionBlock, KeyFacts, ArticleMeta } from "@/components/sections/InContentLinks";
 
 export const metadata: Metadata = {
-  title: "Unweighted GPA Calculator — 4.0 Scale, No Bonuses",
+  title: "Unweighted GPA Calculator: Free 4.0 Scale (2026)",
   description:
-    "Free unweighted GPA calculator on the standard 4.0 scale. No AP or Honors bonuses — get the GPA most colleges recalculate from your transcript.",
+    "Free unweighted GPA calculator on the 4.0 scale used by 90%+ of US colleges. No AP/Honors bonuses — see exactly what admissions will recalculate from your transcript.",
   alternates: { canonical: "/unweighted-gpa-calculator" },
 };
 

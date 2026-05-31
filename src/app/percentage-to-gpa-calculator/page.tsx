@@ -9,9 +9,9 @@ import Link from "next/link";
 import { InlineCalcCta, Citation, DefinitionBlock, KeyFacts, ArticleMeta } from "@/components/sections/InContentLinks";
 
 export const metadata: Metadata = {
-  title: "Percentage to GPA Calculator (% → 4.0)",
+  title: "Percentage to GPA Calculator: % → 4.0 (Free 2026)",
   description:
-    "Convert percentage grades to GPA on the standard 4.0 scale. Free percentage-to-GPA calculator with credit-weighted average and conversion table.",
+    "Free percentage-to-GPA calculator. Convert any percentage grade (0-100%) to the standard 4.0 GPA scale instantly. Full conversion chart included. Credit-weighted, mobile-first.",
   alternates: { canonical: "/percentage-to-gpa-calculator" },
 };
 

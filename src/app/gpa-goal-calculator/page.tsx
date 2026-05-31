@@ -9,9 +9,9 @@ import Link from "next/link";
 import { InlineCalcCta, Citation, DefinitionBlock, KeyFacts, ArticleMeta } from "@/components/sections/InContentLinks";
 
 export const metadata: Metadata = {
-  title: "GPA Goal Calculator — Reverse GPA Target Planner",
+  title: "GPA Goal Calculator: What GPA Do I Need? (Free)",
   description:
-    "Reverse GPA calculator. Enter your current GPA and target — see exactly what GPA you need next semester to hit it. Free, no signup, instant feedback.",
+    "Free reverse GPA calculator. Enter your current GPA + target — instantly see what GPA you need this semester to hit your goal. Used by students chasing scholarships + grad school.",
   alternates: { canonical: "/gpa-goal-calculator" },
 };
 

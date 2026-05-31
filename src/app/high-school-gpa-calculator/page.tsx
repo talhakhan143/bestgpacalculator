@@ -9,9 +9,9 @@ import Link from "next/link";
 import { InlineCalcCta, Citation, DefinitionBlock, KeyFacts, ArticleMeta } from "@/components/sections/InContentLinks";
 
 export const metadata: Metadata = {
-  title: "High School GPA Calculator — Weighted & Unweighted",
+  title: "High School GPA Calculator: Weighted + Unweighted",
   description:
-    "Free high school GPA calculator. Supports AP, Honors, IB, dual-enrollment with weighted and unweighted GPA side by side. All five common school weighting scales.",
+    "Free high school GPA calculator showing weighted AND unweighted GPA side-by-side. AP, Honors, IB, dual-enrollment support across all five common school scales. Mobile-first, instant.",
   alternates: { canonical: "/high-school-gpa-calculator" },
 };
 

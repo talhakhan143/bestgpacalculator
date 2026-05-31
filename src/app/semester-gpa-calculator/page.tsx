@@ -10,9 +10,9 @@ import { InlineCalcCta, Citation, DefinitionBlock, KeyFacts, ArticleMeta } from 
 import { newClass } from "@/lib/gpa-math";
 
 export const metadata: Metadata = {
-  title: "Semester GPA Calculator — One Term Snapshot",
+  title: "Semester GPA Calculator: Free, Single-Term, Instant",
   description:
-    "Free semester GPA calculator. Enter your classes for one term and see your semester GPA on the 4.0 scale. Supports credit hours and AP/Honors weighting.",
+    "Free semester GPA calculator. Enter your classes for one term, get your semester GPA on the 4.0 scale instantly. Credit hours + AP/Honors weighting supported. No signup.",
   alternates: { canonical: "/semester-gpa-calculator" },
 };
 

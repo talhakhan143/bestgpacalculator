@@ -9,9 +9,9 @@ import Link from "next/link";
 import { InlineCalcCta, Citation, DefinitionBlock, KeyFacts, ArticleMeta } from "@/components/sections/InContentLinks";
 
 export const metadata: Metadata = {
-  title: "GPA Calculator Without Credits (Equal Weight)",
+  title: "GPA Calculator Without Credits: Free Equal-Weight Tool",
   description:
-    "Free GPA calculator that ignores credits. Every class counted equally. Quick and simple — for when you don't know credit values or want a flat average.",
+    "Free GPA calculator that ignores credit hours. Every class counted equally on a flat 4.0 scale — perfect when you don't know credits or your school doesn't use them.",
   alternates: { canonical: "/gpa-calculator-without-credits" },
 };
 

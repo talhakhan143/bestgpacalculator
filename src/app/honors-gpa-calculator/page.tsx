@@ -9,9 +9,9 @@ import Link from "next/link";
 import { InlineCalcCta, Citation, DefinitionBlock, KeyFacts, ArticleMeta } from "@/components/sections/InContentLinks";
 
 export const metadata: Metadata = {
-  title: "Honors GPA Calculator — +0.5 Weighting Bonus",
+  title: "Honors GPA Calculator: Free +0.5 Bonus (2026)",
   description:
-    "Honors GPA calculator with bonus weighting. Most US schools add +0.5 for honors classes. See your weighted GPA instantly with all five scales supported.",
+    "Free honors GPA calculator with the standard +0.5 honors bonus (used by 70%+ of US schools). See your weighted GPA instantly. All five common school scales supported.",
   alternates: { canonical: "/honors-gpa-calculator" },
 };
 

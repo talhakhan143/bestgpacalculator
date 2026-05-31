@@ -9,6 +9,8 @@ admin-fields:
   publish: true
 ---
 
+**Quick answer:** The number of A's you need to raise your GPA depends on three things: your current GPA, total credits already earned, and credit hours of the new courses. Rough rule: at 60 credits with a 3.0 GPA, twelve credits of A's raises you to about 3.17. The lift gets smaller as your earned credits grow, because each new grade is a smaller slice of the weighted average.
+
 Most people who ask this question are hoping for a magic number — "get four A's and you're at a 3.5." It doesn't work that way, and the honest answer is more useful: how many A's you need depends on how much GPA you already have *banked* and how big the new courses are compared to your transcript.
 
 I'll show you the formula in plain numbers, then a chart you can scan in ten seconds, and then point you to the calculator that handles the math without you reaching for a notepad.

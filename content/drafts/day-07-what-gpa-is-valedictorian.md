@@ -9,6 +9,8 @@ admin-fields:
   publish: true
 ---
 
+**Quick answer:** Valedictorian is the student with the highest weighted GPA at end of senior year. There's no national cutoff — your school sets it via class ranking. Realistic weighted-GPA ranges by school type: 4.3-4.6 at average suburban public schools, 4.5-4.8 at strong AP-heavy schools, and 4.7-5.2 at selective magnets or prep schools.
+
 Valedictorian isn't a fixed GPA. It's a *ranking* — whoever has the highest GPA at the end of senior year (or, at some schools, end of junior year) gets the title. So the actual number you need depends entirely on what everyone else in your class is sitting at.
 
 That said, you can roughly predict where the cutoff lands based on what kind of high school you're at. I'll walk through the common ranges, the weighted-versus-unweighted question, and the specific schools that have publicly shared their data.

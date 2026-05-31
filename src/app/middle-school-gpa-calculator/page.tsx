@@ -10,9 +10,9 @@ import { InlineCalcCta, Citation, DefinitionBlock, KeyFacts, ArticleMeta } from 
 import { newClass } from "@/lib/gpa-math";
 
 export const metadata: Metadata = {
-  title: "Middle School GPA Calculator (4.0 Scale)",
+  title: "Middle School GPA Calculator: Free 4.0 Scale Tool",
   description:
-    "Free middle school (junior high) GPA calculator on the 4.0 scale. Simple, no weighting, no AP — just letter grades and credits. Mobile-friendly.",
+    "Free middle school (junior high) GPA calculator on the 4.0 scale. No weighting, no AP confusion — just letter grades and credits. Built for 6th-8th graders. Mobile-first.",
   alternates: { canonical: "/middle-school-gpa-calculator" },
 };
 

@@ -9,9 +9,9 @@ import Link from "next/link";
 import { InlineCalcCta, Citation, DefinitionBlock, KeyFacts, ArticleMeta } from "@/components/sections/InContentLinks";
 
 export const metadata: Metadata = {
-  title: "Current GPA Calculator — Project Your Future GPA",
+  title: "Current GPA Calculator: Predict Your Next Semester",
   description:
-    "Use your current GPA + new classes to project your future GPA. Free, instant, mobile-friendly. See exactly how this semester changes your overall record.",
+    "Free current GPA calculator. Combine your existing GPA with this semester's classes to predict your future GPA before grades drop. Mobile-first, instant, no signup.",
   alternates: { canonical: "/current-gpa-calculator" },
 };
 
