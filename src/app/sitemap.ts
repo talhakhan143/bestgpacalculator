@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 import { listPublishedPosts } from "@/lib/blog";
+import { GPA_SCORE_DATA } from "@/lib/gpa-score-data";
+import { UNIS } from "@/lib/university-data";
 
 const BASE = "https://bestgpacalculator.online";
 
@@ -35,6 +37,7 @@ const ROUTES: Record<string, RouteMeta> = {
 
   // Guide pages
   "/how-to-calculate-gpa": { lastMod: "2026-05-15", priority: 0.8, changeFrequency: "monthly" },
+  "/gpa-scale": { lastMod: "2026-06-01", priority: 0.9, changeFrequency: "monthly" },
   "/about": { lastMod: "2026-05-20", priority: 0.5, changeFrequency: "yearly" },
 
   // Low-value legal pages
@@ -82,5 +85,39 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     changeFrequency: "daily",
   };
 
-  return [...staticEntries, blogIndexEntry, ...blogEntries];
+  const gpaHub: MetadataRoute.Sitemap[number] = {
+    url: `${BASE}/gpa`,
+    lastModified: new Date("2026-06-01"),
+    priority: 0.85,
+    changeFrequency: "monthly",
+  };
+  const gpaScoreEntries: MetadataRoute.Sitemap = GPA_SCORE_DATA.map((d) => ({
+    url: `${BASE}/gpa/${d.slug}`,
+    lastModified: new Date("2026-06-01"),
+    priority: 0.75 as Priority,
+    changeFrequency: "monthly" as ChangeFreq,
+  }));
+
+  const uniHub: MetadataRoute.Sitemap[number] = {
+    url: `${BASE}/university`,
+    lastModified: new Date("2026-06-01"),
+    priority: 0.85,
+    changeFrequency: "monthly",
+  };
+  const uniEntries: MetadataRoute.Sitemap = UNIS.map((u) => ({
+    url: `${BASE}/university/${u.slug}`,
+    lastModified: new Date("2026-06-01"),
+    priority: 0.75 as Priority,
+    changeFrequency: "monthly" as ChangeFreq,
+  }));
+
+  return [
+    ...staticEntries,
+    gpaHub,
+    ...gpaScoreEntries,
+    uniHub,
+    ...uniEntries,
+    blogIndexEntry,
+    ...blogEntries,
+  ];
 }

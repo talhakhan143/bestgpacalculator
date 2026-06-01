@@ -266,6 +266,26 @@ export default function Home() {
       {/* FAQ */}
       <Faq items={FAQ_ITEMS} />
 
+      {/* Resource hubs */}
+      <section className="mx-auto mt-20 max-w-5xl px-4 sm:px-6">
+        <div className="text-center">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-700 dark:text-emerald-300">
+            More tools
+          </p>
+          <h2 className="mt-2 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
+            GPA reference and university calculators
+          </h2>
+          <p className="mx-auto mt-3 max-w-xl text-pretty text-base text-zinc-600 dark:text-zinc-300">
+            Look up any GPA score, the complete grading scale, or calculators tuned to specific universities.
+          </p>
+        </div>
+        <div className="mt-8 grid gap-4 sm:grid-cols-3">
+          <ToolCard href="/gpa" title="GPA Scores" body="Is a 3.5 GPA good? Or 3.8? Detailed pages for every value 1.0-4.5." />
+          <ToolCard href="/gpa-scale" title="GPA Scale" body="The full 4.0 and weighted scale with letter grade and percentage conversion." highlight />
+          <ToolCard href="/university" title="University Calculators" body="UF, ASU, Purdue, UC, NYU, and 45+ more — each calibrated to the school's policy." />
+        </div>
+      </section>
+
       {/* Related calculators CTA */}
       <section className="mx-auto mt-20 max-w-4xl px-4 sm:px-6">
         <div className="glass-strong rounded-3xl p-8 text-center sm:p-12">
