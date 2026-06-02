@@ -37,17 +37,34 @@ const RESOURCES = [
   { href: "/blog/highest-gpa-possible", label: "Highest GPA Possible" },
 ];
 
+const TOP_UNIS = [
+  { href: "/university/uf", label: "UF (Florida)" },
+  { href: "/university/asu", label: "ASU (Arizona State)" },
+  { href: "/university/purdue", label: "Purdue" },
+  { href: "/university/uw-madison", label: "UW-Madison" },
+  { href: "/university/ut", label: "UT Austin" },
+  { href: "/university/rutgers", label: "Rutgers" },
+  { href: "/university/ucsd", label: "UC San Diego" },
+  { href: "/university/tamu", label: "Texas A&M" },
+  { href: "/university/osu", label: "Ohio State" },
+  { href: "/university/uiuc", label: "UIUC" },
+  { href: "/university/nyu", label: "NYU" },
+  { href: "/university/berkeley", label: "UC Berkeley" },
+];
+
 export function SiteHeader() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [allOpen, setAllOpen] = useState(false);
   const [resOpen, setResOpen] = useState(false);
+  const [uniOpen, setUniOpen] = useState(false);
 
   useEffect(() => {
     function onClick(e: MouseEvent) {
       const target = e.target as HTMLElement;
       if (!target.closest("[data-all-menu]")) setAllOpen(false);
       if (!target.closest("[data-res-menu]")) setResOpen(false);
+      if (!target.closest("[data-uni-menu]")) setUniOpen(false);
     }
     document.addEventListener("click", onClick);
     return () => document.removeEventListener("click", onClick);
@@ -163,6 +180,48 @@ export function SiteHeader() {
               </div>
             )}
           </div>
+
+          <div className="relative" data-uni-menu>
+            <button
+              type="button"
+              onClick={() => setUniOpen((v) => !v)}
+              className="flex items-center gap-1 rounded-md px-3 py-2 text-slate-600 transition hover:text-slate-900"
+              aria-expanded={uniOpen}
+              aria-haspopup="menu"
+            >
+              Universities
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={`transition ${uniOpen ? "rotate-180" : ""}`} aria-hidden="true">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+            {uniOpen && (
+              <div
+                role="menu"
+                className="absolute left-1/2 top-full mt-2 w-72 -translate-x-1/2 overflow-hidden rounded-xl border border-slate-200 bg-white p-2 shadow-xl"
+              >
+                <div className="grid grid-cols-2 gap-1">
+                  {TOP_UNIS.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={() => setUniOpen(false)}
+                      role="menuitem"
+                      className="block rounded-lg px-3 py-2 text-xs text-slate-700 transition hover:bg-blue-50 hover:text-blue-700"
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+                <Link
+                  href="/university"
+                  onClick={() => setUniOpen(false)}
+                  className="mt-1 block border-t border-slate-100 px-3 py-2 text-xs font-semibold text-blue-700 hover:bg-blue-50"
+                >
+                  See all 65 universities →
+                </Link>
+              </div>
+            )}
+          </div>
         </nav>
 
         {/* Right side actions */}
@@ -229,6 +288,27 @@ export function SiteHeader() {
                 {item.label}
               </Link>
             ))}
+            <div className="my-2 border-t border-slate-200" />
+            <div className="px-3 pb-1 pt-2 text-[10px] font-bold uppercase tracking-wider text-slate-500">
+              Top Universities
+            </div>
+            {TOP_UNIS.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setMenuOpen(false)}
+                className="block rounded-lg px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-blue-50 hover:text-blue-700"
+              >
+                {item.label}
+              </Link>
+            ))}
+            <Link
+              href="/university"
+              onClick={() => setMenuOpen(false)}
+              className="block rounded-lg px-3 py-2 text-sm font-semibold text-blue-700 transition hover:bg-blue-50"
+            >
+              See all 65 universities →
+            </Link>
             <div className="my-2 border-t border-slate-200" />
             <Link
               href="/how-to-calculate-gpa"

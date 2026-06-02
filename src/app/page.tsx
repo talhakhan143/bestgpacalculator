@@ -326,6 +326,61 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Top university calculators — 65 schools, surfaced top 12 by search volume */}
+      <section className="mx-auto mt-20 max-w-5xl px-4 sm:px-6">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-rose-700 dark:text-rose-300">
+              School-specific tools
+            </p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
+              Top university GPA calculators
+            </h2>
+            <p className="mt-2 max-w-xl text-sm text-zinc-600 dark:text-zinc-300">
+              Each calibrated to the school&apos;s weighting policy, admit-GPA range, and honors threshold. 65 universities supported.
+            </p>
+          </div>
+          <Link href="/university" className="text-sm font-semibold text-blue-700 hover:underline">
+            See all 65 →
+          </Link>
+        </div>
+        <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            { href: "/university/uf", abbr: "UF", name: "Florida", vol: "6.6K/mo" },
+            { href: "/university/asu", abbr: "ASU", name: "Arizona State", vol: "3.5K/mo" },
+            { href: "/university/purdue", abbr: "Purdue", name: "Purdue", vol: "3.0K/mo" },
+            { href: "/university/uw-madison", abbr: "UW-Madison", name: "Wisconsin", vol: "1.9K/mo" },
+            { href: "/university/ut", abbr: "UT", name: "UT Austin", vol: "1.8K/mo" },
+            { href: "/university/rutgers", abbr: "Rutgers", name: "Rutgers", vol: "1.7K/mo" },
+            { href: "/university/ucsd", abbr: "UCSD", name: "UC San Diego", vol: "1.6K/mo" },
+            { href: "/university/tamu", abbr: "TAMU", name: "Texas A&M", vol: "1.5K/mo" },
+            { href: "/university/osu", abbr: "OSU", name: "Ohio State", vol: "1.5K/mo" },
+            { href: "/university/uiuc", abbr: "UIUC", name: "Illinois", vol: "1.3K/mo" },
+            { href: "/university/nyu", abbr: "NYU", name: "NYU", vol: "1.0K/mo" },
+            { href: "/university/berkeley", abbr: "Berkeley", name: "UC Berkeley", vol: "950/mo" },
+          ].map((u) => (
+            <Link
+              key={u.href}
+              href={u.href}
+              className="glass group flex items-center gap-3 rounded-2xl p-4 transition hover:-translate-y-0.5 hover:shadow-lg"
+            >
+              <div className="grid h-10 w-12 shrink-0 place-items-center rounded-lg bg-blue-600 text-xs font-bold text-white">
+                {u.abbr}
+              </div>
+              <div className="min-w-0 flex-1">
+                <h3 className="truncate text-sm font-bold tracking-tight text-slate-900 dark:text-zinc-50">
+                  {u.name} GPA Calculator
+                </h3>
+                <p className="text-[11px] text-slate-500">{u.vol} searches</p>
+              </div>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="shrink-0 text-blue-600 transition group-hover:translate-x-0.5" aria-hidden="true">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* Related calculators CTA */}
       <section className="mx-auto mt-20 max-w-4xl px-4 sm:px-6">
         <div className="glass-strong rounded-3xl p-8 text-center sm:p-12">

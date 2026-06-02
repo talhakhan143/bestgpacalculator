@@ -45,6 +45,25 @@ const RESOURCE_LINKS = [
   { href: "/contact", label: "Contact" },
 ];
 
+const TOP_UNI_LINKS = [
+  { href: "/university/uf", label: "UF GPA Calculator" },
+  { href: "/university/asu", label: "ASU GPA Calculator" },
+  { href: "/university/purdue", label: "Purdue GPA Calculator" },
+  { href: "/university/uw-madison", label: "UW-Madison GPA Calculator" },
+  { href: "/university/ut", label: "UT Austin GPA Calculator" },
+  { href: "/university/rutgers", label: "Rutgers GPA Calculator" },
+  { href: "/university/ucsd", label: "UCSD GPA Calculator" },
+  { href: "/university/tamu", label: "Texas A&M GPA Calculator" },
+  { href: "/university/osu", label: "OSU GPA Calculator" },
+  { href: "/university/uiuc", label: "UIUC GPA Calculator" },
+  { href: "/university/nyu", label: "NYU GPA Calculator" },
+  { href: "/university/berkeley", label: "UC Berkeley GPA Calculator" },
+  { href: "/university/fsu", label: "FSU GPA Calculator" },
+  { href: "/university/byu", label: "BYU GPA Calculator" },
+  { href: "/university/iu", label: "IU GPA Calculator" },
+  { href: "/university/utd", label: "UTD GPA Calculator" },
+];
+
 const LEGAL_LINKS = [
   { href: "/privacy", label: "Privacy Policy" },
   { href: "/terms", label: "Terms of Use" },
@@ -85,6 +104,30 @@ export function SiteFooter() {
             <FooterColumn title="Resources" links={RESOURCE_LINKS} />
             <FooterColumn title="Legal" links={LEGAL_LINKS} />
           </div>
+        </div>
+
+        <div className="mt-10 border-t border-white/30 pt-6">
+          <h3 className="text-xs font-bold uppercase tracking-[0.16em] text-zinc-700 dark:text-zinc-300">
+            Top University GPA Calculators
+          </h3>
+          <ul className="mt-3 grid gap-x-4 gap-y-2 text-sm sm:grid-cols-2 lg:grid-cols-4">
+            {TOP_UNI_LINKS.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="text-zinc-600 transition hover:text-indigo-700 dark:text-zinc-400 dark:hover:text-indigo-300"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <Link
+            href="/university"
+            className="mt-3 inline-block text-xs font-semibold text-indigo-700 hover:underline dark:text-indigo-300"
+          >
+            See all 65 university calculators →
+          </Link>
         </div>
 
         <div className="mt-10 border-t border-white/30 pt-6 text-center text-xs text-zinc-600 dark:border-white/[0.06] dark:text-zinc-400">
