@@ -38,6 +38,7 @@ const ROUTES: Record<string, RouteMeta> = {
   // Guide pages
   "/how-to-calculate-gpa": { lastMod: "2026-05-15", priority: 0.8, changeFrequency: "monthly" },
   "/gpa-scale": { lastMod: "2026-06-01", priority: 0.9, changeFrequency: "monthly" },
+  "/law-school-gpa-calculator": { lastMod: "2026-06-02", priority: 0.9, changeFrequency: "monthly" },
   "/about": { lastMod: "2026-05-20", priority: 0.5, changeFrequency: "yearly" },
 
   // Low-value legal pages
