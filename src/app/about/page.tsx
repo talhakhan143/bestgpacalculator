@@ -32,7 +32,7 @@ export default function AboutPage() {
         badge="About us"
         title="A GPA tool"
         highlight="that respects students"
-        subtitle="GPA Boost is a free, no-signup, mobile-first calculator suite covering every common GPA scenario — built by people who got tired of bloated, ad-spammed competitors."
+        subtitle="BestGPACalculator is a free, no-signup, mobile-first calculator suite covering every common GPA scenario — built by people who got tired of bloated, ad-spammed competitors."
       />
 
       <article className="mx-auto mt-12 max-w-3xl px-4 pb-16 sm:px-6">
@@ -113,7 +113,7 @@ export default function AboutPage() {
             for international transcript conversion.
           </p>
 
-          <h2 className="mt-10 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
+          <h2 id="editorial-team" className="mt-10 scroll-mt-24 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
             Editorial team
           </h2>
           <p className="mt-4 text-base leading-relaxed text-zinc-700 dark:text-zinc-300">

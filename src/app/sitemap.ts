@@ -35,11 +35,18 @@ const ROUTES: Record<string, RouteMeta> = {
   "/ap-score-to-gpa-calculator": { lastMod: "2026-05-14", priority: 0.7, changeFrequency: "monthly" },
   "/gpa-goal-calculator": { lastMod: "2026-05-14", priority: 0.9, changeFrequency: "monthly" },
 
+  // Grade calculator family (new — Tier-1 competitor gap)
+  "/grade-calculator": { lastMod: "2026-06-02", priority: 0.9, changeFrequency: "monthly" },
+  "/final-grade-calculator": { lastMod: "2026-06-02", priority: 0.9, changeFrequency: "monthly" },
+  "/semester-grade-calculator": { lastMod: "2026-06-02", priority: 0.8, changeFrequency: "monthly" },
+  "/weighted-grade-calculator": { lastMod: "2026-06-02", priority: 0.8, changeFrequency: "monthly" },
+  "/gpa-to-percentage-calculator": { lastMod: "2026-06-02", priority: 0.8, changeFrequency: "monthly" },
+
   // Guide pages
   "/how-to-calculate-gpa": { lastMod: "2026-05-15", priority: 0.8, changeFrequency: "monthly" },
   "/gpa-scale": { lastMod: "2026-06-01", priority: 0.9, changeFrequency: "monthly" },
   "/law-school-gpa-calculator": { lastMod: "2026-06-02", priority: 0.9, changeFrequency: "monthly" },
-  "/about": { lastMod: "2026-05-20", priority: 0.5, changeFrequency: "yearly" },
+  "/about": { lastMod: "2026-06-02", priority: 0.5, changeFrequency: "yearly" },
 
   // Low-value legal pages
   "/contact": { lastMod: "2026-05-15", priority: 0.3, changeFrequency: "yearly" },

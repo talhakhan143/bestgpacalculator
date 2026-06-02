@@ -65,10 +65,12 @@ export function KeyFacts({ items }: { items: { label: string; value: string }[] 
 export function ArticleMeta({
   updated,
   reviewer = "BestGPACalculator Editorial Team",
+  reviewerHref = "/about#editorial-team",
   methodologyHref = "/how-to-calculate-gpa",
 }: {
   updated: string;
   reviewer?: string;
+  reviewerHref?: string;
   methodologyHref?: string;
 }) {
   return (
@@ -85,7 +87,7 @@ export function ArticleMeta({
           <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
           <circle cx="12" cy="7" r="4" />
         </svg>
-        Reviewed by {reviewer}
+        Reviewed by <Link href={reviewerHref} className="font-medium text-blue-700 hover:underline">{reviewer}</Link>
       </span>
       <Link href={methodologyHref} className="font-medium text-blue-700 hover:underline">Methodology →</Link>
     </div>

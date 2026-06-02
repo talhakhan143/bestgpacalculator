@@ -18,14 +18,30 @@ const SPECIAL_LINKS = [
   { href: "/ap-gpa-calculator", label: "AP GPA" },
   { href: "/honors-gpa-calculator", label: "Honors GPA" },
   { href: "/percentage-to-gpa-calculator", label: "Percentage to GPA" },
+  { href: "/gpa-to-percentage-calculator", label: "GPA to Percentage" },
   { href: "/gpa-calculator-without-credits", label: "Without Credits" },
+  { href: "/law-school-gpa-calculator", label: "Law School (LSAC)" },
+];
+
+const GRADE_LINKS = [
+  { href: "/grade-calculator", label: "Grade Calculator" },
+  { href: "/final-grade-calculator", label: "Final Grade Calculator" },
+  { href: "/semester-grade-calculator", label: "Semester Grade Calculator" },
+  { href: "/weighted-grade-calculator", label: "Weighted Grade Calculator" },
+];
+
+const REFERENCE_LINKS = [
+  { href: "/gpa-scale", label: "GPA Scale Guide" },
+  { href: "/gpa", label: "GPA Score Lookup (1.0-4.5)" },
+  { href: "/university", label: "University Calculators" },
+  { href: "/blog/highest-gpa-possible", label: "Highest GPA Possible" },
 ];
 
 const RESOURCE_LINKS = [
   { href: "/", label: "Home" },
   { href: "/blog", label: "Blog" },
   { href: "/how-to-calculate-gpa", label: "How to Calculate GPA" },
-  { href: "/about", label: "About" },
+  { href: "/about", label: "About + Editorial Team" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -40,7 +56,7 @@ export function SiteFooter() {
   return (
     <footer className="relative mt-20 glass border-x-0 border-b-0">
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
           <div>
             <Link href="/" aria-label="BestGPACalculator — home" className="flex items-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -59,8 +75,12 @@ export function SiteFooter() {
             </p>
           </div>
 
-          <FooterColumn title="Calculators" links={CALCULATOR_LINKS} />
-          <FooterColumn title="Specialized" links={SPECIAL_LINKS} />
+          <FooterColumn title="GPA Calculators" links={CALCULATOR_LINKS} />
+          <FooterColumn title="Specialized GPA" links={SPECIAL_LINKS} />
+          <div className="space-y-6">
+            <FooterColumn title="Grade Calculators" links={GRADE_LINKS} />
+            <FooterColumn title="Reference" links={REFERENCE_LINKS} />
+          </div>
           <div className="space-y-6">
             <FooterColumn title="Resources" links={RESOURCE_LINKS} />
             <FooterColumn title="Legal" links={LEGAL_LINKS} />

@@ -28,7 +28,7 @@ const FAQ_ITEMS: FaqItem[] = [
   },
   {
     q: "Can a weighted GPA be above 4.0?",
-    a: "Yes. With AP and Honors bonuses, students taking advanced course loads regularly reach 4.2 to 4.7 weighted. The cap depends on your school — most cap at 5.0, but some go higher.",
+    a: "Yes. Under the common +1.0 AP / +0.5 Honors weighting used by most US public high schools, an A in an AP course is worth 5.0 and an A in Honors is worth 4.5. Students taking advanced course loads commonly land in the 4.2–4.7 weighted range. Most districts cap at 5.0; a few use +2.0 AP weighting and can go to 6.0 — see our GPA Scale guide for every common scale.",
   },
   {
     q: "Do colleges look at weighted or unweighted GPA?",
@@ -225,7 +225,7 @@ export default function Home() {
             Why students pick us
           </p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
-            Built different from the bloated tools
+            The features that set us apart
           </h2>
         </div>
 
@@ -279,10 +279,50 @@ export default function Home() {
             Look up any GPA score, the complete grading scale, or calculators tuned to specific universities.
           </p>
         </div>
-        <div className="mt-8 grid gap-4 sm:grid-cols-3">
-          <ToolCard href="/gpa" title="GPA Scores" body="Is a 3.5 GPA good? Or 3.8? Detailed pages for every value 1.0-4.5." />
-          <ToolCard href="/gpa-scale" title="GPA Scale" body="The full 4.0 and weighted scale with letter grade and percentage conversion." highlight />
-          <ToolCard href="/university" title="University Calculators" body="UF, ASU, Purdue, UC, NYU, and 45+ more — each calibrated to the school's policy." />
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <ToolCard href="/gpa" title="GPA Scores" body="Is a 3.5 GPA good? Or 3.8? Detailed pages for every value 1.0–4.5." />
+          <ToolCard href="/gpa-scale" title="GPA Scale" body="Full 4.0 + weighted scale with letter grade and percentage conversion." highlight />
+          <ToolCard href="/university" title="University Calculators" body="UF, ASU, Purdue, UC, NYU, and 60+ more — calibrated to each school's policy." />
+          <ToolCard href="/law-school-gpa-calculator" title="Law School (LSAC)" body="LSAC CAS GPA recalculated on the 4.33 scale — retakes counted both times." />
+        </div>
+      </section>
+
+      {/* Latest guides — audit fix: blog was buried */}
+      <section className="mx-auto mt-20 max-w-5xl px-4 sm:px-6">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-700 dark:text-amber-300">
+              Latest guides
+            </p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
+              GPA reading from real students
+            </h2>
+          </div>
+          <Link href="/blog" className="text-sm font-semibold text-blue-700 hover:underline">
+            Browse all guides →
+          </Link>
+        </div>
+        <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <GuideCard
+            href="/blog/highest-gpa-possible"
+            title="What is the highest GPA possible?"
+            body="Unweighted ceiling, weighted maximums, and what record territory really looks like."
+          />
+          <GuideCard
+            href="/gpa/3-5"
+            title="Is a 3.5 GPA good?"
+            body="What a 3.5 means in high school vs college, percentile and admissions reality."
+          />
+          <GuideCard
+            href="/gpa/3-8"
+            title="Is a 3.8 GPA good?"
+            body="A- average — where it ranks, scholarship implications, college fit."
+          />
+          <GuideCard
+            href="/gpa-scale"
+            title="The GPA scale, explained"
+            body="Every common scale (4.0, 4.33, weighted, percentage) in one reference."
+          />
         </div>
       </section>
 
@@ -377,6 +417,28 @@ function Feature({
         {body}
       </p>
     </div>
+  );
+}
+
+function GuideCard({ href, title, body }: { href: string; title: string; body: string }) {
+  return (
+    <Link
+      href={href}
+      className="glass group block rounded-2xl p-5 transition hover:-translate-y-0.5 hover:shadow-lg"
+    >
+      <h3 className="text-base font-bold tracking-tight text-slate-900 dark:text-zinc-50">
+        {title}
+      </h3>
+      <p className="mt-2 text-xs leading-relaxed text-slate-600 dark:text-zinc-300">
+        {body}
+      </p>
+      <div className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-blue-700 dark:text-blue-300">
+        Read guide
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition group-hover:translate-x-0.5" aria-hidden="true">
+          <path d="M5 12h14M13 5l7 7-7 7" />
+        </svg>
+      </div>
+    </Link>
   );
 }
 

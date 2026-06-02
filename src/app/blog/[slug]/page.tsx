@@ -321,17 +321,17 @@ export default async function PostPage({
               <ul className="mt-4 grid gap-1.5 sm:grid-cols-3">
                 {[
                   { href: "/", label: "Home" },
-                  { href: "/weighted-gpa-calculator", label: "Weighted GPA" },
-                  { href: "/unweighted-gpa-calculator", label: "Unweighted GPA" },
-                  { href: "/college-gpa-calculator", label: "College GPA" },
-                  { href: "/high-school-gpa-calculator", label: "High School GPA" },
-                  { href: "/ap-gpa-calculator", label: "AP GPA" },
-                  { href: "/honors-gpa-calculator", label: "Honors GPA" },
-                  { href: "/cumulative-gpa-calculator", label: "Cumulative GPA" },
-                  { href: "/percentage-to-gpa-calculator", label: "Percentage to GPA" },
-                  { href: "/how-to-calculate-gpa", label: "How to Calculate GPA" },
-                  { href: "/about", label: "About" },
-                  { href: "/contact", label: "Contact" },
+                  { href: "/weighted-gpa-calculator", label: "Weighted GPA Calculator" },
+                  { href: "/unweighted-gpa-calculator", label: "Unweighted GPA Calculator" },
+                  { href: "/college-gpa-calculator", label: "College GPA Calculator" },
+                  { href: "/high-school-gpa-calculator", label: "High School GPA Calculator" },
+                  { href: "/grade-calculator", label: "Grade Calculator" },
+                  { href: "/final-grade-calculator", label: "Final Grade Calculator" },
+                  { href: "/semester-grade-calculator", label: "Semester Grade Calculator" },
+                  { href: "/gpa-to-percentage-calculator", label: "GPA to Percentage" },
+                  { href: "/law-school-gpa-calculator", label: "Law School (LSAC) GPA" },
+                  { href: "/gpa-scale", label: "GPA Scale Guide" },
+                  { href: "/university", label: "University Calculators" },
                 ].map((l) => (
                   <li key={l.href}>
                     <Link

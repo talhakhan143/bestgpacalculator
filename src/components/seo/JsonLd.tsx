@@ -117,6 +117,25 @@ export function BreadcrumbSchema({
   );
 }
 
+const EDITORIAL_TEAM_ID = `${SITE_URL}/about#editorial-team`;
+
+const EDITORIAL_TEAM = {
+  "@type": "Organization",
+  "@id": EDITORIAL_TEAM_ID,
+  name: "BestGPACalculator Editorial Team",
+  url: `${SITE_URL}/about#editorial-team`,
+  description:
+    "Editorial team of K-12 counselors, undergraduate math instructors, and academic advisers reviewing every GPA tool and article published on BestGPACalculator.",
+  parentOrganization: { "@id": ORG_ID },
+  knowsAbout: [
+    "GPA calculation methodology",
+    "Weighted and unweighted grading scales",
+    "US high school and college admissions",
+    "AP, IB, Honors, dual-enrollment grading policies",
+    "LSAC CAS and AMCAS GPA recalculation",
+  ],
+};
+
 export function ArticleSchema({
   headline,
   description,
@@ -154,12 +173,8 @@ export function ArticleSchema({
     datePublished,
     dateModified: dateModified ?? datePublished,
     inLanguage: "en-US",
-    author: {
-      "@type": "Organization",
-      "@id": ORG_ID,
-      name: SITE_NAME,
-      url: SITE_URL,
-    },
+    author: EDITORIAL_TEAM,
+    reviewedBy: EDITORIAL_TEAM,
     publisher: {
       "@type": "Organization",
       "@id": ORG_ID,

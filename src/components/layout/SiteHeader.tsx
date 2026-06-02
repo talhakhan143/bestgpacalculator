@@ -24,17 +24,30 @@ const ALL_CALCULATORS = [
   { href: "/honors-gpa-calculator", label: "Honors GPA" },
   { href: "/percentage-to-gpa-calculator", label: "Percentage to GPA" },
   { href: "/gpa-calculator-without-credits", label: "Without Credits" },
+  { href: "/law-school-gpa-calculator", label: "Law School GPA (LSAC)" },
+  { href: "/grade-calculator", label: "Grade Calculator" },
+  { href: "/final-grade-calculator", label: "Final Grade Calculator" },
+];
+
+const RESOURCES = [
+  { href: "/gpa-scale", label: "GPA Scale" },
+  { href: "/gpa", label: "GPA Score Lookup" },
+  { href: "/university", label: "University Calculators" },
+  { href: "/how-to-calculate-gpa", label: "How to Calculate GPA" },
+  { href: "/blog/highest-gpa-possible", label: "Highest GPA Possible" },
 ];
 
 export function SiteHeader() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [allOpen, setAllOpen] = useState(false);
+  const [resOpen, setResOpen] = useState(false);
 
   useEffect(() => {
     function onClick(e: MouseEvent) {
       const target = e.target as HTMLElement;
       if (!target.closest("[data-all-menu]")) setAllOpen(false);
+      if (!target.closest("[data-res-menu]")) setResOpen(false);
     }
     document.addEventListener("click", onClick);
     return () => document.removeEventListener("click", onClick);
@@ -117,6 +130,39 @@ export function SiteHeader() {
               </div>
             )}
           </div>
+
+          <div className="relative" data-res-menu>
+            <button
+              type="button"
+              onClick={() => setResOpen((v) => !v)}
+              className="flex items-center gap-1 rounded-md px-3 py-2 text-slate-600 transition hover:text-slate-900"
+              aria-expanded={resOpen}
+              aria-haspopup="menu"
+            >
+              Resources
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={`transition ${resOpen ? "rotate-180" : ""}`} aria-hidden="true">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+            {resOpen && (
+              <div
+                role="menu"
+                className="absolute left-1/2 top-full mt-2 w-64 -translate-x-1/2 overflow-hidden rounded-xl border border-slate-200 bg-white p-2 shadow-xl"
+              >
+                {RESOURCES.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setResOpen(false)}
+                    role="menuitem"
+                    className="block rounded-lg px-3 py-2 text-sm text-slate-700 transition hover:bg-blue-50 hover:text-blue-700"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
         </nav>
 
         {/* Right side actions */}
@@ -160,6 +206,20 @@ export function SiteHeader() {
         <div className="border-t border-slate-200 bg-white md:hidden">
           <nav className="mx-auto max-w-6xl space-y-1 px-4 py-3 sm:px-6">
             {ALL_CALCULATORS.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setMenuOpen(false)}
+                className="block rounded-lg px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-blue-50 hover:text-blue-700"
+              >
+                {item.label}
+              </Link>
+            ))}
+            <div className="my-2 border-t border-slate-200" />
+            <div className="px-3 pb-1 pt-2 text-[10px] font-bold uppercase tracking-wider text-slate-500">
+              Resources
+            </div>
+            {RESOURCES.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}

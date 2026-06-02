@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s | BestGPA",
   },
   description:
-    "Free GPA calculator (also gpa caculator, gpa calulator) for high school and college students. Weighted, unweighted, cumulative, semester, AP, Honors, percentage conversion. Mobile-first, no signup, instant results.",
+    "Free GPA calculator with five per-school weighting scales — weighted, unweighted, AP, Honors, IB, dual-enrollment. Live results, mobile-first, no signup.",
   openGraph: {
     title: "Best GPA Calculator — Free High School & College GPA Tools",
     description:
