@@ -182,6 +182,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 1700,
+    indexed: true,
+    intro:
+      "Rutgers has an unusual GPA scale — no A- or B- letters. An A is 4.0, B+ is 3.5, straight to B at 3.0, then C+ at 2.5. This compressed scale means a single grade slip moves your GPA more than at standard schools. Admission uses unweighted GPA primarily but reviews weighted (including AP/Honors bonus) for context. Rutgers Honors College and the Business School add their own GPA gates on top of general university admission.",
+    localStat: {
+      label: "Fall 2024 Rutgers-New Brunswick admit GPA",
+      value: "3.6 - 3.9 unweighted (middle 50%)",
+      source: "Rutgers Office of University Admissions, 2024",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">The no-minus scale punishes B+ misses harder.</strong> Earning a B (3.0) instead of B+ (3.5) costs you a full 0.5 — twice the impact of the same slip at a school with B+ = 3.33 and B = 3.0. Aim for the +.",
+      "<strong class=\"text-slate-900\">School of Arts and Sciences Honors needs 3.6+ to apply.</strong> First-year Honors admission is by invitation. Transfer-in Honors requires a 3.6+ college GPA across at least 30 credits, plus essay and recommendation.",
+      "<strong class=\"text-slate-900\">Rutgers Business needs 3.2 in pre-business.</strong> If you don't direct-admit to RBS from high school, you can apply during sophomore year with a 3.2+ GPA in pre-business courses (ECON 102, MATH 135/151, ACCT 271). Roughly 60% of applicants are admitted.",
+    ],
+    sourceUrl: "https://admissions.rutgers.edu",
   },
   {
     slug: "ucsd",
@@ -196,6 +210,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Provost's Honors",
     goodStandingGpa: "2.0",
     searchVolume: 1600,
+    indexed: true,
+    intro:
+      "UC San Diego uses the UC system's capped-weighted GPA formula — only grades from 10th and 11th grade A-G coursework count, with a +1.0 boost for UC-approved honors, AP, and IB classes, capped at 8 semesters of bonus weight. That means a student with 12 weighted classes only sees the bonus on 8 of them. UCSD ranks third in UC system selectivity behind UCLA and Berkeley, with college affiliation (the seven undergraduate colleges) determining your housing, general-ed pattern, and writing program.",
+    localStat: {
+      label: "Fall 2024 admit UC-weighted GPA (middle 50%)",
+      value: "4.13 - 4.32",
+      source: "UCSD Office of Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">The 8-semester cap on weighted bonus is binding.</strong> If you took 14 weighted classes across 10th-11th, only 8 semesters of +1.0 boost apply. Plan your AP/honors load with this cap in mind — overloading past 8 semesters doesn't help your UC GPA.",
+      "<strong class=\"text-slate-900\">Provost's Honors lists at 3.5+ each term.</strong> 3.5+ on at least 12 graded UCSD units per term puts you on Provost's Honors. The honor is reported on transcripts but doesn't otherwise affect degree honors (those use cumulative GPA only).",
+      "<strong class=\"text-slate-900\">Engineering and CS direct admit are the most selective.</strong> The Jacobs School of Engineering caps freshman admission by capacity. Computer Science and Bioengineering are the two most competitive — typical admits clear 4.3 UC-weighted GPA plus 1500+ SAT.",
+    ],
+    sourceUrl: "https://admissions.ucsd.edu",
   },
   {
     slug: "tamu",
@@ -210,6 +238,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's Honor Roll",
     goodStandingGpa: "2.0",
     searchVolume: 1500,
+    indexed: true,
+    intro:
+      "Texas A&M uses a whole-grade scale that doesn't recognize plus or minus — an A- and a B+ both count as different letter grades on your transcript, but for GPA purposes a B and a B+ both equal 3.0 (or 3.33 if the school reports A-/B+ separately). This compresses the curve and means the difference between a 3.0 and a 3.5 GPA at TAMU represents a much wider spread of actual grades than at standard schools.",
+    localStat: {
+      label: "Fall 2024 College Station admit GPA (middle 50%)",
+      value: "3.65 - 3.95 unweighted",
+      source: "Texas A&M Office of Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Top 10% Texas rule auto-admits.</strong> Texas residents in the top 10% of their high school class are automatically admitted to TAMU — same as the state's Top 6% UT Austin rule but with a higher percentage cap. Major-specific admission may still require review.",
+      "<strong class=\"text-slate-900\">Mays Business School direct admit needs 3.5+ + top 25%.</strong> Mays is one of the more competitive direct-admit majors. Holistic review favors students with calculus completed, 3.5+ unweighted, and top 25% high school class rank.",
+      "<strong class=\"text-slate-900\">Q-drop policy lets you drop low grades.</strong> TAMU allows students to drop a course (Q-drop) up to 3 times across the degree, removing it from GPA entirely. Strategic use early in the term protects your GPA from a clearly-failing class.",
+    ],
+    sourceUrl: "https://admissions.tamu.edu",
   },
   {
     slug: "osu",
@@ -224,6 +266,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 1500,
+    indexed: true,
+    intro:
+      "Ohio State reads your school-reported GPA without recalculation, but the admissions office weighs course rigor heavily — particularly AP and college-credit-plus enrollment. Direct admit to Fisher College of Business and the College of Engineering are significantly more selective than the general university pool, with practical floors around 3.85+ unweighted and demonstrated math rigor (Calculus completed by senior year for engineering).",
+    localStat: {
+      label: "Fall 2024 Columbus campus admit GPA average",
+      value: "3.87 unweighted (middle 50%: 3.7 - 4.0)",
+      source: "OSU Undergraduate Admissions, Class of 2028 profile",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Eminence Fellows is OSU's flagship full-ride.</strong> The Eminence Fellows Scholarship covers full tuition, room, and board for selective admits, typically requiring 4.0 unweighted, top-decile class rank, 1450+ SAT, and a leadership essay. Apply by November 1.",
+      "<strong class=\"text-slate-900\">Honors program is by separate application.</strong> The OSU Honors program requires a 3.5+ unweighted GPA, but admission is competitive and reviewed alongside an essay and curriculum rigor. Roughly 25% of admitted Honors applicants are accepted.",
+      "<strong class=\"text-slate-900\">Forgiveness petition exists for repeat grades.</strong> OSU's grade forgiveness policy allows a student to repeat up to 3 courses where they earned D or E (F), with only the new grade counting in cumulative GPA. The original grade stays on transcript with a notation.",
+    ],
+    sourceUrl: "https://admissions.osu.edu",
   },
   {
     slug: "iu",
@@ -238,6 +294,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 1300,
+    indexed: true,
+    intro:
+      "Indiana University Bloomington uses your school-reported GPA without recalculation, but the Hutton Honors College, Kelley School of Business direct admit, and Media School each impose their own tighter GPA gates on top of general admission. Indiana's automatic merit-aid grid uses both GPA and SAT/ACT — at 3.7+ with strong test scores, the Distinction-tier awards run $11K–$15K per year for in-state students.",
+    localStat: {
+      label: "Kelley School direct admit GPA threshold",
+      value: "3.8+ unweighted typical",
+      source: "Indiana University Kelley School of Business",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Hutton Honors needs 3.7+ from high school.</strong> Apply by November 1 for priority Hutton scholarships. The honors program offers stipends for research, study abroad, and capstone projects — separate from general IU merit aid.",
+      "<strong class=\"text-slate-900\">Kelley direct admit is selective.</strong> Direct admit to Kelley typically requires 3.8+ unweighted, 1300+ SAT, and a business-focused essay. Students denied direct admit can apply during sophomore year with 3.5+ in pre-business courses.",
+      "<strong class=\"text-slate-900\">Course retake replaces full grade.</strong> IU's grade-replacement policy (FX option) lets retaken grades fully replace original ones in cumulative GPA, with no per-degree cap — but the original grade remains on transcript with an X notation.",
+    ],
+    sourceUrl: "https://admissions.indiana.edu",
   },
   {
     slug: "uiuc",
@@ -252,6 +322,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 1300,
+    indexed: true,
+    intro:
+      "UIUC's admission is heavily major-stratified. The Grainger College of Engineering and the Gies College of Business sit well above the general university admit range — Computer Science in particular admits at sub-7% rates with practical floors near 4.0 unweighted and 1500+ SAT. Liberal Arts and Sciences runs more accessible. Illinois reviews self-reported high school GPA with course rigor as the secondary signal; the AP/IB count matters more than the unweighted number once you're past 3.7.",
+    localStat: {
+      label: "Grainger Engineering admit GPA (middle 50%)",
+      value: "3.85 - 4.0 unweighted",
+      source: "UIUC Office of Undergraduate Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Computer Science is the most selective major in the state.</strong> CS at UIUC admits at roughly 6-7%. If CS is your goal, apply to it as your primary major — getting in to LAS and trying to transfer internally is significantly harder than admitting from outside.",
+      "<strong class=\"text-slate-900\">James Scholar is the honors invite.</strong> Top-end admits with strong GPAs (typically 3.9+ unweighted) get invited to James Scholar with a separate application. The program adds research grants and priority registration.",
+      "<strong class=\"text-slate-900\">Grade replacement requires a petition.</strong> UIUC doesn't auto-replace grades on retake — both grades remain in cumulative GPA. Removing the original requires a formal petition with documented hardship.",
+    ],
+    sourceUrl: "https://admissions.illinois.edu",
   },
   {
     slug: "utd",
@@ -266,6 +350,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 1300,
+    indexed: true,
+    intro:
+      "UT Dallas runs one of the most transparent admission systems in Texas: the AES (Assured Excellence Scholarship) Index combines class rank, GPA, and test scores into a numeric formula that maps directly to merit awards. Hit the cutoffs and the scholarship is guaranteed — no committee, no essays. The Jonsson School of Engineering and Computer Science is UTD's flagship, with computer science particularly competitive among Texas public engineering programs.",
+    localStat: {
+      label: "AES Distinction (top tier) full tuition threshold",
+      value: "Top 5% class rank + SAT 1480+/ACT 33+",
+      source: "UT Dallas Academic Excellence Scholarship",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">AES is formula-based, not holistic.</strong> Plug your numbers into the Assured Excellence calculator and you'll know your scholarship before applying. Top 10% + 1340 SAT typically clears the full-tuition Distinction tier.",
+      "<strong class=\"text-slate-900\">Engineering at UTD competes with UT Austin's Cockrell.</strong> ECS at UT Dallas has lower admit numerical thresholds than Cockrell but produces strong CS graduates at scale. A 3.8+ unweighted plus calculus completion is the practical floor.",
+      "<strong class=\"text-slate-900\">UTeach gives a 2nd major in education for free.</strong> The UTeach program at UTD lets STEM students earn teaching certification alongside their primary degree at no additional cost. Strong if you're considering a back-pocket teaching credential.",
+    ],
+    sourceUrl: "https://admissions.utdallas.edu",
   },
   {
     slug: "uta",
@@ -280,6 +378,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 1200,
+    indexed: true,
+    intro:
+      "UT Arlington is the most accessible of the major UT system campuses — assured admission to applicants in the top 25% of their Texas high school class, or with a 3.0+ GPA plus SAT 1080+/ACT 21+. The nursing and engineering programs (particularly the College of Nursing and Health Innovation) are nationally ranked and well above the general admit profile, with separate selection criteria. UTA's strong commuter-student infrastructure and metroplex location make it a default for Dallas-Fort Worth-area students.",
+    localStat: {
+      label: "Assured admission threshold",
+      value: "Top 25% class rank, OR 3.0+ GPA with SAT 1080+",
+      source: "UT Arlington Office of Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Nursing has its own GPA gate.</strong> Direct admit to UTA Nursing requires a 3.5+ unweighted, completion of pre-nursing prereqs (anatomy, microbiology), and a separate application by January 15.",
+      "<strong class=\"text-slate-900\">Honors College admits at 3.7+.</strong> The Goolsby Leadership Academy within UTA Honors is the prestige track. Goolsby admits 30-40 students per cohort, requires 3.7+ and an interview, and covers tuition.",
+      "<strong class=\"text-slate-900\">Maverick Promise covers full tuition for low-income Texans.</strong> Texas residents with family income under $65K and admitted to UTA get full tuition covered, conditional on maintaining 2.0+ GPA. Renewal floor is lower than most state promise programs.",
+    ],
+    sourceUrl: "https://admissions.uta.edu",
   },
   {
     slug: "jmu",
@@ -294,6 +406,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 1150,
+    indexed: true,
+    intro:
+      "JMU's admission process is friendlier to mid-tier GPAs than most flagship publics — the school explicitly markets a holistic-review process that weighs essays and extracurriculars meaningfully against the 3.5–3.9 GPA admit range. Madison Honors College adds a 3.7+ unweighted GPA gate plus separate application. The College of Business and the College of Health and Behavioral Studies (specifically nursing) are JMU's most selective majors.",
+    localStat: {
+      label: "Fall 2024 admit GPA (middle 50%)",
+      value: "3.65 - 4.0 weighted",
+      source: "JMU Office of Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Test-optional remains the standard.</strong> JMU has maintained test-optional admission post-2020. Students without strong SAT/ACT scores can apply purely on transcript + essays + extracurricular profile without penalty.",
+      "<strong class=\"text-slate-900\">Nursing requires separate January application.</strong> Direct admit to JMU Nursing requires 3.5+ GPA, completion of biology and chemistry prereqs, and a January 15 deadline that's earlier than general admission.",
+      "<strong class=\"text-slate-900\">Madison Honors invitation auto-applies.</strong> If your application clears the 3.7+ unweighted GPA bar with strong AP/IB rigor, you're automatically considered for Madison Honors at admission — no separate application required for the invitation itself.",
+    ],
+    sourceUrl: "https://www.jmu.edu/admissions",
   },
   {
     slug: "berkeley",
@@ -308,6 +434,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 1150,
+    indexed: true,
+    intro:
+      "UC Berkeley is the most selective UC alongside UCLA, with the College of Engineering's EECS, Haas Business, and Computer Science admits well above the general university profile. The UC-weighted GPA — capped at 8 semesters of bonus weight from approved honors/AP/IB — drives the formal admission read, but Berkeley's holistic review then layers essays, the personal insight questions, and demonstrated context (school profile, family background) on top. Admit rates run sub-12% overall and below 5% for EECS.",
+    localStat: {
+      label: "Fall 2024 admit UC-weighted GPA (middle 50%)",
+      value: "4.27 - 4.49",
+      source: "UC Berkeley Office of Undergraduate Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">EECS direct admit is the toughest UC track.</strong> EECS admit rates hover near 5%. The College of Letters & Science with intended CS gives you a more realistic admit path; you can later apply for the L&S CS major with a 3.3+ GPA in the two intro CS courses.",
+      "<strong class=\"text-slate-900\">Haas requires separate sophomore application.</strong> Berkeley doesn't direct-admit freshmen to Haas. Apply during sophomore year after completing prereqs (UGBA 10, ECON 1, MATH 16A, MATH 16B) with a 3.5+ Haas-GPA target.",
+      "<strong class=\"text-slate-900\">9% Plan auto-admits California top-decile.</strong> California residents in the top 9% of their high school class are guaranteed UC admission, though not necessarily to Berkeley specifically — most get matched to UC Riverside or UC Merced under the plan.",
+    ],
+    sourceUrl: "https://admissions.berkeley.edu",
   },
   {
     slug: "fsu",
@@ -322,9 +462,37 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 1150,
+    indexed: true,
+    intro:
+      "FSU's admission formula mirrors UF's: core academic courses only, recalculated, with standard Florida weighting (+1.0 for AP/IB/AICE, +0.5 for Honors). The school is meaningfully less selective than UF overall, but the FSU College of Business, Jim Moran College of Entrepreneurship, and Honors Program raise their own bars. Bright Futures eligibility — the dominant scholarship for in-state students — drives a large share of FSU's enrollment math; the 3.5 weighted threshold for full coverage is the same number that gets you a strong FSU admission read.",
+    localStat: {
+      label: "Fall 2024 admit GPA (middle 50%, FSU-recalculated)",
+      value: "4.0 - 4.4 weighted",
+      source: "FSU Office of Admissions, 2024 freshman profile",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Bright Futures Medallion is FSU's pipeline scholarship.</strong> 3.0+ weighted + SAT 1210+ unlocks 75% tuition coverage; 3.5+ weighted + SAT 1330+ unlocks 100%. Far more FSU students hit Medallion than Academic, so the 75% tier is the realistic target for many.",
+      "<strong class=\"text-slate-900\">FSU Honors Program admits at 1370 SAT + 4.0 weighted typical.</strong> The Honors Program offers smaller classes and stipends. Apply by November 1 for priority Honors scholarships — they're awarded separately from general FSU merit.",
+      "<strong class=\"text-slate-900\">CARE summer program rebuilds path for first-gen admits.</strong> FSU's CARE program provides academic and financial support for first-generation and low-income students whose academic profile is below typical admit cutoffs. CARE admits start summer session at FSU rather than getting denied.",
+    ],
+    sourceUrl: "https://admissions.fsu.edu",
   },
   {
     slug: "usf",
+    indexed: true,
+    intro:
+      "USF (Tampa) has tightened its admission profile significantly over the past decade — it now sits as Florida's third-most-selective public after UF and FSU. Admission recalculates GPA using core academic courses with standard Florida weighting, and direct admit to the Muma College of Business and the Morsani College of Medicine pipeline programs (e.g., the 7-year BS/MD) requires far higher GPAs than general admission.",
+    localStat: {
+      label: "Fall 2024 admit GPA (USF-recalculated)",
+      value: "4.07 - 4.43 weighted (middle 50%)",
+      source: "USF Office of Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Honors College needs 4.0 weighted + 1300 SAT.</strong> The Judy Genshaft Honors College admits selectively. Honors students get priority registration, stipends, and access to the Honors-only thesis track.",
+      "<strong class=\"text-slate-900\">BS/MD 7-year program is the prestige track.</strong> The Morsani 7-year BS/MD program requires 4.4+ weighted GPA, top-5% class rank, and 1500+ SAT. Admits roughly 10 students per year — the most selective USF path by an order of magnitude.",
+      "<strong class=\"text-slate-900\">Bright Futures math runs identical to FSU.</strong> Same Florida thresholds — 3.5 weighted unlocks full Academic; 3.0 + lower SAT unlocks Medallion at 75% tuition. The single biggest financial lever for in-state students.",
+    ],
+    sourceUrl: "https://www.usf.edu/admissions",
     abbr: "USF",
     fullName: "University of South Florida",
     shortName: "South Florida",
@@ -350,6 +518,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Annual Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 1000,
+    indexed: true,
+    intro:
+      "UW Seattle uses an unusual decimal-point scale internally — grades are recorded to one decimal (a 3.7 isn't an A-, it's literally a 3.7) rather than the standard letter buckets. The Paul G. Allen School of Computer Science is one of the most selective CS programs in any public university, with admit rates well below the overall university number. UW's Husky Promise covers full tuition for in-state students whose families earn under roughly $80K — making the school's effective cost competitive with community college for many Washington residents.",
+    localStat: {
+      label: "Fall 2024 Seattle campus admit GPA (middle 50%)",
+      value: "3.75 - 3.95",
+      source: "UW Office of Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">CS direct admit is the prestige track.</strong> The Allen School direct admit from high school is sub-10%. Apply to UW with CS as the intended major; the alternative (admit to general university, then apply for CS major) is harder because internal CS transfer is also competitive.",
+      "<strong class=\"text-slate-900\">Husky Promise = full tuition under $80K family income.</strong> Washington residents from families earning under roughly $80K get full tuition covered, conditional on 2.0+ GPA maintenance. One of the strongest in-state-promise programs in the country.",
+      "<strong class=\"text-slate-900\">Annual Dean's List requires 3.5+ over the year.</strong> UW's Annual Dean's List uses the year average, not per-quarter. A 3.7-3.4-3.5 pattern still qualifies if the average clears 3.5 over the three quarters combined.",
+    ],
+    sourceUrl: "https://admit.washington.edu",
   },
   {
     slug: "tcu",
@@ -364,6 +546,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 900,
+    indexed: true,
+    intro:
+      "TCU's holistic admissions process weighs essays, leadership, and demonstrated interest at least as heavily as raw GPA — admit rates for students who attend information sessions or schedule campus visits run noticeably higher than walk-in applicants. The Neeley School of Business and the John V. Roach Honors College add their own GPA gates: Neeley direct admit clusters around 3.6+ unweighted with strong test scores; Roach Honors typically expects 3.8+ unweighted and a separate essay.",
+    localStat: {
+      label: "Fall 2024 admit GPA average",
+      value: "3.7 unweighted",
+      source: "TCU Office of Admission",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Demonstrated interest moves admit decisions.</strong> TCU tracks campus visits, info sessions, and email engagement. Students with documented interaction get a measurable bump in admit probability — unusual for a school of this selectivity tier.",
+      "<strong class=\"text-slate-900\">Chancellor's Scholarship is the prestige full-ride.</strong> Chancellor's covers full tuition + room + board for ~30 students per year. Requires 4.0+ weighted, 1450+ SAT, top-decile class rank, and a finalist weekend interview in February.",
+      "<strong class=\"text-slate-900\">Roach Honors application is separate.</strong> Honors at TCU requires a separate application by November 1. Roach Honors students get research stipends, study-abroad funding, and a thesis-required curriculum that distinguishes them at grad-school admissions.",
+    ],
+    sourceUrl: "https://admissions.tcu.edu",
   },
   {
     slug: "nyu",
@@ -378,6 +574,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.65+ for Dean's List (varies by school)",
     goodStandingGpa: "2.0",
     searchVolume: 900,
+    indexed: true,
+    intro:
+      "NYU has become one of the most selective private universities in the country — overall admit rates dropped from over 30% in the early 2010s to single digits today. Each of the 10+ undergraduate schools (CAS, Stern, Tisch, Tandon, Steinhardt, etc.) operates its own admit profile. Stern Business and Tisch Arts admit well below the general NYU rate; Tandon Engineering remains the most accessible single school. NYU does not offer merit-only scholarships at the level of peer privates — most financial aid is need-based.",
+    localStat: {
+      label: "Fall 2024 overall admit rate",
+      value: "Approximately 8%",
+      source: "NYU Office of Undergraduate Admissions, Class of 2028",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">School choice locks your admit chance.</strong> Tandon admit rate runs roughly 30%; Stern and Tisch sit below 10%. Picking a less-competitive school with the goal of transferring into Stern later is harder than expected — internal transfer to Stern requires 3.5+ NYU GPA plus separate application.",
+      "<strong class=\"text-slate-900\">Test-optional but tests still help.</strong> NYU is test-optional but submitting a strong SAT (1500+) or ACT (34+) is read as a positive signal in holistic review. The majority of admitted students still submit scores.",
+      "<strong class=\"text-slate-900\">Sticker price is real — no merit lifelines.</strong> NYU's published cost of attendance runs over $90K/year. Need-based aid is meaningful but limited to demonstrated need. Plan financially before applying.",
+    ],
+    sourceUrl: "https://www.nyu.edu/admissions",
   },
   {
     slug: "csu",
@@ -392,6 +602,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 850,
+    indexed: true,
+    intro:
+      "The Cal State system is 23 campuses with wildly different admission profiles — San Diego State and Cal Poly SLO are nationally selective (admit rates near or below 30%), while many regional CSUs remain wide open at 70%+. The CSU Eligibility Index combines GPA and test scores into a single number; impacted campuses and majors (the most competitive combinations) require eligibility indexes well above the baseline minimum. The free CSU application opens in October — there's no fee waiver process for the application itself because the application is already low-cost.",
+    localStat: {
+      label: "Cal Poly SLO admit GPA (middle 50%, most selective CSU)",
+      value: "4.05 - 4.30 weighted",
+      source: "Cal Poly SLO admissions data, Fall 2024",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Impacted majors have higher local cutoffs.</strong> The same school may admit at 3.2 for one major and 3.7 for an impacted one (engineering, nursing, business). Check the campus-specific impaction list before applying.",
+      "<strong class=\"text-slate-900\">CSU Cal Grant pays full tuition for in-state low-income families.</strong> Cal Grant A covers full CSU tuition with a 3.0+ unweighted GPA from a California high school and income under the annual cap (roughly $122K). Cal Grant B covers full tuition + a living stipend with a 2.0+ GPA but stricter income requirements.",
+      "<strong class=\"text-slate-900\">23-campus single application costs $70 per choice.</strong> The CSU app lets you apply to multiple campuses on one form, $70 per campus chosen. Strategic spread = one reach (Cal Poly SLO or SDSU) + one match + one safety regional campus.",
+    ],
+    sourceUrl: "https://www.calstate.edu/apply",
   },
   {
     slug: "byu",
@@ -406,6 +630,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 850,
+    indexed: true,
+    intro:
+      "BYU's admission process is unusual — alongside the standard GPA, test scores, and essays, the application includes an ecclesiastical endorsement from your local LDS leader (required even for non-LDS applicants, who get the endorsement from their own clergy). Tuition for active LDS members runs roughly half the rate for non-members, making BYU one of the most affordable private universities for in-faith students. The Marriott School of Business and BYU Engineering are the most selective majors within the university.",
+    localStat: {
+      label: "Fall 2024 admit GPA average",
+      value: "3.85 unweighted",
+      source: "BYU Office of Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Ecclesiastical endorsement is mandatory.</strong> Every applicant — LDS or not — needs a clergy endorsement. Non-LDS applicants get this from their own faith leader. Skipping or delaying this step is the most common application-disqualifier.",
+      "<strong class=\"text-slate-900\">LDS tuition is roughly half the standard rate.</strong> Active LDS students pay around $3,200/semester; non-LDS students pay roughly $6,400. The non-LDS rate is still competitive vs other private universities.",
+      "<strong class=\"text-slate-900\">Honors Program admits at 3.85+ with separate application.</strong> BYU Honors requires the standard application plus an Honors-specific essay and faculty interview. Honors students complete a thesis and get priority registration.",
+    ],
+    sourceUrl: "https://admissions.byu.edu",
   },
   {
     slug: "umd",
@@ -420,6 +658,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 750,
+    indexed: true,
+    intro:
+      "Maryland recalculates GPA using core academic subjects only, with extra weight for AP and IB classes. The A. James Clark School of Engineering and the Robert H. Smith School of Business are significantly more competitive than the general university — both have separate sophomore-year application processes for students not admitted directly from high school. UMD is the most selective public university in the mid-Atlantic outside Virginia's UVA and W&M; in-state students get priority but out-of-state admit rates have tightened sharply since 2020.",
+    localStat: {
+      label: "Fall 2024 admit recalculated GPA (middle 50%)",
+      value: "3.95 - 4.34 weighted",
+      source: "University of Maryland Office of Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Smith Business direct admit requires 4.2+ recalculated.</strong> If you don't direct-admit to Smith from high school, sophomore-year application requires 3.5+ in pre-business prereqs (BMGT 220, ECON 200, MATH 220). The internal transfer admit rate sits around 50%.",
+      "<strong class=\"text-slate-900\">Banneker/Key is the prestige in-state scholarship.</strong> Banneker/Key covers full tuition + room + board for selective Maryland residents. Requires top-decile class rank, 4.0+ unweighted, 1500+ SAT, and a finalist interview weekend in February.",
+      "<strong class=\"text-slate-900\">UMD Honors College has separate invitation.</strong> Roughly the top 25% of admits get invited to one of 8 living-learning Honors programs (ACES, Gemstone, Honors Humanities, etc.). Each program has its own application within the broader Honors invitation.",
+    ],
+    sourceUrl: "https://admissions.umd.edu",
   },
   {
     slug: "gmu",
@@ -434,6 +686,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 750,
+    indexed: true,
+    intro:
+      "George Mason has positioned itself as Virginia's most accessible major public university — admit rates run roughly 90% overall, well above UVA, William & Mary, or Virginia Tech. The Honors College and Carter School of Music add their own GPA gates above the general admit range. GMU's location in Fairfax (DC metro) and its strong CS/cybersecurity programs make it a default for Northern Virginia students who want public university tuition with proximity to federal-sector internships.",
+    localStat: {
+      label: "Fall 2024 admit GPA (middle 50%)",
+      value: "3.5 - 3.95 weighted",
+      source: "GMU Office of Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Honors College requires 3.8+ unweighted.</strong> Honors application is part of the main GMU application — no separate form. Honors students get smaller classes, priority registration, and a thesis option that strengthens grad-school applications.",
+      "<strong class=\"text-slate-900\">CS and Cybersecurity programs are the prestige tracks.</strong> Direct admit to Computer Science or Cyber Security Engineering needs 3.7+ unweighted plus Calculus completion. CS at Mason ties to federal cyber-sector internships through the DC corridor.",
+      "<strong class=\"text-slate-900\">In-state tuition stays under $14K/year.</strong> GMU is the cheapest major Virginia public for in-state students. For families balancing affordability and DC-area location, the financial math is hard to beat.",
+    ],
+    sourceUrl: "https://www2.gmu.edu/admissions-aid",
   },
   {
     slug: "pitt",
@@ -448,6 +714,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 700,
+    indexed: true,
+    intro:
+      "Pitt uses a rolling admissions process — apply early in the cycle and you typically hear back within 4-6 weeks, with merit-aid offers attached to acceptance. The Frederick Honors College, Swanson School of Engineering direct admit, and Pitt Business (Katz) selectivity all sit well above the general admit range. Pitt's location in Oakland (the medical/academic center of Pittsburgh) and its strong UPMC affiliation make it a default for pre-med tracks across the mid-Atlantic.",
+    localStat: {
+      label: "Fall 2024 admit GPA average",
+      value: "4.04 weighted",
+      source: "Pitt Office of Admissions and Financial Aid",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Apply early — rolling decisions reward speed.</strong> Pitt accepts applications starting August 1 with decisions in 4-6 weeks. Earlier applicants get larger merit awards because the scholarship pool is allocated as applications come in.",
+      "<strong class=\"text-slate-900\">Chancellor's Scholarship is the full-ride track.</strong> Chancellor's covers full tuition + room + board for ~50 admits per year. Requires top-decile class rank, 4.4+ weighted, 1500+ SAT, and a Pittsburgh-based finalist weekend.",
+      "<strong class=\"text-slate-900\">UPMC Premed pipeline favors high-GPA Pitt students.</strong> Pitt undergrads with 3.7+ cumulative GPA and MCAT 510+ have historically had strong UPMC medical school acceptance rates — UPMC is one of the largest academic health systems in the US.",
+    ],
+    sourceUrl: "https://oafa.pitt.edu",
   },
   {
     slug: "ucsb",
@@ -462,6 +742,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 650,
+    indexed: true,
+    intro:
+      "UC Santa Barbara is the only UC that's also a member of the Association of American Universities (AAU) Tier-1 research league while being known for its beach campus and laid-back culture. The College of Creative Studies (CCS) is the prestige hidden track — a small honors college within UCSB with grad-school-level coursework starting freshman year. Engineering and Computer Science admit profiles run higher than the general UCSB number; CCS admits at a separate, more selective bar.",
+    localStat: {
+      label: "Fall 2024 admit UC-weighted GPA (middle 50%)",
+      value: "4.17 - 4.31",
+      source: "UCSB Office of Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">College of Creative Studies is the hidden honors track.</strong> CCS admits roughly 25 students per year across 8 majors. Students start grad-level coursework freshman year and submit a creative portfolio (writing, art, science research) rather than a standard application essay.",
+      "<strong class=\"text-slate-900\">Regents Scholarship covers full tuition.</strong> Top ~2% of admits get invited to Regents — full tuition + a research stipend. No separate application; the invitation arrives with admission for selected students.",
+      "<strong class=\"text-slate-900\">CS direct admit needs 4.3+ UC-weighted.</strong> Computer Science at UCSB is its own College of Engineering admit track. Practical floor is 4.3+ UC-weighted plus calculus completion. Internal transfer from non-CS majors requires 3.5+ in intro CS prereqs.",
+    ],
+    sourceUrl: "https://admissions.sa.ucsb.edu",
   },
   {
     slug: "umich",
@@ -476,6 +770,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List (varies by school)",
     goodStandingGpa: "2.0",
     searchVolume: 650,
+    indexed: true,
+    intro:
+      "Michigan is the most selective public university in the Midwest and one of the most selective public universities nationally — admit rates run sub-18% overall and far lower for the College of Engineering's CS program, Ross Business School, and the Stamps Honors College. The school maintains an unusual in-state vs out-of-state split: Michigan residents admit at roughly 35-40%, while non-residents face sub-15% rates. Michigan's holistic review weighs course rigor heavily — 8+ AP courses is a typical threshold for serious applicants.",
+    localStat: {
+      label: "Fall 2024 admit GPA (middle 50%)",
+      value: "3.92 - 4.0 unweighted",
+      source: "University of Michigan Office of Undergraduate Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Ross Business needs preferred admission from high school.</strong> Direct admit to Ross from high school is significantly more competitive than the LSA general admit. Internal Ross transfer in sophomore year requires 3.5+ Michigan GPA plus prereq completion.",
+      "<strong class=\"text-slate-900\">Stamps Honors is Michigan's full-ride track.</strong> Stamps covers full cost of attendance plus a research/enrichment stipend. Roughly 10 admits per year. Requires 1500+ SAT, 4.0 unweighted, demonstrated leadership, and a finalist weekend interview.",
+      "<strong class=\"text-slate-900\">Engineering CS admit cluster runs near 4.0.</strong> Computer Science at Michigan Engineering admits roughly 7-10% of CoE applicants. Practical floor: 3.95+ unweighted, 1520+ SAT, multivariable calc completed, and CS-specific extracurriculars.",
+    ],
+    sourceUrl: "https://admissions.umich.edu",
   },
   {
     slug: "columbia",
@@ -490,6 +798,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.6+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 600,
+    indexed: true,
+    intro:
+      "Columbia admits at roughly 4% overall — the most selective Ivy after Harvard, Yale, and Stanford. Columbia College and the School of Engineering and Applied Science (SEAS) have separate admit processes; SEAS runs slightly higher admit rates than the College. The Core Curriculum is Columbia's defining academic feature — a fixed two-year sequence of literature, philosophy, art, music, and science required of every undergraduate regardless of major. Holistic review weighs the Core fit alongside standard metrics.",
+    localStat: {
+      label: "Class of 2028 admit rate",
+      value: "Approximately 3.85%",
+      source: "Columbia Office of Undergraduate Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Columbia is need-blind with full demonstrated-need aid.</strong> If admitted, Columbia meets 100% of demonstrated need with grants, no loans. Family income under $150K typically qualifies for free tuition; under $66K typically qualifies for free tuition plus room and board.",
+      "<strong class=\"text-slate-900\">SEAS Engineering admit rate is slightly higher than the College.</strong> Engineering admits at roughly 6% — still very low, but meaningfully higher than the College's 3%. The Core is shortened for SEAS students to allow engineering curriculum, but Lit Hum and CC remain required.",
+      "<strong class=\"text-slate-900\">3-2 engineering and pre-med tracks are Columbia specialties.</strong> The 3-2 program lets liberal-arts-college students transfer to Columbia SEAS for engineering after 3 years at the home college. Pre-med at Columbia draws on NYC hospital affiliations.",
+    ],
+    sourceUrl: "https://undergrad.admissions.columbia.edu",
   },
   {
     slug: "vcu",
@@ -504,6 +826,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 600,
+    indexed: true,
+    intro:
+      "VCU's claim to fame is the VCUarts program — consistently ranked the top public arts school in the country — and the VCU Health System hospital, which feeds the school's well-regarded pre-med and nursing tracks. Admission to the arts and health science programs runs significantly more selective than general university admission. The Richmond location and large urban campus mean VCU draws a different student profile from the Northern Virginia / DC corridor schools.",
+    localStat: {
+      label: "VCUarts admit rate (most competitive program)",
+      value: "Approximately 35%",
+      source: "VCU School of the Arts admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">VCUarts portfolio is the admission lever.</strong> Direct admit to VCUarts requires a strong creative portfolio reviewed by faculty. The GPA can run lower (3.3+) if the portfolio is exceptional. Reverse holds: weak portfolio + strong GPA gets denied.",
+      "<strong class=\"text-slate-900\">Honors College admit cluster runs 3.7+.</strong> VCU Honors offers smaller seminar classes, research stipends, and priority registration. The Honors application is separate from the main VCU app, with November 1 priority deadline.",
+      "<strong class=\"text-slate-900\">Nursing direct admit needs 3.5+ + sciences.</strong> Direct admit to VCU Nursing from high school requires 3.5+ unweighted plus completion of biology, chemistry, and anatomy at the high school level. The College of Health Professions is one of VCU's strongest pipelines.",
+    ],
+    sourceUrl: "https://admissions.vcu.edu",
   },
   {
     slug: "ttu",
@@ -518,6 +854,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 600,
+    indexed: true,
+    intro:
+      "Texas Tech is a research-classified public flagship covering the Texas Panhandle region. The Rawls College of Business and the Whitacre College of Engineering raise the admit bar above the general university number; the law school is one of the few in the state outside Houston-Austin-Dallas-San Antonio. TTU's assured admission formula uses class rank and GPA thresholds — Texas residents in the top 10% of their high school class are auto-admitted with no review.",
+    localStat: {
+      label: "TTU Honors College admit GPA",
+      value: "3.5+ unweighted with 1300+ SAT typical",
+      source: "Texas Tech Honors College",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Top 10% Texas residents auto-admit.</strong> Texas Tech follows the state's auto-admit rules — top 10% class rank guarantees admission. Out-of-state applicants face higher numerical bars: 3.5+ GPA + 1180+ SAT for typical admit.",
+      "<strong class=\"text-slate-900\">Honors needs 1300+ SAT.</strong> TTU Honors College admits at 3.5+ GPA but the SAT bar is high (1300+). Honors students get smaller classes, a $500-$1000 annual scholarship, and access to a thesis track.",
+      "<strong class=\"text-slate-900\">Engineering scholarships use the AES grid.</strong> Texas Tech's Aerospace Engineering, Petroleum Engineering, and CS programs have their own scholarship pools allocated by GPA + SAT. Apply by December 1 to maximize award.",
+    ],
+    sourceUrl: "https://www.depts.ttu.edu/admissions",
   },
   {
     slug: "smu",
@@ -532,6 +882,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.4+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 570,
+    indexed: true,
+    intro:
+      "SMU is a mid-sized Dallas private with strong business (Cox School), engineering (Lyle), and Meadows School of the Arts programs. The school positions itself as a national-private with strong industry connections in finance, energy, and tech — the Cox MBA program is consistently ranked top-30 nationally and undergrad Cox direct admits feed into investment banking and consulting pipelines that compete with peer privates.",
+    localStat: {
+      label: "Class of 2028 admit profile",
+      value: "Middle 50% GPA 3.7-4.0, SAT 1380-1500",
+      source: "SMU Office of Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">President's Scholar is the full-ride.</strong> President's Scholarship covers full tuition + room + board + research stipend. Roughly 12 admits per year. Requires 1500+ SAT, 4.0+ weighted, and a finalist Dallas-based weekend interview.",
+      "<strong class=\"text-slate-900\">Cox direct admit gets the prestige scholarship.</strong> Direct admit to Cox unlocks Caruth Honors and the Highland Capital scholarships. Internal Cox transfer is possible at 3.5+ SMU GPA but the financial aid trajectory differs.",
+      "<strong class=\"text-slate-900\">Pre-med pipeline runs through UT Southwestern.</strong> SMU undergrads with 3.7+ cumulative GPA have a strong UT Southwestern Medical School admit rate — UT Southwestern is one of the top public medical schools and SMU undergrad pipelines are well established.",
+    ],
+    sourceUrl: "https://www.smu.edu/admission/apply",
   },
   {
     slug: "cornell",
@@ -546,6 +910,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 550,
+    indexed: true,
+    intro:
+      "Cornell is unique among the Ivies: 4 of its 7 undergraduate schools are statutory schools partly funded by New York State, with significantly lower tuition for NY residents (Agriculture, Human Ecology, ILR, and Veterinary Medicine). Admit rates vary dramatically between schools — the Hotel Administration program (SHA) and Industrial and Labor Relations (ILR) admit at near-15% while the College of Arts and Sciences runs sub-7%. The school choice within Cornell is the single most important strategic decision in applying.",
+    localStat: {
+      label: "School-specific admit rates, Class of 2028",
+      value: "CAS ~6%, Engineering ~7%, SHA ~12%, ILR ~15%",
+      source: "Cornell University Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Statutory schools cut NY-resident tuition in half.</strong> If you're a NY resident applying to CALS (Ag), Human Ecology, ILR, or Hotel, in-state tuition runs roughly $43K vs $66K endowed-school rate. That's an $80K+ degree-cost difference over 4 years.",
+      "<strong class=\"text-slate-900\">School choice matters more than at peer Ivies.</strong> Cornell does not allow you to apply to multiple schools as backup. Pick the school you'd genuinely study in — internal transfer between schools is possible but each transfer has its own GPA gate (typically 3.3+).",
+      "<strong class=\"text-slate-900\">Engineering and CS clustered together.</strong> Cornell's College of Engineering houses CS as a major within Engineering, with admits at ~7%. CS is also offered through Arts & Sciences with slightly different requirements and a different admit profile. Both routes get the same CS degree.",
+    ],
+    sourceUrl: "https://admissions.cornell.edu",
   },
   {
     slug: "csuf",
@@ -560,6 +938,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 500,
+    indexed: true,
+    intro:
+      "Cal State Fullerton is the second-largest CSU campus by enrollment — the school admits at roughly 65% overall but several majors (Business at Mihaylo, Nursing, Engineering) are heavily impacted with much higher cutoffs. CSUF's location in Orange County draws heavily from the Los Angeles and San Diego metropolitan areas, and its Mihaylo College of Business and Economics is the largest accredited business school on the West Coast.",
+    localStat: {
+      label: "Mihaylo Business impaction GPA",
+      value: "3.5+ + SAT 1100+ for Fall 2024",
+      source: "CSU Fullerton impaction data",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Impacted majors have campus-specific cutoffs.</strong> Mihaylo Business runs much higher cutoffs than general CSUF — 3.5+ + 1100+ SAT. Engineering impaction also runs higher. Check the impaction list before applying.",
+      "<strong class=\"text-slate-900\">Cal Grant A covers full tuition for in-state.</strong> Cal Grant A requires 3.0+ unweighted and family income under the cap (~$122K). At CSUF, this is the default state-funded scholarship for most admitted in-state students.",
+      "<strong class=\"text-slate-900\">Honors needs 3.7+ in major prereqs.</strong> CSUF Honors Program requires a separate sophomore-year application: 3.7+ overall GPA, 3.7+ in major prereqs, and a faculty recommendation. Honors students complete a senior thesis.",
+    ],
+    sourceUrl: "https://www.fullerton.edu/admissions",
   },
   {
     slug: "fiu",
@@ -574,6 +966,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 500,
+    indexed: true,
+    intro:
+      "FIU is Miami's flagship public — one of the largest universities in Florida by enrollment and the most Hispanic-serving R1 institution in the country. The Honors College, Wertheim College of Medicine pipeline, and FIU Business each have GPA gates higher than the general university number. FIU's Bright Futures math runs identical to UF/FSU — Florida's standard weighting and merit-scholarship thresholds apply.",
+    localStat: {
+      label: "Honors College admit GPA",
+      value: "3.7+ recalculated weighted typical",
+      source: "FIU Honors College",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Bright Futures math is identical to UF/FSU.</strong> Same Florida thresholds — 3.5 weighted + SAT 1330 unlocks full Academic; 3.0 + SAT 1210 unlocks Medallion (75% tuition). FIU students hit Medallion at high rates.",
+      "<strong class=\"text-slate-900\">Honors College has separate application.</strong> The Honors College admits roughly 600 incoming freshmen per year out of 4,000+ applicants. Requires 3.7+ weighted, 1300+ SAT, and a separate Honors essay.",
+      "<strong class=\"text-slate-900\">Pre-med pipeline through Wertheim is established.</strong> FIU's College of Medicine (Wertheim) has a relationship with strong-GPA FIU undergrads. The 4+4 pathway (BS at FIU → MD at Wertheim) requires 3.6+ cumulative + 510+ MCAT typical.",
+    ],
+    sourceUrl: "https://admissions.fiu.edu",
   },
   {
     slug: "psu",
@@ -588,6 +994,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 500,
+    indexed: true,
+    intro:
+      "Penn State University Park is the flagship campus of the Penn State system — a 24-campus network where students can start at any branch and transfer to University Park. The Schreyer Honors College is Penn State's nationally-known honors program, admitting roughly 300 students per year with full-tuition scholarships and a thesis requirement. Smeal College of Business, College of Engineering, and the Eberly College of Science each maintain separate selectivity profiles.",
+    localStat: {
+      label: "Schreyer Honors admit GPA + SAT",
+      value: "1500+ SAT, 4.0 unweighted typical",
+      source: "Schreyer Honors College",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">2+2 Penn State pathway is the back-door admit.</strong> Start at a branch campus (Altoona, Behrend, etc.), maintain 3.0+ GPA, and auto-transfer to University Park after 60 credits. The branch campuses admit at much higher rates than UP.",
+      "<strong class=\"text-slate-900\">Schreyer Honors covers full tuition.</strong> Schreyer admits roughly 300 students per cohort with full tuition + research stipend + thesis advisor. Apply by November 30. The thesis is a real undergraduate research deliverable, not symbolic.",
+      "<strong class=\"text-slate-900\">Major change to engineering needs 3.0+ in math.</strong> If you don't direct-admit to engineering, switching majors during the entrance-to-major process (typically sophomore year) requires 3.0+ in calculus and physics prereqs.",
+    ],
+    sourceUrl: "https://admissions.psu.edu",
   },
   {
     slug: "vt",
