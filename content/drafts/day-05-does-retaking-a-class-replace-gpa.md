@@ -1,8 +1,8 @@
 ---
 admin-fields:
-  title: "Does Retaking a Class Replace Your GPA? (By School Type)"
+  title: "Does Retaking a Class Replace Your GPA? 4 Policy Types Explained"
   slug: "does-retaking-a-class-replace-gpa"
-  excerpt: "Sometimes. It depends on whether you're in high school or college, and what your specific school's grade replacement policy says. Here's how it works at the most common school types."
+  excerpt: "Retaking only replaces your GPA at schools with grade-replacement policy. 4 policy types exist — and most students don't know which their school uses. Check yours here."
   tags: "retake class, grade replacement, gpa policy, academic renewal"
   emoji: "🔁"
   coverImage: "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&w=1200&q=70"

@@ -1,8 +1,8 @@
 ---
 admin-fields:
-  title: "What GPA Is Required to Be Valedictorian? (School-by-School Breakdown)"
+  title: "What GPA Do You Need for Valedictorian? Average by School Type (2026)"
   slug: "what-gpa-is-valedictorian"
-  excerpt: "There's no national GPA cutoff for valedictorian — your school sets it. At competitive high schools, the title routinely goes to students with weighted GPAs above 4.5. Here's how to find the real number for your school."
+  excerpt: "Most valedictorians have weighted GPAs between 4.5 and 5.0. Real averages by school type, plus the unweighted minimums that win at smaller schools. Updated 2026."
   tags: "valedictorian, gpa, high school ranking, class rank"
   emoji: "🏆"
   coverImage: "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&w=1200&q=70"

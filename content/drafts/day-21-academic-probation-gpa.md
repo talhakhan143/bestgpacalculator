@@ -1,8 +1,8 @@
 ---
 admin-fields:
-  title: "Academic Probation GPA: What It Is, Requirements, and How to Get Off It"
+  title: "Academic Probation GPA: What It Means + Exact Math to Get Off (2026)"
   slug: "academic-probation-gpa"
-  excerpt: "Academic probation hits when your cumulative GPA falls below your school's threshold — usually 2.0 at most US colleges. You stay enrolled, but with a deadline to recover. Here's what it actually means, what triggers it, and the exact math for getting off."
+  excerpt: "Academic probation triggers when your cumulative GPA drops below 2.0 at most US colleges. You stay enrolled with strict deadlines — here's the exact GPA math to recover in one semester."
   tags: "academic probation gpa, academic probation requirements, gpa for academic probation, how to avoid probation"
   emoji: "⚠️"
   coverImage: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&w=1200&q=70"

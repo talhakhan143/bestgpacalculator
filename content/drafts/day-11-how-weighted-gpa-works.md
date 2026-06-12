@@ -1,8 +1,8 @@
 ---
 admin-fields:
-  title: "How Weighted GPA Works: AP, Honors, and the Math Behind the Boost"
+  title: "How Weighted GPA Works: AP +1.0, Honors +0.5, IB +1.0 (Real Math)"
   slug: "how-weighted-gpa-works"
-  excerpt: "A weighted GPA adds extra points to AP, Honors, IB, and dual-enrollment courses to reward rigor. Most US high schools use a 5.0 scale where an A in AP equals 5.0 and an A in Honors equals 4.5. Here's exactly how the math runs."
+  excerpt: "Weighted GPA adds +1.0 for AP and IB, +0.5 for Honors — so an A in AP becomes a 5.0 instead of 4.0. Here's exactly how schools calculate the boost, with side-by-side examples."
   tags: "weighted gpa, ap classes, honors classes, gpa boost, high school gpa"
   emoji: "📈"
   coverImage: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&w=1200&q=70"

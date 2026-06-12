@@ -1,8 +1,8 @@
 ---
 admin-fields:
-  title: "Does Summer School Raise Your GPA? What Students Need to Know"
+  title: "Does Summer School Raise Your GPA? (Yes — Under These 3 Conditions)"
   slug: "does-summer-school-raise-gpa"
-  excerpt: "Sometimes — but the GPA lift depends on what kind of class you take, whether it counts at your home school, and your school's grade replacement policy. Here's how to figure out if it's worth the summer."
+  excerpt: "Summer school raises your GPA only if (1) you take it at your home school, (2) under their grade-replacement policy, (3) for a class you previously failed. Outside courses don't count — here's why."
   tags: "summer school, raise gpa, retake class, grade replacement"
   emoji: "☀️"
   coverImage: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&w=1200&q=70"
