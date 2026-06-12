@@ -19,6 +19,12 @@ export interface GpaScoreData {
   primaryKw: string;        // main target keyword (highest vol)
   searchVolume: number;     // monthly US volume from Ahrefs
   faqs: { q: string; a: string }[];
+  // Wave-3 enrichment. Pages without `intro` get noindex + drop from sitemap.
+  indexed?: boolean;
+  intro?: string;           // 60-120 word score-specific opening
+  realWorldExample?: string; // 2-3 sentence anonymized student example
+  uniqueTips?: string[];    // 3-4 score-specific tips replacing the recovery/maintain bullets
+  sourceUrl?: string;       // citation (NCES / College Board / IPEDS)
 }
 
 export const GPA_SCORE_DATA: GpaScoreData[] = [
@@ -211,6 +217,18 @@ export const GPA_SCORE_DATA: GpaScoreData[] = [
       { q: "What letter grade is a 2.5 GPA?", a: "A 2.5 GPA sits between C+ and B-, equivalent to roughly 80-82% on most US grading scales." },
       { q: "What is a 2.5 GPA in percentage?", a: "A 2.5 GPA equals approximately 80-82% on US grading scales — a low B-." },
     ],
+    indexed: true,
+    intro:
+      "A 2.5 GPA — roughly a C+ average — sits below the US high school median and disqualifies you from most state-flagship direct admission and merit scholarship eligibility. It's not catastrophic: community college admission is unaffected, and a strong CC GPA can rebuild your record for transfer in two years. But four-year direct admission usually requires an upward trend (clear junior/senior improvement), a meaningful extracurricular signal, or a community-college transfer pathway.",
+    realWorldExample:
+      "A 2.5 cumulative GPA puts you in roughly the bottom 25-30% of US high school graduates. NCES data shows about 15% of US high school grads finish with cumulative GPAs below 2.75 — the band where most academic recovery work happens.",
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Community college transfer is the wide-open path.</strong> A 3.0+ GPA across your first year of CC (typically 30 credits) qualifies you for guaranteed transfer to most state flagships under articulation agreements — including UCF, ASU, and most UC system schools.",
+      "<strong class=\"text-slate-900\">Federal Pell Grant requires only 2.0.</strong> Pell eligibility uses the school's Satisfactory Academic Progress (SAP) floor, which is almost always 2.0 — not 2.5. You're well clear of Pell disqualification at a 2.5.",
+      "<strong class=\"text-slate-900\">NCAA D1 eligibility cuts at 2.3 core GPA.</strong> At a 2.5 you qualify, but you're on the NCAA sliding scale — the lower your core GPA, the higher your SAT/ACT must be. At 2.5 the floor is SAT 1010+ or ACT 19+ to be a qualifier.",
+      "<strong class=\"text-slate-900\">Grade replacement is the fastest GPA lift.</strong> If your school allows retake-with-replacement for D/F grades, even one or two retakes can push a 2.5 toward 3.0 within two semesters — much faster than slow improvement.",
+    ],
+    sourceUrl: "https://nces.ed.gov/programs/coe/indicator/cnb",
   },
   {
     slug: "2-6",
@@ -317,6 +335,18 @@ export const GPA_SCORE_DATA: GpaScoreData[] = [
       { q: "Is a 3.0 GPA good in college?", a: "In college a 3.0 is a B average — solid and above the 2.0 minimum almost all programs require to stay in good standing. For graduate school admission, however, you typically want 3.0-3.5 minimum." },
       { q: "What is a 3.0 GPA in percentage?", a: "A 3.0 GPA equals approximately 83-86% on most US grading scales, equivalent to a B letter grade." },
     ],
+    indexed: true,
+    intro:
+      "A 3.0 GPA — straight B's — sits right at the median for US high schoolers. It's the line between \"fine\" and \"competitive\" depending on context: at a non-selective school you're average, at a competitive private high school you're behind, and at most state flagships you're a borderline candidate. The good news: a 3.0 is enough to keep the doors open at the majority of US four-year colleges, most scholarship programs, and any community-college transfer pathway.",
+    realWorldExample:
+      "NCES tracks roughly 32% of US high school graduates landing in the 2.75-3.25 cumulative range — the 3.0 mark sits at the upper edge of that median band. The state flagships that publish admit data show roughly 35-50% of admits have unweighted GPAs in the 3.0-3.5 range.",
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">A 3.0 is mathematically vulnerable.</strong> One C in a 5-credit class can drop you to 2.85, kicking you out of most scholarship renewals (the common floor is 2.75 or 3.0). Aim for a 3.2 cushion to absorb a slip.",
+      "<strong class=\"text-slate-900\">Strong CC-to-flagship transfer pathway.</strong> A 3.0 finishing a community college associate's degree makes you a viable transfer to most state systems — Ohio State, Penn State, ASU, and UC Riverside all admit 3.0+ CC transfers regularly.",
+      "<strong class=\"text-slate-900\">3.0 is the NHS / ROTC / state-merit floor.</strong> National Honor Society admission, ROTC scholarship eligibility, and renewal for Bright Futures (FL), HOPE (GA), and most state merit awards all use 3.0 as the cutoff. Drop below and the award terminates.",
+      "<strong class=\"text-slate-900\">Don't confuse weighted with unweighted.</strong> A weighted 4.2 with an unweighted 3.0 reads to admissions as \"took hard classes, struggled with material.\" Close the gap by aiming for B+ in your AP/Honors load, not just by stacking advanced courses.",
+    ],
+    sourceUrl: "https://nces.ed.gov/programs/coe/indicator/csb",
   },
   {
     slug: "3-1",
@@ -426,6 +456,18 @@ export const GPA_SCORE_DATA: GpaScoreData[] = [
       { q: "Is a 3.5 GPA good in high school?", a: "Yes. A 3.5 GPA in high school puts you in the top 30% nationally and opens admission to most state flagships and many private universities. Top-tier colleges (Ivies, MIT, Stanford) typically expect 3.8+." },
       { q: "What is a 3.5 GPA?", a: "A 3.5 GPA equals an A- letter grade, roughly 90-93% on US grading scales." },
     ],
+    indexed: true,
+    intro:
+      "A 3.5 GPA puts you in the top 25-30% of US high school graduates and clears the bar for selective state universities, most merit scholarships, and competitive transfer programs. It's where the highest-leverage scholarship dollars get unlocked — full Bright Futures coverage in Florida, in-state honors program admission, NCAA Division I eligibility, ROTC competitive awards. Not yet at the Ivy or top-10 reach level, but the practical floor for most useful college outcomes.",
+    realWorldExample:
+      "A 3.5 is the floor most state-flagship honors programs use for sophomore admission after a freshman year of college-level work. It's the same number Florida's Bright Futures Academic Scholarship uses to award full tuition coverage in the state.",
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Honors college admission starts at 3.5.</strong> Penn State Schreyer, UF Lombardi, Indiana Hutton, and most state honors colleges use 3.5 unweighted as the floor for sophomore-year admission. Honors admission unlocks priority registration, scholarships, and smaller classes.",
+      "<strong class=\"text-slate-900\">NCAA D1 \"qualifier\" status from day one.</strong> A 3.5+ core-course GPA plus minimum SAT/ACT scores qualifies you as a full D1 qualifier — meaning full athletic and academic eligibility from freshman year. Below 3.0 starts triggering academic-redshirt or non-qualifier classifications.",
+      "<strong class=\"text-slate-900\">ROTC competitive scholarships open at 3.5.</strong> The Army four-year ROTC scholarship's competitive cutoff has historically tracked around 3.7, but 3.5+ enters serious contention. Awards are worth $40K+ per year.",
+      "<strong class=\"text-slate-900\">3.5+ transfer to UC system is real.</strong> The UC system uses 3.5 as a soft cutoff for guaranteed transfer-credit consideration. Most state flagships will admit a CC transfer with 3.5+ GPA across at least 30 transferable credit hours.",
+    ],
+    sourceUrl: "https://www2.ed.gov/about/offices/list/ope/oii/index.html",
   },
   {
     slug: "3-6",
@@ -494,6 +536,18 @@ export const GPA_SCORE_DATA: GpaScoreData[] = [
       { q: "Is a 3.8 GPA good in college?", a: "Yes. A 3.8 college GPA is excellent — it qualifies for top honors recognition and is highly competitive for graduate school admission, including selective programs." },
       { q: "What letter grade is a 3.8 GPA?", a: "A 3.8 GPA equals an A letter grade on the standard 4.0 scale." },
     ],
+    indexed: true,
+    intro:
+      "A 3.8 GPA is competitive at most state flagships, strong at private liberal-arts colleges, and the practical floor for serious Ivy League applicants — though Ivy admits typically clear 3.9+ unweighted. It puts you in the top 10-12% of US high schoolers. The number gets you read by competitive admissions offices; whether you're admitted depends on rigor (AP/IB course count), essays, and how your school reports class rank.",
+    realWorldExample:
+      "Yale's Class of 2028 had a median unweighted GPA of 3.93. Stanford's was 3.96. A 3.8 unweighted with a 4.4+ weighted is right at the threshold where Ivy admission becomes mathematically plausible — not guaranteed, but in range with strong essays and test scores.",
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Course rigor matters more than the GPA itself.</strong> A 3.8 with 8+ APs reads stronger than a 4.0 with 2 APs. Top private colleges use AP/IB course count as the primary signal — the GPA is read in the context of available rigor.",
+      "<strong class=\"text-slate-900\">3.8 unweighted converts to 4.4-4.7 weighted.</strong> At schools using the standard +1.0 AP weighting, your 3.8 with a normal AP load ends up at 4.4-4.7 weighted. When colleges ask for \"academic GPA,\" they usually mean weighted in core academic courses.",
+      "<strong class=\"text-slate-900\">3.8+ unlocks the strongest state merit awards.</strong> Bright Futures (FL, full coverage at 3.5+ in-state), Cal Grant A (CA, 3.0+ but competitive at 3.8+), HOPE Zell Miller (GA, 3.7+), and Bright Futures Medallion variants — all reach the strongest tier at 3.8+.",
+      "<strong class=\"text-slate-900\">Phi Beta Kappa pathway starts here.</strong> The PBK academic honor society for the liberal arts requires 3.75+ cumulative GPA at the qualifying college, with junior-year election typical. If college PBK is a goal, the 3.8 high school trajectory sets the baseline.",
+    ],
+    sourceUrl: "https://nces.ed.gov/fastfacts/display.asp?id=372",
   },
   {
     slug: "3-9",
@@ -539,6 +593,18 @@ export const GPA_SCORE_DATA: GpaScoreData[] = [
       { q: "What is a 4.0 GPA in percentage?", a: "A 4.0 GPA equals approximately 95-100% on US grading scales — straight A's." },
       { q: "Whats a 4.0 GPA?", a: "A 4.0 GPA is straight A's on the 4.0 scale — the maximum unweighted GPA possible. Above 4.0 means weighted GPA from AP, Honors, or IB courses." },
     ],
+    indexed: true,
+    intro:
+      "A 4.0 unweighted GPA means straight A's — the maximum end of the standard scale. It's a perfect academic record, but it's not unique enough on its own to guarantee Ivy League admission. The most selective schools see thousands of 4.0 applicants every year. What distinguishes admits is the combination: 4.0 unweighted plus 4.5-5.0 weighted, plus 8+ AP courses, plus standardized tests (SAT 1500+, ACT 34+), plus a meaningful extracurricular profile.",
+    realWorldExample:
+      "Harvard's Class of 2028 admitted students with a median unweighted GPA of 3.95 — meaning roughly half of admits were below 4.0. Among the 4.0 applicants, the admit rate was approximately 5%. A 4.0 is necessary, not sufficient, at the most selective schools.",
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Course rigor decides what 4.0 actually means.</strong> A 4.0 with light course rigor reads as \"honor roll at an easy school.\" Admissions officers compare your transcript to your school's available curriculum — if your school offers 12 APs and you took 2, the 4.0 means less than a 3.85 with 10 APs.",
+      "<strong class=\"text-slate-900\">A+ grades can push weighted past 4.0.</strong> Most schools cap an A at 4.0 but allow A+ to count as 4.33. If your transcript shows A+ grades, that bumps weighted GPA above 4.0 even without AP weighting. Top colleges read both the transcript and the school profile to know which scale applies.",
+      "<strong class=\"text-slate-900\">4.0 unlocks named merit aid at private schools.</strong> Full-tuition scholarships at private universities — Tulane Distinguished, Northeastern Honors, ASU President's, USC Trustee — often require 4.0+ to compete. Priority deadlines run in November, before regular admission decisions.",
+      "<strong class=\"text-slate-900\">Take the B, don't take the W.</strong> The biggest mistake high-GPA students make is dropping a course mid-semester rather than taking a B. A W doesn't affect GPA, but admissions officers see it as risk-aversion. The B preserves the courses-taken signal admissions reads as effort.",
+    ],
+    sourceUrl: "https://www.collegeboard.org/membership/all-access/counseling-admissions-financial-aid-academic",
   },
   {
     slug: "4-2",

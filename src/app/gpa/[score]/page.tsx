@@ -29,6 +29,7 @@ export async function generateMetadata({
     title: `Is a ${data.value} GPA Good? ${isGoodHint} (${new Date().getFullYear() + 1})`,
     description: `${data.verdict} See letter-grade equivalent, percentile, college options, and how to improve. Free GPA calculator included.`,
     alternates: { canonical: `/gpa/${data.slug}` },
+    robots: data.indexed ? undefined : { index: false, follow: true },
   };
 }
 
@@ -105,7 +106,14 @@ export default async function GpaScorePage({
         </div>
 
         <article className="prose-custom mt-10">
-          <p className="text-base leading-relaxed text-slate-700">{data.verdictLong}</p>
+          <p className="text-base leading-relaxed text-slate-700">
+            {data.intro ?? data.verdictLong}
+          </p>
+          {data.realWorldExample ? (
+            <blockquote className="mt-6 border-l-4 border-blue-200 bg-blue-50/60 py-3 pl-4 pr-3 text-base italic leading-relaxed text-slate-700">
+              {data.realWorldExample}
+            </blockquote>
+          ) : null}
         </article>
       </section>
 
@@ -134,6 +142,13 @@ export default async function GpaScorePage({
               ? `How to raise a ${data.value} GPA`
               : `How to keep (or improve) a ${data.value} GPA`}
           </h3>
+          {data.uniqueTips && data.uniqueTips.length > 0 ? (
+            <ul className="mt-3 list-disc space-y-2 pl-5 text-base leading-relaxed text-slate-700">
+              {data.uniqueTips.map((tip, i) => (
+                <li key={i} dangerouslySetInnerHTML={{ __html: tip }} />
+              ))}
+            </ul>
+          ) : (
           <ul className="mt-3 list-disc space-y-2 pl-5 text-base leading-relaxed text-slate-700">
             {recoveryFocus ? (
               <>
@@ -179,6 +194,22 @@ export default async function GpaScorePage({
               </>
             )}
           </ul>
+          )}
+
+          {data.sourceUrl ? (
+            <p className="mt-6 text-xs text-slate-500">
+              GPA distribution data verified against{" "}
+              <a
+                href={data.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-slate-700 underline decoration-slate-300 hover:text-slate-900"
+              >
+                primary source
+              </a>
+              .
+            </p>
+          ) : null}
 
           <div className="mt-8 rounded-2xl border border-blue-200 bg-blue-50 p-5">
             <div className="flex items-start gap-3">

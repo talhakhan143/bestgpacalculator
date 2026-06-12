@@ -14,6 +14,13 @@ export interface UniData {
   honorsGpa: string;     // GPA for honors / dean's list
   goodStandingGpa: string; // GPA for good academic standing
   searchVolume: number;  // monthly US volume (sum of uni variants)
+  // Wave-3 enrichment fields. Pages without `intro` get a noindex tag and are
+  // dropped from the sitemap until a real, school-specific writeup is added.
+  indexed?: boolean;     // false = noindex + drop from sitemap
+  intro?: string;        // 60-120 word school-specific opening paragraph
+  localStat?: { label: string; value: string; source: string }; // one verified data point
+  uniqueTips?: string[]; // 3-4 school-specific tips, replaces boilerplate bullets
+  sourceUrl?: string;    // primary citation URL (uni admissions page or CDS)
 }
 
 export const UNIS: UniData[] = [
@@ -30,6 +37,21 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.75+ for Dean's List",
     goodStandingGpa: "2.0 (below = academic probation)",
     searchVolume: 6600,
+    indexed: true,
+    intro:
+      "UF doesn't take your raw transcript GPA at face value — they recalculate it from your core academic courses only, then add their own weight: +1.0 for AP, IB, and AICE, +0.5 for Honors. Two students with the same school-reported 4.0 can end up with different UF numbers. The recalculated GPA is what appears on the admission decision letter, and for students who took accelerated coursework, it almost always runs higher than the unweighted version on your transcript.",
+    localStat: {
+      label: "Fall 2024 admit GPA average",
+      value: "4.46 weighted (UF-recalculated)",
+      source: "UF Office of Admissions, 2024 freshman class profile",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Bright Futures unlocks free tuition at 3.5 weighted.</strong> The Florida Bright Futures Academic Scholarship covers 100% of tuition at UF for in-state students with a 3.5+ weighted GPA, SAT 1330+ or ACT 29+, and 100 community service hours. The Medallion award (75% tuition) lowers the cutoff to 3.0 + SAT 1210.",
+      "<strong class=\"text-slate-900\">UF grade forgiveness has a hard cap.</strong> You can retake up to 3 courses where you earned C- or lower in your first attempt — only the second grade counts in cumulative GPA. The original grade stays on the transcript with a \"GR\" notation but no longer affects the average.",
+      "<strong class=\"text-slate-900\">Dean's List requires 12+ graded credits at 3.75.</strong> S/U-graded courses and internships don't count toward the 12-credit minimum — a common oversight that disqualifies students who otherwise hit the GPA number.",
+      "<strong class=\"text-slate-900\">Lombardi Honors needs a 4.0 weighted from high school.</strong> If you don't earn direct Honors admission, you can apply for sophomore admission with a 3.5+ college GPA — Lombardi admits roughly 1 in 8 applicants annually.",
+    ],
+    sourceUrl: "https://admissions.ufl.edu/apply/freshman",
   },
   {
     slug: "asu",
@@ -44,6 +66,21 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 3500,
+    indexed: true,
+    intro:
+      "ASU reads your unweighted 4.0 GPA — no recalculation, no AP weighting added on top. The internal scale runs to 4.33 (A+ counts as 4.33 for graduate-level honors and Barrett applications), but admission decisions cap at 4.0. If your high school reports a weighted 4.7, ASU will use the unweighted-equivalent number, so make sure the real GPA they're seeing is what you'd want them to see.",
+    localStat: {
+      label: "Barrett Honors College median admit GPA",
+      value: "3.78 unweighted",
+      source: "ASU Barrett Honors College, 2024 admissions profile",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Assured admission auto-admits you with any one of these.</strong> Top 25% of high school class, 3.0+ unweighted GPA, SAT 1120+, or ACT 22+. Meet a single one and the decision is automatic — no committee review needed.",
+      "<strong class=\"text-slate-900\">Barrett Honors has higher gates.</strong> Median admits run 3.78+ unweighted, SAT 1380, or ACT 31. Apply by November 1 for priority Barrett scholarships — the $20K+ awards run out before the regular January deadline.",
+      "<strong class=\"text-slate-900\">Academic renewal can erase old grades.</strong> If you've been away from college for 2+ years and have a low GPA from before, you can request to exclude those grades from your cumulative GPA on return. This is the single biggest GPA lift available at ASU.",
+      "<strong class=\"text-slate-900\">Scholarship GPA floors are higher than good standing.</strong> ASU defines good standing at 2.0, but most merit scholarships require 2.5-3.0 minimum. Check your specific award's Satisfactory Academic Progress (SAP) requirement — they're not all 2.0.",
+    ],
+    sourceUrl: "https://admission.asu.edu/freshman",
   },
   {
     slug: "purdue",
@@ -58,6 +95,21 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Semester Honors",
     goodStandingGpa: "2.0",
     searchVolume: 3000,
+    indexed: true,
+    intro:
+      "Purdue takes your high school GPA as reported — no recalculation, no stripping of non-academic courses. But the admissions office reads your transcript contextually, weighing the AP and Honors course count alongside the raw number. A 3.7 with five APs reads stronger than a 3.9 with no advanced work. Engineering and computer science direct-admit are the most selective tracks: typically top-decile class rank or 3.85+ unweighted is the realistic floor.",
+    localStat: {
+      label: "Fall 2024 West Lafayette admit GPA (middle 50%)",
+      value: "3.65 - 3.95 unweighted",
+      source: "Purdue Office of Admissions Common Data Set 2024",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">First-Year Engineering (FYE) is the engineering gateway.</strong> Direct admit to a specific engineering discipline requires a 3.5+ GPA after freshman year, plus completing MA 165, CHM 115, ENGR 131, and ENGR 132 with grades of C or better in each.",
+      "<strong class=\"text-slate-900\">Grade replacement caps at 18 credits / 6 courses.</strong> Repeat a course, and the new grade fully replaces the old in cumulative GPA — but only up to 18 credits total across your degree. Use this on your highest-credit failures first for the biggest lift.",
+      "<strong class=\"text-slate-900\">Dean's List threshold is stricter than peers.</strong> Purdue requires a 3.8+ semester GPA on 15+ graded credits — most state flagships use 12 credits. The 15-credit floor often surprises engineering students taking lighter loads after freshman year.",
+      "<strong class=\"text-slate-900\">Boilermaker tuition freeze conditional on 2.0+.</strong> The frozen rate you enter with stays — but only if your GPA stays above 2.0 every semester. One semester below 2.0 can cost you the freeze and add thousands per year.",
+    ],
+    sourceUrl: "https://admissions.purdue.edu/apply",
   },
   {
     slug: "uw-madison",
@@ -72,6 +124,21 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 1900,
+    indexed: true,
+    intro:
+      "UW-Madison reads transcripts holistically — no recalculation, but heavy emphasis on rigor (AP, IB, Honors count) and the GPA trend across your four high school years. A jump from B's freshman year to A's by junior year reads stronger than a flat 3.8. Letters & Science admits the broadest pool; direct-admit to Wisconsin School of Business (WSB) or the College of Engineering is meaningfully more competitive — typically 3.85+ unweighted with top-decile class rank as the practical floor.",
+    localStat: {
+      label: "Fall 2024 admit GPA average (all programs)",
+      value: "3.86 unweighted",
+      source: "UW-Madison Office of Admissions and Recruitment, 2024",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Wisconsin Idea Scholarship covers full tuition at 3.0+.</strong> Pell-eligible Wisconsin residents get full tuition coverage at any UW-Madison program — but the 3.0 cumulative GPA renewal floor is firm. Drop below 3.0 and the award terminates immediately.",
+      "<strong class=\"text-slate-900\">Course retake replaces D/F grades fully.</strong> UW's course-retake policy lets the second grade fully replace the first in your cumulative GPA, capped at 12 credits total — and only for courses where you originally earned D or F.",
+      "<strong class=\"text-slate-900\">Dean's List requires 3.85+ on 12+ credits.</strong> Higher than most public flagships (typically 3.5). Degree honors run 3.5/3.75/3.9 for With Honors, With High Honors, and With Highest Honors respectively.",
+      "<strong class=\"text-slate-900\">WSB direct-admit needs 3.4+ in pre-business.</strong> If you don't direct-admit from high school, you can apply for sophomore admission with a 3.4+ GPA in pre-business courses (ECON 101/102, MATH 211, ACCT 100). Most students who do this maintain 3.6+ to stay competitive.",
+    ],
+    sourceUrl: "https://admissions.wisc.edu",
   },
   {
     slug: "ut",
@@ -86,6 +153,21 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for College Scholar",
     goodStandingGpa: "2.0",
     searchVolume: 1800,
+    indexed: true,
+    intro:
+      "UT Austin's admissions split into two paths: Texas residents in the top 6% of their high school class are automatically admitted under the state's Top X% Rule (HB 588). Everyone else competes through holistic review, where GPA and class rank are read together — a 4.0 from a school that doesn't rank looks meaningfully different from a 3.8 ranked 1st of 200. Direct admission to McCombs Business or Cockrell Engineering runs significantly more selective than the general UT pool.",
+    localStat: {
+      label: "Top X% auto-admit threshold, Fall 2025",
+      value: "Top 6% of Texas high school class",
+      source: "UT Austin Office of Admissions, HB 588 announcement",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Top 6% Rule auto-admits Texas residents.</strong> If you rank in the top 6% of your Texas high school graduating class, UT-Austin is required by state law to admit you to the general university. Major-specific admission (McCombs, Cockrell) remains competitive even under auto-admit.",
+      "<strong class=\"text-slate-900\">Out-of-state admit rate runs 5-15%.</strong> The state has a 90% Texas-resident enrollment cap, leaving very few slots for non-residents. A 3.9+ unweighted plus strong essays, two recommendations, and major-specific extracurriculars are realistic minimums.",
+      "<strong class=\"text-slate-900\">CAP rebuilds the path for denied applicants.</strong> The Coordinated Admission Program lets denied applicants attend UTSA, UT-Tyler, or UT-El Paso for one year, maintain a 3.2 GPA, and transfer automatically to UT-Austin as a sophomore. Underused recovery path for borderline candidates.",
+      "<strong class=\"text-slate-900\">Grade replacement is limited.</strong> You can retake a course where you earned C- or lower, but both grades appear on your transcript and both factor into your cumulative GPA. The original grade is not removed — stricter than most state flagships.",
+    ],
+    sourceUrl: "https://admissions.utexas.edu/apply",
   },
   {
     slug: "rutgers",

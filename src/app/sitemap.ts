@@ -99,12 +99,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.85,
     changeFrequency: "monthly",
   };
-  const gpaScoreEntries: MetadataRoute.Sitemap = GPA_SCORE_DATA.map((d) => ({
-    url: `${BASE}/gpa/${d.slug}`,
-    lastModified: new Date("2026-06-01"),
-    priority: 0.75 as Priority,
-    changeFrequency: "monthly" as ChangeFreq,
-  }));
+  const gpaScoreEntries: MetadataRoute.Sitemap = GPA_SCORE_DATA
+    .filter((d) => d.indexed)
+    .map((d) => ({
+      url: `${BASE}/gpa/${d.slug}`,
+      lastModified: new Date("2026-06-12"),
+      priority: 0.75 as Priority,
+      changeFrequency: "monthly" as ChangeFreq,
+    }));
 
   const uniHub: MetadataRoute.Sitemap[number] = {
     url: `${BASE}/university`,
@@ -112,12 +114,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.85,
     changeFrequency: "monthly",
   };
-  const uniEntries: MetadataRoute.Sitemap = UNIS.map((u) => ({
-    url: `${BASE}/university/${u.slug}`,
-    lastModified: new Date("2026-06-01"),
-    priority: 0.75 as Priority,
-    changeFrequency: "monthly" as ChangeFreq,
-  }));
+  const uniEntries: MetadataRoute.Sitemap = UNIS
+    .filter((u) => u.indexed)
+    .map((u) => ({
+      url: `${BASE}/university/${u.slug}`,
+      lastModified: new Date("2026-06-12"),
+      priority: 0.75 as Priority,
+      changeFrequency: "monthly" as ChangeFreq,
+    }));
 
   return [
     ...staticEntries,

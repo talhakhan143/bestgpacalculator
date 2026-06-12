@@ -25,6 +25,7 @@ export async function generateMetadata({
     title: `${data.abbr} GPA Calculator: Free + ${data.shortName} Grading Scale`,
     description: `Free ${data.fullName} GPA calculator. ${data.scaleNote} Calculate your ${data.abbr} GPA in 10 seconds with credit-weighted scoring. No signup, mobile-first.`,
     alternates: { canonical: `/university/${data.slug}` },
+    robots: data.indexed ? undefined : { index: false, follow: true },
   };
 }
 
@@ -91,7 +92,11 @@ export default async function UniGpaCalculatorPage({
         badge={data.fullName}
         title={`${data.abbr}`}
         highlight="GPA Calculator"
-        subtitle={`Free GPA calculator for ${data.fullName} students. ${data.scaleNote} Add your classes, get your ${data.abbr} GPA in 10 seconds.`}
+        subtitle={
+          data.intro
+            ? data.intro
+            : `Free GPA calculator for ${data.fullName} students. ${data.scaleNote} Add your classes, get your ${data.abbr} GPA in 10 seconds.`
+        }
       />
 
       <section id="calculator" className="mx-auto max-w-3xl px-4 sm:px-6">
@@ -144,27 +149,67 @@ export default async function UniGpaCalculatorPage({
             {data.weightingPolicy} The number you submit on your transcript and the number {data.abbr} uses in its admission decision may differ. Use the calculator above to model both — switch the preset to match {data.shortName}&apos;s policy.
           </p>
 
+          {data.localStat ? (
+            <div className="mt-8 rounded-2xl border border-emerald-200 bg-emerald-50 p-5">
+              <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-emerald-700">
+                {data.localStat.label}
+              </div>
+              <div className="mt-1 text-2xl font-bold tracking-tight text-emerald-900">
+                {data.localStat.value}
+              </div>
+              <div className="mt-2 text-xs text-emerald-800/80">
+                Source: {data.localStat.source}
+              </div>
+            </div>
+          ) : null}
+
           <h3 className="mt-10 text-xl font-bold tracking-tight text-slate-900">
             Maintaining a good {data.abbr} GPA
           </h3>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-base leading-relaxed text-slate-700">
-            <li>
-              <strong className="text-slate-900">Track cumulative GPA, not just semester GPA.</strong> {data.fullName} reports both. Most academic warnings trigger on the cumulative number.
-            </li>
-            <li>
-              <strong className="text-slate-900">Use the credit-weighted scoring above.</strong> A 4-credit course&apos;s grade affects your GPA 33% more than a 3-credit course&apos;s grade.
-            </li>
-            <li>
-              <strong className="text-slate-900">Plan for honors.</strong> {data.honorsGpa}. Use the{" "}
-              <Link href="/gpa-goal-calculator" className="font-semibold text-blue-700 hover:underline">
-                GPA Goal Calculator
-              </Link>{" "}
-              to see what grade average you need next semester to qualify.
-            </li>
-            <li>
-              <strong className="text-slate-900">Check the grade replacement policy.</strong> {data.shortName}, like most universities, has a grade-replacement policy for retaken courses. Removing a low grade from the cumulative is the single biggest GPA lift.
-            </li>
-          </ul>
+          {data.uniqueTips && data.uniqueTips.length > 0 ? (
+            <ul className="mt-3 list-disc space-y-2 pl-5 text-base leading-relaxed text-slate-700">
+              {data.uniqueTips.map((tip, i) => (
+                <li
+                  key={i}
+                  dangerouslySetInnerHTML={{ __html: tip }}
+                />
+              ))}
+            </ul>
+          ) : (
+            <ul className="mt-3 list-disc space-y-2 pl-5 text-base leading-relaxed text-slate-700">
+              <li>
+                <strong className="text-slate-900">Track cumulative GPA, not just semester GPA.</strong> {data.fullName} reports both. Most academic warnings trigger on the cumulative number.
+              </li>
+              <li>
+                <strong className="text-slate-900">Use the credit-weighted scoring above.</strong> A 4-credit course&apos;s grade affects your GPA 33% more than a 3-credit course&apos;s grade.
+              </li>
+              <li>
+                <strong className="text-slate-900">Plan for honors.</strong> {data.honorsGpa}. Use the{" "}
+                <Link href="/gpa-goal-calculator" className="font-semibold text-blue-700 hover:underline">
+                  GPA Goal Calculator
+                </Link>{" "}
+                to see what grade average you need next semester to qualify.
+              </li>
+              <li>
+                <strong className="text-slate-900">Check the grade replacement policy.</strong> {data.shortName}, like most universities, has a grade-replacement policy for retaken courses. Removing a low grade from the cumulative is the single biggest GPA lift.
+              </li>
+            </ul>
+          )}
+
+          {data.sourceUrl ? (
+            <p className="mt-6 text-xs text-slate-500">
+              Admit-range and policy data verified against{" "}
+              <a
+                href={data.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-slate-700 underline decoration-slate-300 hover:text-slate-900"
+              >
+                {data.shortName}&apos;s official admissions page
+              </a>
+              .
+            </p>
+          ) : null}
         </div>
       </article>
 
