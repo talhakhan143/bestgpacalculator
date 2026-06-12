@@ -1022,6 +1022,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 450,
+    indexed: true,
+    intro:
+      "Virginia Tech's College of Engineering is one of the most respected public engineering programs east of Berkeley, with computer science, aerospace, and biomedical engineering as the most competitive direct-admit majors. VT's Pamplin College of Business and the Honors College both have separate GPA gates above the general admission profile. The Blacksburg campus's strong alumni network in defense, aerospace, and federal contracting feeds tight internship and post-grad pipelines.",
+    localStat: {
+      label: "Engineering direct admit GPA threshold",
+      value: "3.9+ weighted, calculus completion required",
+      source: "Virginia Tech College of Engineering",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Engineering pathway through General Engineering.</strong> Not all freshmen direct-admit to a specific engineering major — many start in General Engineering and apply to a discipline after freshman year with 3.0+ in math/physics prereqs. Computer Science, BME, and Aerospace are the most selective transfers.",
+      "<strong class=\"text-slate-900\">Pamplin Honors needs 3.7+ unweighted.</strong> Pamplin direct admit requires strong test scores and GPA. The Pamplin Honors track requires 3.7+ unweighted plus an essay.",
+      "<strong class=\"text-slate-900\">Corps of Cadets is a parallel admission track.</strong> VT's Corps of Cadets has its own application process and admit profile — students can use the Corps as a pathway to ROTC and military commissioning. Corps students live and train together separately from the general student body.",
+    ],
+    sourceUrl: "https://admissions.vt.edu",
   },
   {
     slug: "ku",
@@ -1036,6 +1050,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Honor Roll",
     goodStandingGpa: "2.0",
     searchVolume: 450,
+    indexed: true,
+    intro:
+      "KU has a tiered automatic-admit grid that takes the guesswork out of admission for Kansas residents. Hit a 3.25+ GPA with ACT 21+ (or SAT 1060+) and you're auto-admitted. The University Honors Program is the prestige track, with separate application and 3.75+ unweighted GPA expectation. Engineering and the KU School of Business (KU Business) maintain their own GPA gates for direct admit.",
+    localStat: {
+      label: "Automatic admission threshold (Kansas residents)",
+      value: "3.25 GPA + ACT 21 (or SAT 1060)",
+      source: "KU Office of Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Auto-admit grid is published.</strong> KU publishes its formal admission grid combining GPA and test scores. Hit the threshold and the decision is automatic — no committee review. Above the auto-admit line, merit scholarships scale with the score combination.",
+      "<strong class=\"text-slate-900\">Honors Program needs 3.75 + essay.</strong> The University Honors Program requires 3.75+ unweighted, 1330+ SAT/30+ ACT, and an honors-specific application essay. Honors students get smaller seminars, research grants, and an honors thesis option.",
+      "<strong class=\"text-slate-900\">KU Crimson + Blue scholarship covers full tuition.</strong> Kansas residents with 3.5+ + 30+ ACT typically clear Crimson + Blue (full tuition for 8 semesters). The award stacks with other KU scholarships, often producing a positive aid award after federal Pell.",
+    ],
+    sourceUrl: "https://admissions.ku.edu",
   },
   {
     slug: "usc",
@@ -1050,6 +1078,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 440,
+    indexed: true,
+    intro:
+      "USC has positioned itself as a premier Pacific-coast private — admit rates have tightened from over 20% a decade ago to roughly 10% today, with Marshall School of Business, Viterbi School of Engineering, and the School of Cinematic Arts (SCA) running well below the overall number. USC's Trustee Scholarship covers full tuition for selective admits. The Annenberg School of Communication, Iovine and Young Academy, and SCA each operate distinct admissions processes that weight portfolio over raw GPA.",
+    localStat: {
+      label: "Class of 2028 admit rate",
+      value: "Approximately 9%",
+      source: "USC Office of Undergraduate Admission",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Trustee covers full tuition with no separate app.</strong> Top 100 admits per year invited to Trustee — full tuition for 4 years. Selection happens during the regular admission review; no separate essay required.",
+      "<strong class=\"text-slate-900\">SCA is portfolio-driven.</strong> The School of Cinematic Arts (USC SCA) admits on portfolio quality. A 3.7 GPA with an exceptional reel beats a 4.0 GPA with a thin one. Apply by November 1 for priority Cinematic Arts scholarships.",
+      "<strong class=\"text-slate-900\">Marshall direct admit gets the prestige scholarship.</strong> Direct admit to Marshall Business unlocks Marshall-specific scholarships. Internal transfer to Marshall is possible at 3.5+ USC GPA but the financial aid track differs.",
+    ],
+    sourceUrl: "https://admission.usc.edu",
   },
   {
     slug: "baylor",
@@ -1064,6 +1106,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.7+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 400,
+    indexed: true,
+    intro:
+      "Baylor is the largest Baptist university in the world and one of Texas's most selective privates outside SMU and Rice. The Hankamer School of Business, the School of Engineering and Computer Science, and the Honors College each operate distinct selectivity profiles. Baylor's distinctive culture — chapel attendance is encouraged but not required, alcohol policy is conservative — makes fit screening an explicit part of the admission review.",
+    localStat: {
+      label: "Class of 2028 admit rate",
+      value: "Approximately 35%",
+      source: "Baylor Office of Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Baylor Top Scholars covers full tuition.</strong> Top Scholars admits roughly 30 students per year with full tuition + research stipend. Requires 4.0+ weighted, top-decile class rank, 1480+ SAT, and a finalist interview weekend.",
+      "<strong class=\"text-slate-900\">Honors College admits separately.</strong> Baylor Honors requires a separate application due November 1. The Honors thesis is a full senior-year capstone — stronger than the typical college honors program structure.",
+      "<strong class=\"text-slate-900\">Pre-med pipeline through Baylor College of Medicine.</strong> Baylor College of Medicine (a separate institution) maintains a pipeline relationship with Baylor undergrads. 3.7+ cumulative + 510+ MCAT puts you in serious contention for BCM admission.",
+    ],
+    sourceUrl: "https://www.baylor.edu/admissions",
   },
   {
     slug: "sdsu",
@@ -1078,6 +1134,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 400,
+    indexed: true,
+    intro:
+      "SDSU is the second-most-selective CSU (after Cal Poly SLO) and the largest by graduate-level research output. The Fowler College of Business and Computer Engineering are SDSU's most impacted majors with separate, higher admit thresholds. SDSU's location and the strong San Diego biotech/defense corridor produce internship pipelines that compete with UCSD for top in-state students.",
+    localStat: {
+      label: "Fowler Business impaction GPA",
+      value: "3.8+ weighted with calc completion typical",
+      source: "SDSU impaction data",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Impacted majors raise cutoffs sharply.</strong> Business and Engineering majors at SDSU often require 0.3-0.5 higher GPA than general university. Check the campus impaction list — applying to an open major and trying to switch later is harder than direct admit.",
+      "<strong class=\"text-slate-900\">Weber Honors needs 3.8+ + essay.</strong> Weber Honors College admits roughly 600 freshmen per year. The Honors application is part of the main CSU app but requires a separate essay due in November.",
+      "<strong class=\"text-slate-900\">President's Scholarship is the prestige award.</strong> Top scholars get full tuition + research stipend + priority registration. Apply by November 30 for the President's Scholarship pool.",
+    ],
+    sourceUrl: "https://admissions.sdsu.edu",
   },
   {
     slug: "cal-poly",
@@ -1092,6 +1162,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 380,
+    indexed: true,
+    intro:
+      "Cal Poly SLO uses the most transparent admission formula in the CSU system — the Multi-Criteria Admission (MCA) score combines GPA, rigor, math courses completed, work experience, and other factors into a single numeric rank by major. Hit the MCA cutoff for your major and you're in. Cal Poly's 'Learn by Doing' culture, hands-on engineering labs, and tight industry pipeline make it the most selective CSU and the top public polytechnic on the West Coast.",
+    localStat: {
+      label: "Computer Science admit MCA threshold",
+      value: "Top 15% of applicant pool typical",
+      source: "Cal Poly MCA admissions documentation",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">MCA score is mathematically transparent.</strong> Cal Poly publishes the MCA formula. Calculate your MCA before applying — it tells you exactly where you stand relative to last year's admit cutoff for your specific major. No guesswork.",
+      "<strong class=\"text-slate-900\">Engineering majors have wildly different cutoffs.</strong> CS, Computer Engineering, Aerospace, and Software Engineering have separate MCA cutoffs from Civil, Mechanical, or Industrial. Applying to a less-impacted engineering major can be a strategic admit path.",
+      "<strong class=\"text-slate-900\">No campus-wide auto-transfer between majors.</strong> Internal major change at Cal Poly requires meeting the destination major's admission requirements again. If your goal is CS, apply directly — switching from another engineering major is harder than the original admit.",
+    ],
+    sourceUrl: "https://admissions.calpoly.edu",
   },
   {
     slug: "wsu",
@@ -1106,6 +1190,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for President's Honor Roll",
     goodStandingGpa: "2.0",
     searchVolume: 370,
+    indexed: true,
+    intro:
+      "Washington State University is Washington's land-grant flagship — significantly more accessible than UW Seattle, with admit rates near 75% overall. The Carson College of Business and the Voiland College of Engineering each operate at higher selectivity than the general university. WSU's Honors College is one of the older and more established public-university honors programs in the country, with separate application and a 3.7+ GPA expectation.",
+    localStat: {
+      label: "WSU Honors College admit GPA",
+      value: "3.7+ weighted with 1280+ SAT typical",
+      source: "WSU Honors College",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Distinguished Regents Scholarship covers full ride.</strong> Top-end admits get Distinguished Regents — full tuition + room + board for 4 years. Requires 1450+ SAT and top-decile rank.",
+      "<strong class=\"text-slate-900\">Pullman vs Vancouver vs Tri-Cities — campus matters.</strong> WSU has multiple campuses. Pullman is the main residential campus; Vancouver and Tri-Cities are commuter-oriented. The CS programs differ by campus — confirm the major is offered where you want to study.",
+      "<strong class=\"text-slate-900\">Cougar Commitment caps tuition increases.</strong> The Cougar Commitment program caps WSU tuition increases at 2% per year for in-state students. Combined with state-funded aid, it makes WSU one of the most affordable Pac-12 (now Pac-2) campuses.",
+    ],
+    sourceUrl: "https://admission.wsu.edu",
   },
   {
     slug: "utsa",
@@ -1120,6 +1218,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 350,
+    indexed: true,
+    intro:
+      "UTSA is a regional UT-system campus serving the San Antonio metropolitan area. The school is officially an R1 research institution and a Hispanic-serving institution, with cybersecurity (one of the strongest public university cyber programs nationally), engineering, and the Carlos Alvarez College of Business as the most competitive majors. UTSA is the destination campus for many CAP students who didn't direct-admit to UT Austin.",
+    localStat: {
+      label: "Cybersecurity program ranking",
+      value: "Top 5 public university cyber program nationally",
+      source: "Ponemon Institute, multiple years",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">CAP students rebuild their UT Austin path here.</strong> Coordinated Admission Program (CAP) sends students who didn't direct-admit to UT Austin to UTSA or UT-Tyler. Maintain 3.2 GPA in pre-major coursework and you transfer to UT Austin guaranteed.",
+      "<strong class=\"text-slate-900\">Cybersecurity is the prestige program.</strong> UTSA Cyber graduates feed into federal contractors, NSA pipelines, and major commercial cyber firms. The program holds NSA Center of Academic Excellence designation across multiple cyber specializations.",
+      "<strong class=\"text-slate-900\">Honors College admits at 3.5+ + 1180 SAT.</strong> Honors College students get smaller classes, a $1K/yr stipend, and priority registration. Apply separately during the regular UTSA application — same November 1 priority deadline.",
+    ],
+    sourceUrl: "https://www.utsa.edu/admissions",
   },
   {
     slug: "ucla",
@@ -1134,6 +1246,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.7+ for Dean's Honor List",
     goodStandingGpa: "2.0",
     searchVolume: 350,
+    indexed: true,
+    intro:
+      "UCLA is the most-applied-to university in the country and the most selective UC (tied with Berkeley). The Henry Samueli School of Engineering and Applied Science admits at a separate, more selective profile than the rest of the campus. UCLA's College of Letters and Science is the more accessible admit path for students primarily interested in liberal arts; pre-med and pre-law tracks happen through L&S majors plus prereq sequencing.",
+    localStat: {
+      label: "Fall 2024 admit UC-weighted GPA (middle 50%)",
+      value: "4.31 - 4.50",
+      source: "UCLA Office of Undergraduate Admission",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Engineering admit cluster is the toughest UC track.</strong> HSSEAS admits roughly 7% of engineering applicants — lower than Berkeley CoE for some majors. Bioengineering, CS, and CSE are the most competitive specializations.",
+      "<strong class=\"text-slate-900\">Anderson Business is grad-only.</strong> UCLA does not have an undergraduate business major. Students interested in business take Economics, Business Economics, or Management through L&S, then apply to Anderson MBA after work experience.",
+      "<strong class=\"text-slate-900\">Regents Scholarship covers full tuition.</strong> Top ~150 admits get invited to Regents — full UC tuition for 4 years. No separate application; invitation arrives with admission.",
+    ],
+    sourceUrl: "https://www.admission.ucla.edu",
   },
   {
     slug: "unc",
@@ -1148,6 +1274,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 350,
+    indexed: true,
+    intro:
+      "UNC Chapel Hill is the most selective public university in the South alongside UVA — admit rates run sub-19% overall with North Carolina residents prioritized under state-mandated enrollment caps (roughly 82% in-state). The Kenan-Flagler Business School direct admit, the Morehead-Cain Scholarship (the original American merit scholarship, predating Rhodes), and the Robertson Scholars Program raise the bar substantially above general admission.",
+    localStat: {
+      label: "Fall 2024 in-state vs out-of-state admit rates",
+      value: "In-state ~42%, Out-of-state ~12%",
+      source: "UNC Office of Undergraduate Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Morehead-Cain is the prestige full ride.</strong> Morehead-Cain covers full tuition + room + board + summer enrichment funding for 50 admits per year. Nominated through high schools or community organizations — apply early.",
+      "<strong class=\"text-slate-900\">Kenan-Flagler direct admit needs 4.5+ weighted.</strong> Direct admit to Kenan-Flagler from high school is significantly more competitive than general UNC admission. Internal transfer is possible at 3.5+ UNC GPA + 3.5+ in pre-business prereqs.",
+      "<strong class=\"text-slate-900\">In-state cap drives out-of-state competition.</strong> The 82% in-state enrollment requirement leaves roughly 700 slots for non-residents. Out-of-state applicants need near-perfect credentials: 4.6+ weighted, 1500+ SAT, and exceptional essays.",
+    ],
+    sourceUrl: "https://admissions.unc.edu",
   },
   {
     slug: "uci",
@@ -1162,6 +1302,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's Honor List",
     goodStandingGpa: "2.0",
     searchVolume: 330,
+    indexed: true,
+    intro:
+      "UC Irvine ranks fourth in UC system selectivity behind Berkeley, UCLA, and UCSD. The Henry Samueli School of Engineering, the Donald Bren School of Information and Computer Sciences (ICS), and the Paul Merage School of Business each operate distinct admit profiles. UCI's strong Orange County location, tight CS pipeline, and the Campuswide Honors Collegium make it a default for students priced out of UCLA and UCSD.",
+    localStat: {
+      label: "Fall 2024 admit UC-weighted GPA (middle 50%)",
+      value: "4.0 - 4.27",
+      source: "UCI Office of Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">ICS is the prestige CS track.</strong> The Bren School of Information and Computer Sciences is a separate UCI school dedicated to computer science. Software Engineering and CS at ICS admit at higher selectivity than CS at the Engineering school.",
+      "<strong class=\"text-slate-900\">Campuswide Honors Collegium needs 4.0+ UC-GPA.</strong> CHC admits roughly 250 students per year. Honors students get smaller classes, priority registration, and a research thesis option. Apply separately during the UCI application.",
+      "<strong class=\"text-slate-900\">Merage Business doesn't direct-admit freshmen.</strong> Merage operates as a sophomore-application school. Plan for entry through L&S Economics or Business Economics, then apply to Merage with 3.3+ UCI GPA after prereq completion.",
+    ],
+    sourceUrl: "https://admissions.uci.edu",
   },
   {
     slug: "sjsu",
@@ -1176,6 +1330,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's Scholar List",
     goodStandingGpa: "2.0",
     searchVolume: 320,
+    indexed: true,
+    intro:
+      "San Jose State is Silicon Valley's public engineering and CS pipeline — the Charles W. Davidson College of Engineering and the Lucas College of Business produce more Silicon Valley hires than any other CSU campus. CS at SJSU is heavily impacted with admit cutoffs that compete with mid-tier private universities. The location advantage (Apple, Adobe, Cisco within 5 miles) makes SJSU a default for budget-conscious CA students pursuing tech careers.",
+    localStat: {
+      label: "CS impaction GPA threshold",
+      value: "3.8+ weighted with calc completion typical",
+      source: "SJSU impaction data",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">CS impaction is steep.</strong> SJSU CS admits at much higher cutoffs than general SJSU. Practical floor: 3.8+ weighted + calculus + 1300+ SAT. The CS pipeline is well-known to Silicon Valley recruiters — internships open up immediately freshman year.",
+      "<strong class=\"text-slate-900\">Spartan Scholarship offers $5K/yr for top admits.</strong> Top 5% of admits get Spartan Scholarship awards. The award stacks with Cal Grant — combined coverage often exceeds full tuition for in-state students.",
+      "<strong class=\"text-slate-900\">Engineering Career Center is the differentiator.</strong> SJSU's Engineering Career Center has the densest Silicon Valley employer relationship in the CSU system. Co-op opportunities and on-campus interviews start sophomore year.",
+    ],
+    sourceUrl: "https://www.sjsu.edu/admissions",
   },
   {
     slug: "ua",
@@ -1190,6 +1358,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 320,
+    indexed: true,
+    intro:
+      "Alabama runs the most aggressive out-of-state merit-aid grid of any SEC flagship — a 3.5 GPA + 27 ACT can unlock $24K/yr in tuition, and 30+ ACT with 3.5 GPA often clears full out-of-state tuition. The grid is published and formulaic. Honors College and the Capstone Engineering Society raise the bar for prestige tracks, but the headline win at Bama is the merit math for high-test-score, mid-range-GPA students from outside Alabama.",
+    localStat: {
+      label: "Presidential Scholarship threshold (out-of-state)",
+      value: "3.5+ + ACT 32+ unlocks full tuition",
+      source: "University of Alabama scholarship grid",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Out-of-state merit grid is published.</strong> Bama posts the exact GPA + test combinations for each scholarship tier. No essay, no committee — hit the number and the award is automatic. This makes Bama one of the cheapest out-of-state options for top-scoring students.",
+      "<strong class=\"text-slate-900\">Honors College adds $2.5K/yr.</strong> Honors admission stacks on top of merit aid. Apply by December 1 for priority Honors funding. The Honors-required thesis is a senior capstone.",
+      "<strong class=\"text-slate-900\">Capstone Scholar covers full ride.</strong> Capstone Scholar is the top tier — full tuition + room + board for ~30 admits per year. Requires National Merit Finalist, 4.0+ unweighted, and 35+ ACT.",
+    ],
+    sourceUrl: "https://admissions.ua.edu",
   },
   {
     slug: "msu",
@@ -1204,6 +1386,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 300,
+    indexed: true,
+    intro:
+      "Michigan State is Michigan's land-grant university — large, comprehensive, and meaningfully more accessible than UMich Ann Arbor. The Eli Broad College of Business, the College of Engineering, and the Honors College each raise the admission bar. MSU's veterinary medicine program is one of the top-30 nationally, and the school's massive Big Ten alumni network drives strong Detroit-area job placement for grads in supply chain and finance majors.",
+    localStat: {
+      label: "Fall 2024 admit GPA average",
+      value: "3.78 unweighted",
+      source: "MSU Office of Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Eli Broad direct admit needs 3.7+ + business essay.</strong> Direct admit to Broad Business requires the supplemental business essay plus 3.7+ unweighted. Internal Broad transfer is possible at 3.0+ in pre-business courses.",
+      "<strong class=\"text-slate-900\">Honors College admits at 3.7+ unweighted.</strong> MSU Honors students get smaller seminars, a research thesis option, and priority registration. Apply by November 1 for priority Honors scholarship consideration.",
+      "<strong class=\"text-slate-900\">Spartan Advantage covers full tuition for low-income MI.</strong> Spartan Advantage guarantees full tuition coverage for Michigan residents from families with income under the Pell threshold (~$60K), with 2.0+ GPA renewal floor.",
+    ],
+    sourceUrl: "https://admissions.msu.edu",
   },
   {
     slug: "kent-state",
@@ -1232,6 +1428,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 1500,
+    indexed: true,
+    intro:
+      "LSU's admission for Louisiana residents leans heavily on the TOPS Core GPA — a recalculated number based on the 19 academic units of the TOPS curriculum, which is what determines TOPS scholarship eligibility (Louisiana's flagship state aid). A 2.5 TOPS Core + ACT 20 unlocks TOPS Opportunity (full tuition); a 3.5 TOPS Core + ACT 27 unlocks TOPS Honors. The Roger Hadfield Ogden Honors College and the College of Business each maintain selective profiles above general LSU admit.",
+    localStat: {
+      label: "TOPS Honors scholarship threshold",
+      value: "3.5+ TOPS Core GPA + ACT 27+",
+      source: "Louisiana TOPS scholarship program",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">TOPS Core is the LA-resident money number.</strong> The TOPS Core GPA — calculated from 19 specific academic courses — drives in-state aid. Compute your TOPS Core early to know which tier you'll qualify for.",
+      "<strong class=\"text-slate-900\">Ogden Honors needs separate app.</strong> Ogden Honors admits ~600 freshmen with Honors-specific stipends and a thesis requirement. Apply by November 1 for priority Honors funding.",
+      "<strong class=\"text-slate-900\">E.J. Ourso direct admit needs 3.5+ + supplemental essay.</strong> The College of Business direct admit requires a business-specific essay plus 3.5+ unweighted. Internal transfer to E.J. Ourso possible at 3.2+ college GPA.",
+    ],
+    sourceUrl: "https://www.lsu.edu/admissions",
   },
   {
     slug: "lsac",
@@ -1246,6 +1456,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for most law school merit scholarships",
     goodStandingGpa: "2.0 (varies by law school)",
     searchVolume: 1400,
+    indexed: true,
+    intro:
+      "The LSAC CAS GPA is the number every US law school uses — it's recalculated from your undergraduate transcripts on a standard 4.33 scale, and it includes every grade you ever earned, including failed courses and retakes. Most undergrad institutions replace retake grades; LSAC does not. A student with one failed course freshman year still carries that F in the CAS GPA even if their school replaced it. This makes CAS GPA reconstruction the single most important pre-law calculation.",
+    localStat: {
+      label: "Top 14 law school median admit CAS GPA",
+      value: "3.83 (median across Yale, Harvard, Stanford, Columbia, Chicago, NYU, Penn, Berkeley, Virginia, Michigan, Duke, Northwestern, Cornell, Georgetown)",
+      source: "ABA 509 reports, 2024 cycle",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">LSAC does not honor grade replacement.</strong> If your school replaced a D with a B on retake, LSAC averages both grades. The replacement-policy assumption that pre-law students bring from undergrad is the most common CAS GPA shock.",
+      "<strong class=\"text-slate-900\">A+ counts as 4.33, raising CAS above your school number.</strong> If your school caps an A+ at 4.0 (or doesn't report A+), the LSAC translation can run your CAS GPA above your undergrad GPA. Confirm your transcript shows the A+ explicitly.",
+      "<strong class=\"text-slate-900\">Late-undergrad upward trend won't fix early-undergrad damage.</strong> Top-14 admissions read the entire transcript, and one straight-A semester senior year doesn't undo three years of B-/C grades. The math of CAS-GPA recovery is much harder than at the undergrad level.",
+    ],
+    sourceUrl: "https://www.lsac.org/applying-law-school/jd-application-process/cas",
   },
   {
     slug: "uh",
@@ -1260,6 +1484,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 1100,
+    indexed: true,
+    intro:
+      "University of Houston is Texas's third-largest public flagship, with strong programs in engineering, hospitality (Conrad N. Hilton College), and Cullen College of Business. UH operates assured admission for Texas residents — top 10% high school class rank or 3.0+ GPA with SAT 1180+ guarantees admission. The Honors College and the C.T. Bauer College of Business raise their own bars for direct-admit prestige programs.",
+    localStat: {
+      label: "Assured admission for Texas residents",
+      value: "Top 10% rank OR 3.0+ GPA + SAT 1180+",
+      source: "UH Office of Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Honors College has full-tuition Tier One scholarships.</strong> Top Honors admits get Tier One Scholarships — full tuition for 4 years. Requires 1450+ SAT, 4.0+ weighted, and Honors application by December 1.",
+      "<strong class=\"text-slate-900\">Bauer Business direct admit needs 3.7+ + Calc.</strong> Direct admit to Bauer from high school is more competitive than general UH. Internal Bauer transfer is possible at 3.0+ in pre-business courses.",
+      "<strong class=\"text-slate-900\">Hilton Hospitality is nationally ranked.</strong> Conrad N. Hilton College is one of the top-3 US hospitality programs and has dedicated industry connections in Houston's hotel and event-management sector.",
+    ],
+    sourceUrl: "https://uh.edu/admissions",
   },
   {
     slug: "uva",
@@ -1274,6 +1512,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.4+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 1000,
+    indexed: true,
+    intro:
+      "UVA is one of the two most selective public universities in the South (alongside UNC) — admit rates run sub-19% with strong in-state preference (around 65-70% Virginia residents). The McIntire School of Commerce, the School of Engineering and Applied Science direct admit, and the Echols Scholars Program raise the bar substantially. UVA's holistic review weighs course rigor heavily; the school explicitly favors students who took the hardest courses available at their high school over students with 4.0s in light course loads.",
+    localStat: {
+      label: "Class of 2028 in-state vs out-of-state admit rates",
+      value: "In-state ~36%, Out-of-state ~14%",
+      source: "UVA Office of Undergraduate Admission",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Echols Scholars unlocks curriculum freedom.</strong> Echols Scholars (top ~7% of admits) skip the general-education requirements and design their own curriculum. No separate application — invitation arrives with admission for top candidates.",
+      "<strong class=\"text-slate-900\">McIntire is a sophomore-application school.</strong> McIntire Business does not direct-admit freshmen. Apply during sophomore year with 3.6+ UVA GPA, completion of prereqs, and a separate McIntire essay.",
+      "<strong class=\"text-slate-900\">AccessUVa covers full demonstrated need.</strong> UVA meets 100% of demonstrated need for admitted in-state students. Out-of-state students get strong but not always 100% need coverage.",
+    ],
+    sourceUrl: "https://admission.virginia.edu",
   },
   {
     slug: "uga",
