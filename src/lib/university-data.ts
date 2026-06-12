@@ -1414,6 +1414,19 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 300,
+    indexed: true,
+    intro:
+      "Kent State is best known for the College of Aeronautics and Engineering (one of the few accredited aviation programs at a public university) and the Fashion School — both of which run separate selectivity profiles above the general admission number. Kent State maintains an accessible profile for Ohio residents, with admit rates near 80% overall.",
+    localStat: {
+      label: "Honors College admit GPA",
+      value: "3.5+ unweighted with 1180+ SAT typical",
+      source: "Kent State Honors College",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Aviation program is the prestige track.</strong> Kent State's College of Aeronautics is one of the most established public-university aviation programs, with FAA-approved flight school facilities and a direct pipeline to regional airlines and military aviation.",
+      "<strong class=\"text-slate-900\">Fashion School ranks in the top-5 nationally.</strong> The Kent State Fashion School consistently ranks among the top public-university fashion programs. Direct admission requires portfolio review.",
+    ],
+    sourceUrl: "https://www.kent.edu/admissions",
   },
   {
     slug: "lsu",
@@ -1540,6 +1553,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 800,
+    indexed: true,
+    intro:
+      "UGA recalculates your high school GPA using academic core courses only, adding +1.0 for AP, IB, and dual-enrollment classes. The recalculated number is what matters — and it's the same number tied to Georgia's HOPE and Zell Miller scholarship eligibility, the dominant in-state aid programs. UGA's Terry College of Business, Honors Program, and the Foundation Fellowship raise the bar substantially above general admission.",
+    localStat: {
+      label: "Zell Miller Scholarship threshold (full tuition)",
+      value: "3.7+ HOPE GPA + 1200+ SAT / 26+ ACT",
+      source: "Georgia Student Finance Commission",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">HOPE/Zell Miller drive in-state economics.</strong> HOPE covers 86% of tuition at 3.0+ HOPE GPA; Zell Miller covers full tuition at 3.7+ + SAT 1200+. Renewal requires 3.0+ college GPA. These two awards drive most in-state UGA financial math.",
+      "<strong class=\"text-slate-900\">Foundation Fellowship is the prestige full-ride.</strong> Foundation Fellowship admits ~20 students per year with full tuition + room + board + research stipend. Requires top-decile rank, 4.4+ HOPE GPA, 1500+ SAT, and a finalist weekend.",
+      "<strong class=\"text-slate-900\">Terry direct admit needs 3.8+ HOPE GPA.</strong> Terry Business direct admit from high school requires 3.8+ HOPE GPA plus Calculus completion. Internal Terry transfer is possible at 3.4+ pre-business GPA.",
+    ],
+    sourceUrl: "https://www.admissions.uga.edu",
   },
   {
     slug: "clemson",
@@ -1554,6 +1581,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for President's List",
     goodStandingGpa: "2.0",
     searchVolume: 900,
+    indexed: true,
+    intro:
+      "Clemson is South Carolina's land-grant research university, with strong engineering, computing, and business programs. The Calhoun Honors College, the Wilbur O. and Ann Powers College of Business, and the College of Engineering, Computing and Applied Sciences each have separate selectivity profiles. Clemson's in-state vs out-of-state admit rate spread is notable — South Carolina residents see meaningfully higher admit rates than non-residents.",
+    localStat: {
+      label: "Fall 2024 admit GPA average",
+      value: "4.34 weighted",
+      source: "Clemson Office of Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Calhoun Honors College admits separately.</strong> Calhoun Honors admits ~270 students per year with priority registration, smaller seminars, and research/thesis stipends. Apply by December 1.",
+      "<strong class=\"text-slate-900\">National Scholars covers full ride.</strong> National Scholars admits 10-15 students per year with full tuition + room + board + research grant. Requires top-decile rank, 4.4+ weighted, 1500+ SAT, and a finalist weekend.",
+      "<strong class=\"text-slate-900\">In-state Palmetto Fellows stacks well.</strong> SC Palmetto Fellows ($6,700/yr) plus other state aid often produces a strong financial package for in-state Clemson admits with 3.5+ HOPE GPA.",
+    ],
+    sourceUrl: "https://www.clemson.edu/admissions",
   },
   {
     slug: "amcas",
@@ -1568,6 +1609,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.7+ AMCAS GPA for competitive medical school admission",
     goodStandingGpa: "3.0 (typical pre-med floor)",
     searchVolume: 800,
+    indexed: true,
+    intro:
+      "AMCAS recalculates your undergraduate GPA from every transcript you've ever attended, on a standard 4.0 scale. The recalculation separates Science GPA (BCPM: Biology, Chemistry, Physics, Math) from non-Science GPA — and both numbers matter equally in medical school admissions. Unlike most undergrad institutions, AMCAS does not honor grade replacement. Retaken courses count BOTH attempts in the average. This single rule makes AMCAS GPA reconstruction the most underestimated step in pre-med planning.",
+    localStat: {
+      label: "Top-20 medical school median admit AMCAS GPA",
+      value: "3.89 overall + 3.86 Science",
+      source: "AAMC MSAR data, 2024 cycle",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Science GPA matters as much as overall.</strong> Med schools view a 3.95 overall with 3.6 science as red-flag — they read it as \"strong humanities student who struggles with hard sciences.\" Aim to keep Science GPA within 0.1 of overall.",
+      "<strong class=\"text-slate-900\">AP credit doesn't help your AMCAS GPA.</strong> AP credit gets you out of intro coursework but doesn't add to AMCAS GPA. If you skipped intro bio with AP, take it again in college — adcoms specifically look for the upper-division equivalent.",
+      "<strong class=\"text-slate-900\">Post-bacc is the recovery path.</strong> If your AMCAS GPA is below 3.5, a structured post-baccalaureate program (1-2 years of full-time science courses with 3.8+ post-bacc GPA) is the standard rebuild — better than scattered community-college courses.",
+    ],
+    sourceUrl: "https://students-residents.aamc.org/applying-medical-school-amcas/applying-medical-school-amcas",
   },
   {
     slug: "caspa",
@@ -1582,6 +1637,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.6+ for competitive PA program admission",
     goodStandingGpa: "3.0 (typical pre-PA floor)",
     searchVolume: 800,
+    indexed: true,
+    intro:
+      "CASPA is the centralized application service for PA programs and uses its own GPA recalculation rules. CASPA reports five separate GPAs: overall, science, BCP (Biology-Chemistry-Physics), non-science, and post-bacc. Like AMCAS, CASPA does not honor grade replacement — both attempts of a retaken course are averaged. PA program admissions typically weight Science and BCP GPAs more heavily than overall.",
+    localStat: {
+      label: "Median accepted CASPA GPA (PA programs nationally)",
+      value: "3.58 overall + 3.53 Science",
+      source: "PAEA Program Report 38, 2024",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">BCP GPA is the PA-school-specific filter.</strong> PA programs particularly weight the BCP (Bio-Chem-Physics) GPA because those courses test the core science readiness for clinical training. Aim for 3.5+ BCP minimum.",
+      "<strong class=\"text-slate-900\">Patient care experience hours matter as much as GPA.</strong> The average accepted PA applicant brings 3,000+ patient care hours (scribing, CNA, EMT). A 3.5 CASPA with 4,000 hours often beats a 3.8 with 500 hours.",
+      "<strong class=\"text-slate-900\">CASPA opens late April annually.</strong> Most PA programs use rolling admissions starting June/July. Submit in April-May for the strongest admit position — late-cycle applications face fewer remaining seats.",
+    ],
+    sourceUrl: "https://caspaapplicant.liaisoncas.com",
   },
   {
     slug: "uic",
@@ -1596,6 +1665,19 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 700,
+    indexed: true,
+    intro:
+      "UIC is the urban counterpart to UIUC in the University of Illinois system — significantly more accessible (admit rate near 80%) but with strong health-sciences programs anchored by the UIC College of Medicine (the largest medical college in the US by enrollment) and the nearby UI Hospital. The Honors College and the College of Business Administration each maintain separate gates above general admission.",
+    localStat: {
+      label: "Honors College admit GPA",
+      value: "3.5+ unweighted with 1200+ SAT typical",
+      source: "UIC Honors College",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">UIC Medicine is the largest US med school.</strong> The College of Medicine admits roughly 350 students per year across four campuses. UIC undergrad pre-meds have a meaningful pipeline advantage.",
+      "<strong class=\"text-slate-900\">Honors College adds $5K/yr scholarship.</strong> UIC Honors students get a Chancellor's Honors Scholarship ($5K/yr) plus priority registration and smaller seminars. Apply by November 1.",
+    ],
+    sourceUrl: "https://admissions.uic.edu",
   },
   {
     slug: "unl",
@@ -1610,6 +1692,19 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 700,
+    indexed: true,
+    intro:
+      "Nebraska's land-grant flagship operates a published auto-admit grid: a 3.0+ GPA + ACT 20+ (or class rank top 50%) guarantees admission. Hit the numbers and you're in — no committee review. The University Honors Program is competitive and admits roughly 600 freshmen per year, and the College of Business raises bars for direct admit students.",
+    localStat: {
+      label: "Auto-admit threshold (NE residents)",
+      value: "3.0+ GPA + ACT 20+ OR class rank top 50%",
+      source: "UNL Office of Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Regents Scholarship covers full tuition for top-decile NE residents.</strong> Regents pays full tuition for Nebraska residents in the top 10% of their high school class with ACT 28+. Apply by November 15.",
+      "<strong class=\"text-slate-900\">Husker non-resident scholarships exist.</strong> Out-of-state students with 3.5+ GPA + ACT 28+ qualify for non-resident scholarships that reduce out-of-state tuition to roughly in-state rates.",
+    ],
+    sourceUrl: "https://admissions.unl.edu",
   },
   {
     slug: "uky",
@@ -1624,6 +1719,19 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.6+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 600,
+    indexed: true,
+    intro:
+      "University of Kentucky is the state's land-grant flagship. The Lewis Honors College, Gatton College of Business and Economics, and the College of Engineering each operate selectivity above the general profile. UK maintains automatic-admit pathways for Kentucky residents meeting specific GPA/test combinations, similar to other SEC publics.",
+    localStat: {
+      label: "Lewis Honors admit GPA",
+      value: "3.6+ unweighted with 1280+ SAT typical",
+      source: "Lewis Honors College",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Singletary Scholarship is the flagship full-ride.</strong> Singletary admits 25-30 students per year with full tuition + room + board + research stipend. Requires top-decile rank, 4.0+ unweighted, and a finalist weekend.",
+      "<strong class=\"text-slate-900\">Pre-pharmacy pipeline through College of Pharmacy.</strong> UK Pharmacy is consistently ranked top-20 nationally. Pre-pharm undergrads with 3.5+ college GPA and PCAT scores have strong UK PharmD admission outcomes.",
+    ],
+    sourceUrl: "https://admission.uky.edu",
   },
   {
     slug: "auburn",
@@ -1636,11 +1744,37 @@ export const UNIS: UniData[] = [
     weightingPolicy: "Auburn uses school-reported GPA + test scores in admission decisions.",
     admitRange: "3.5 - 4.1",
     honorsGpa: "3.4+ for Dean's List",
+    indexed: true,
+    intro:
+      "Auburn is Alabama's land-grant flagship (paired with the University of Alabama), with strong engineering, agriculture, and business programs. The Samuel Ginn College of Engineering and the Harbert College of Business each maintain selectivity profiles above general admission. Auburn's Honors College has separate application, and the school is known for its tight alumni network in the Southeast and aerospace-industry pipeline through Huntsville.",
+    localStat: {
+      label: "Fall 2024 admit GPA average",
+      value: "3.91 unweighted",
+      source: "Auburn Office of Undergraduate Admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Honors College has separate Spirit application.</strong> Auburn Honors admits roughly 700 students per year with thesis-track curriculum, smaller seminars, and priority registration. Apply by December 1.",
+      "<strong class=\"text-slate-900\">Engineering co-op program is structural.</strong> Auburn's Cooperative Education program lets engineering students alternate semesters of classes and full-time work — typically completing 4-5 co-op rotations before graduation. Graduates leave with significant industry experience and reduced tuition cost.",
+    ],
+    sourceUrl: "https://www.auburn.edu/admissions",
     goodStandingGpa: "2.0",
     searchVolume: 600,
   },
   {
     slug: "uiowa",
+    indexed: true,
+    intro:
+      "Iowa is a strong mid-tier public flagship with notable programs in creative writing (the Iowa Writers' Workshop is grad-only but the undergrad English creative writing track is its feeder), business (Tippie College), and nursing. Iowa's Honors Program admits selectively, and the Henry B. Tippie College of Business direct admit raises bars above the general admission profile.",
+    localStat: {
+      label: "Honors Program admit GPA threshold",
+      value: "3.7+ unweighted typical",
+      source: "University of Iowa Honors Program",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Iowa Writers' Workshop is grad-only but undergrad feeder exists.</strong> The Iowa Writers' Workshop is one of the top-3 creative writing MFA programs nationally — undergrad English majors at Iowa have a noticeable advantage in subsequent MFA admissions cycles.",
+      "<strong class=\"text-slate-900\">Old Gold Scholarship covers full out-of-state tuition.</strong> Old Gold admits 30-40 students per year with full out-of-state tuition coverage. Requires top-decile rank + 32+ ACT typical.",
+    ],
+    sourceUrl: "https://admissions.uiowa.edu",
     abbr: "UIowa",
     fullName: "University of Iowa",
     shortName: "Iowa",
@@ -1655,6 +1789,19 @@ export const UNIS: UniData[] = [
   },
   {
     slug: "mizzou",
+    indexed: true,
+    intro:
+      "Mizzou (University of Missouri) is the SEC's newest flagship after the conference realignment, with strong journalism (the Missouri School of Journalism is one of the country's oldest and best-known j-schools), business (Trulaske), and engineering programs. Mizzou is meaningfully more accessible than other SEC flagships, with admit rates near 80%, but the Missouri School of Journalism and the Honors College maintain higher bars.",
+    localStat: {
+      label: "Missouri School of Journalism admit GPA",
+      value: "3.6+ unweighted with strong writing portfolio",
+      source: "Missouri School of Journalism admissions",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">J-school is the prestige program.</strong> The Missouri School of Journalism founded the world's first j-school and remains one of the top three nationally. Print, broadcast, and convergence majors each have distinct admit profiles.",
+      "<strong class=\"text-slate-900\">Honors College needs 3.7+ + essay.</strong> Honors College admits roughly 1,000 freshmen per year. Honors students get smaller classes, research stipends, and a thesis track. Apply by December 1.",
+    ],
+    sourceUrl: "https://admissions.missouri.edu",
     abbr: "Mizzou",
     fullName: "University of Missouri",
     shortName: "Mizzou",
@@ -1680,6 +1827,20 @@ export const UNIS: UniData[] = [
     honorsGpa: "3.5+ for Dean's List",
     goodStandingGpa: "2.0",
     searchVolume: 900,
+    indexed: true,
+    intro:
+      "South Carolina (Columbia) is the state's flagship public — significantly more accessible than Clemson but with a strong Honors College (the South Carolina Honors College is consistently ranked among the top-3 public-university honors programs nationally). The Darla Moore School of Business — particularly its International Business program — runs notably higher selectivity than general admission. UofSC's Palmetto Fellows scholarship math drives most in-state financial planning.",
+    localStat: {
+      label: "Moore School International Business ranking",
+      value: "Top-1 undergraduate International Business program (US News)",
+      source: "US News & World Report rankings, multiple years",
+    },
+    uniqueTips: [
+      "<strong class=\"text-slate-900\">Honors College is top-3 nationally.</strong> South Carolina Honors admits ~700 students per year with priority registration, smaller seminars, research stipends, and a thesis-required curriculum. Apply by October 15 for priority Honors funding.",
+      "<strong class=\"text-slate-900\">Moore IB is the prestige major.</strong> Moore School's International Business program has held US News' #1 ranking for international business for over 20 consecutive years. Direct admit requires top-decile rank + 1380+ SAT typical.",
+      "<strong class=\"text-slate-900\">Palmetto Fellows stacks well in-state.</strong> SC Palmetto Fellows ($6,700/yr) plus other state aid typically produces strong financial packages for in-state UofSC admits with 3.5+ HOPE GPA.",
+    ],
+    sourceUrl: "https://sc.edu/about/offices_and_divisions/undergraduate_admissions",
   },
 ];
 
