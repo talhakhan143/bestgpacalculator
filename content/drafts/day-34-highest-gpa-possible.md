@@ -5,7 +5,7 @@ admin-fields:
   excerpt: "The highest unweighted GPA is 4.0. The highest weighted GPA depends on your school's scale — typically 5.0, sometimes 6.0+. Here's how every scale works and the all-time records."
   tags: "highest gpa, gpa scale, 5.0 gpa, 6.0 gpa, weighted gpa"
   emoji: "📈"
-  coverImage: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&w=1200&q=70"
+  coverImage: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&w=1200&q=70"
   publish: true
 ---
 
