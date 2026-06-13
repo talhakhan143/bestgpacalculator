@@ -28,6 +28,7 @@ const GRADE_LINKS = [
   { href: "/final-grade-calculator", label: "Final Grade Calculator" },
   { href: "/semester-grade-calculator", label: "Semester Grade Calculator" },
   { href: "/weighted-grade-calculator", label: "Weighted Grade Calculator" },
+  { href: "/ez-grader", label: "EZ Grader (Teachers)" },
 ];
 
 const REFERENCE_LINKS = [

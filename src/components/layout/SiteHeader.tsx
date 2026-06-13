@@ -27,6 +27,7 @@ const ALL_CALCULATORS = [
   { href: "/law-school-gpa-calculator", label: "Law School GPA (LSAC)" },
   { href: "/grade-calculator", label: "Grade Calculator" },
   { href: "/final-grade-calculator", label: "Final Grade Calculator" },
+  { href: "/ez-grader", label: "EZ Grader (Teachers)" },
 ];
 
 const RESOURCES = [

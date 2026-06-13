@@ -81,6 +81,12 @@ const ALL: CalcLink[] = [
     blurb: "What you need next term.",
     badge: "New",
   },
+  {
+    href: "/ez-grader",
+    title: "EZ Grader",
+    blurb: "Teacher test-grade tool.",
+    badge: "New",
+  },
 ];
 
 export function RelatedCalculators({

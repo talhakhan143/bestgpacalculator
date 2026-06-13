@@ -41,6 +41,7 @@ const ROUTES: Record<string, RouteMeta> = {
   "/semester-grade-calculator": { lastMod: "2026-06-02", priority: 0.8, changeFrequency: "monthly" },
   "/weighted-grade-calculator": { lastMod: "2026-06-02", priority: 0.8, changeFrequency: "monthly" },
   "/gpa-to-percentage-calculator": { lastMod: "2026-06-02", priority: 0.8, changeFrequency: "monthly" },
+  "/ez-grader": { lastMod: "2026-06-13", priority: 0.9, changeFrequency: "monthly" },
 
   // Guide pages
   "/how-to-calculate-gpa": { lastMod: "2026-05-15", priority: 0.8, changeFrequency: "monthly" },
