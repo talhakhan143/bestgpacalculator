@@ -29,6 +29,7 @@ const GRADE_LINKS = [
   { href: "/semester-grade-calculator", label: "Semester Grade Calculator" },
   { href: "/weighted-grade-calculator", label: "Weighted Grade Calculator" },
   { href: "/ez-grader", label: "EZ Grader (Teachers)" },
+  { href: "/letter-grade-to-gpa-converter", label: "Letter Grade → GPA" },
 ];
 
 const REFERENCE_LINKS = [

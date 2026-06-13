@@ -87,6 +87,12 @@ const ALL: CalcLink[] = [
     blurb: "Teacher test-grade tool.",
     badge: "New",
   },
+  {
+    href: "/letter-grade-to-gpa-converter",
+    title: "Letter → GPA",
+    blurb: "A-F to 4.0 scale.",
+    badge: "New",
+  },
 ];
 
 export function RelatedCalculators({
