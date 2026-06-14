@@ -93,6 +93,12 @@ const ALL: CalcLink[] = [
     blurb: "A-F to 4.0 scale.",
     badge: "New",
   },
+  {
+    href: "/cgpa-to-percentage-calculator",
+    title: "CGPA → %",
+    blurb: "10-point Indian scale.",
+    badge: "New",
+  },
 ];
 
 export function RelatedCalculators({

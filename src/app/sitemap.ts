@@ -43,6 +43,7 @@ const ROUTES: Record<string, RouteMeta> = {
   "/gpa-to-percentage-calculator": { lastMod: "2026-06-02", priority: 0.8, changeFrequency: "monthly" },
   "/ez-grader": { lastMod: "2026-06-13", priority: 0.9, changeFrequency: "monthly" },
   "/letter-grade-to-gpa-converter": { lastMod: "2026-06-14", priority: 0.9, changeFrequency: "monthly" },
+  "/cgpa-to-percentage-calculator": { lastMod: "2026-06-15", priority: 0.9, changeFrequency: "monthly" },
 
   // Guide pages
   "/how-to-calculate-gpa": { lastMod: "2026-05-15", priority: 0.8, changeFrequency: "monthly" },

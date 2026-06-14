@@ -29,6 +29,7 @@ const ALL_CALCULATORS = [
   { href: "/final-grade-calculator", label: "Final Grade Calculator" },
   { href: "/ez-grader", label: "EZ Grader (Teachers)" },
   { href: "/letter-grade-to-gpa-converter", label: "Letter Grade → GPA" },
+  { href: "/cgpa-to-percentage-calculator", label: "CGPA → Percentage" },
 ];
 
 const RESOURCES = [
