@@ -99,6 +99,12 @@ const ALL: CalcLink[] = [
     blurb: "10-point Indian scale.",
     badge: "New",
   },
+  {
+    href: "/uk-grade-to-gpa-converter",
+    title: "UK Grade → GPA",
+    blurb: "1st, 2:1, 2:2 → US 4.0.",
+    badge: "New",
+  },
 ];
 
 export function RelatedCalculators({

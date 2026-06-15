@@ -30,6 +30,7 @@ const ALL_CALCULATORS = [
   { href: "/ez-grader", label: "EZ Grader (Teachers)" },
   { href: "/letter-grade-to-gpa-converter", label: "Letter Grade → GPA" },
   { href: "/cgpa-to-percentage-calculator", label: "CGPA → Percentage" },
+  { href: "/uk-grade-to-gpa-converter", label: "UK Grade → GPA" },
 ];
 
 const RESOURCES = [
