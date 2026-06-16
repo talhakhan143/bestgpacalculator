@@ -105,6 +105,12 @@ const ALL: CalcLink[] = [
     blurb: "1st, 2:1, 2:2 → US 4.0.",
     badge: "New",
   },
+  {
+    href: "/india-cgpa-to-gpa-converter",
+    title: "India CGPA → GPA",
+    blurb: "10-point CGPA → US 4.0.",
+    badge: "New",
+  },
 ];
 
 export function RelatedCalculators({

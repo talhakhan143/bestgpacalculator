@@ -31,6 +31,7 @@ const ALL_CALCULATORS = [
   { href: "/letter-grade-to-gpa-converter", label: "Letter Grade → GPA" },
   { href: "/cgpa-to-percentage-calculator", label: "CGPA → Percentage" },
   { href: "/uk-grade-to-gpa-converter", label: "UK Grade → GPA" },
+  { href: "/india-cgpa-to-gpa-converter", label: "India CGPA → GPA" },
 ];
 
 const RESOURCES = [
