@@ -125,7 +125,7 @@ export default function HonorsGpaPage() {
             ))}
           </div>
           <p className="mt-3 text-xs text-zinc-500 dark:text-zinc-400">
-            Standard +0.5 scale. F never gets the bonus.
+            Standard +0.5 scale. A failing grade stays at 0.0 — the bonus never applies.
           </p>
         
           <InlineCalcCta

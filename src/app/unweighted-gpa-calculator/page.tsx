@@ -22,7 +22,7 @@ const FAQ_ITEMS: FaqItem[] = [
   },
   {
     q: "Why do colleges prefer unweighted GPA?",
-    a: "Colleges recalculate weighted GPAs to compare students fairly across schools that weight differently. Unweighted is the universal baseline; rigor is then judged separately by looking at the transcript.",
+    a: "Colleges normalize weighted GPAs so applicants from schools with different weighting policies can be compared on even terms. Unweighted is that shared baseline, and how demanding your course load was gets evaluated separately from the transcript itself.",
   },
   {
     q: "Can my unweighted GPA go above 4.0?",
@@ -120,14 +120,14 @@ F → 0.0`}
             Unweighted vs weighted — when each one matters
           </h3>
           <p className="mt-3 text-base leading-relaxed text-zinc-700 dark:text-zinc-300">
-            Most selective US colleges <strong>recalculate</strong> your GPA on
-            an internal unweighted scale to compare students fairly across
-            schools that weight differently. Course rigor is then judged
-            separately from the transcript. So unweighted is the apples-to-apples
-            number; the{" "}
+            Most selective US colleges <strong>re-derive</strong> your GPA on a
+            single unweighted baseline so applicants from differently-weighted
+            schools can be compared on equal footing, then weigh course
+            difficulty as a separate signal. That makes unweighted the
+            apples-to-apples number; the{" "}
             <Link href="/weighted-gpa-calculator" className="font-medium text-blue-700 hover:underline">weighted GPA</Link>{" "}
-            signals ambition. Some scholarships, class rank, and valedictorian
-            calculations still use weighted, so always know both. The{" "}
+            reflects ambition. Some scholarships, class rank, and valedictorian
+            calculations still run on weighted figures, so it pays to know both. The{" "}
             <Link href="/ap-gpa-calculator" className="font-medium text-blue-700 hover:underline">AP GPA Calculator</Link>{" "}
             and{" "}
             <Link href="/honors-gpa-calculator" className="font-medium text-blue-700 hover:underline">Honors GPA Calculator</Link>{" "}
@@ -158,7 +158,7 @@ F → 0.0`}
             <li><strong className="text-zinc-900 dark:text-zinc-100">Using A+ = 4.3.</strong> Most US schools cap at 4.0 even with an A+. Check your transcript legend.</li>
             <li><strong className="text-zinc-900 dark:text-zinc-100">Counting pass/fail courses.</strong> Pass/no-pass classes typically don&apos;t enter the GPA.</li>
             <li><strong className="text-zinc-900 dark:text-zinc-100">Mixing semester and year grades.</strong> Pick one — most schools report semester grades into GPA.</li>
-            <li><strong className="text-zinc-900 dark:text-zinc-100">Forgetting credit hours.</strong> A 4-credit course pulls weight twice as much as a 1-credit elective.</li>
+            <li><strong className="text-zinc-900 dark:text-zinc-100">Forgetting credit hours.</strong> A heavier 4-credit course pulls on your average far more than a 1-credit elective.</li>
           </ul>
 
           <InlineCalcCta

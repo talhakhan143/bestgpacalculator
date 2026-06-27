@@ -15,7 +15,9 @@ const CALCULATOR_LINKS = [
 const SPECIAL_LINKS = [
   { href: "/semester-gpa-calculator", label: "Semester GPA" },
   { href: "/current-gpa-calculator", label: "Current GPA" },
+  { href: "/gpa-goal-calculator", label: "GPA Goal / Target" },
   { href: "/ap-gpa-calculator", label: "AP GPA" },
+  { href: "/ap-score-to-gpa-calculator", label: "AP Score → GPA" },
   { href: "/honors-gpa-calculator", label: "Honors GPA" },
   { href: "/percentage-to-gpa-calculator", label: "Percentage to GPA" },
   { href: "/gpa-to-percentage-calculator", label: "GPA to Percentage" },

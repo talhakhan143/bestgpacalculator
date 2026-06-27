@@ -82,10 +82,10 @@ export default function GpaWithoutCreditsPage() {
           </h2>
           <p className="mt-4 text-base leading-relaxed text-zinc-700 dark:text-zinc-300">
             Most US high schools and colleges use credit hours to weight
-            classes. A 4-credit chemistry class affects your GPA more than a
-            1-credit gym class. But not every school works that way — middle
-            schools often don&apos;t track credits, and some grading systems
-            simply average all letter grades equally.
+            classes. A 4-credit chemistry class leaves a bigger mark on your
+            GPA than a 1-credit gym class. But not every school works that way —
+            middle schools often don&apos;t track credits, and some grading
+            systems simply average all letter grades equally.
           </p>
 
           <DefinitionBlock
@@ -117,8 +117,8 @@ export default function GpaWithoutCreditsPage() {
             How an equal-weight GPA differs from a credit-weighted GPA
           </h3>
           <p className="mt-3 text-base leading-relaxed text-zinc-700 dark:text-zinc-300">
-            With equal weighting, a 1-credit ceramics elective influences the
-            average exactly as much as a 4-credit chemistry sequence. Credit
+            With equal weighting, a 1-credit ceramics elective sways the
+            average exactly as much as a four-credit science sequence. Credit
             weighting respects course length and rigor. For most US high
             schools and all US colleges, credit weighting is the official method
             — see the{" "}

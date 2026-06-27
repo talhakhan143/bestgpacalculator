@@ -26,7 +26,7 @@ const FAQ_ITEMS: FaqItem[] = [
   },
   {
     q: "Do colleges see weighted or unweighted high school GPA?",
-    a: "They see both — your transcript shows what your school reports. But selective colleges typically recalculate to their own standard scale, often unweighted, then judge rigor separately from the transcript.",
+    a: "Both appear — your transcript lists whatever your school reports. Selective colleges, though, usually convert everything to their own standard scale, frequently unweighted, and then size up course difficulty as its own factor.",
   },
   {
     q: "Does freshman year GPA matter?",
@@ -156,9 +156,10 @@ export default function HighSchoolGpaPage() {
             <Link href="/honors-gpa-calculator" className="font-medium text-blue-700 hover:underline">Honors GPA Calculator</Link>{" "}
             for the +0.5 honors track, or the{" "}
             <Link href="/ap-score-to-gpa-calculator" className="font-medium text-blue-700 hover:underline">AP Score Predictor</Link>{" "}
-            to see how a 1-5 exam score converts to college credit. Colleges
-            re-weight differently — most strip the bonus and judge rigor
-            separately, so always track both numbers.
+            to see how a 1-5 exam score converts to college credit. Admissions
+            offices apply their own weighting rules — many drop the bonus
+            altogether and gauge how demanding your schedule was as a separate
+            factor, so it&apos;s worth watching both numbers.
           </p>
 
           <InlineCalcCta
