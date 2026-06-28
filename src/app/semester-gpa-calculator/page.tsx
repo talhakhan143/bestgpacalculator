@@ -83,9 +83,9 @@ export default function SemesterGpaPage() {
           </h2>
           <p className="mt-4 text-base leading-relaxed text-zinc-700 dark:text-zinc-300">
             Your semester GPA is the average grade point across every class
-            you took that term, weighted by how many credits each class is
-            worth. A 4-credit math class influences the average more than a
-            1-credit elective.
+            you took that term, weighted by how many credits each class
+            carries. A heavier 4-credit math class moves your term average
+            more than a single-credit elective does.
           </p>
 
           <DefinitionBlock

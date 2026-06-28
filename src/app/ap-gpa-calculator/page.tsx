@@ -144,10 +144,10 @@ export default function ApGpaPage() {
             <Link href="/honors-gpa-calculator" className="font-medium text-blue-700 hover:underline">Honors GPA Calculator</Link>{" "}
             covers the +0.5 track separately. The{" "}
             <Link href="/weighted-gpa-calculator" className="font-medium text-blue-700 hover:underline">Weighted GPA Calculator</Link>{" "}
-            handles a mixed schedule with a 5-scale weighting toggle. Selective
-            colleges typically recalculate to a flat{" "}
+            handles a mixed schedule with a 5-scale weighting toggle. Most
+            selective colleges strip these AP bonuses back to a flat{" "}
             <Link href="/unweighted-gpa-calculator" className="font-medium text-blue-700 hover:underline">unweighted</Link>{" "}
-            number and judge rigor separately, so always track both.
+            number and assess your course rigor on its own, so keep both in view.
           </p>
 
           <h3 className="mt-10 text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">

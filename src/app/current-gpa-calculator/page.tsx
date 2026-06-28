@@ -145,15 +145,19 @@ export default function CurrentGpaPage() {
           </p>
 
           <h3 className="mt-10 text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
-            Why early grades matter most
+            Estimate your current GPA before grades post
           </h3>
           <p className="mt-3 text-base leading-relaxed text-zinc-700 dark:text-zinc-300">
-            Cumulative GPA is a credit-weighted average. The first 30 credits
-            anchor it heavily. A perfect 4.0 over 15 new credits only lifts a
-            3.0 cumulative (60 credits) to about 3.20. The{" "}
-            <Link href="/gpa-goal-calculator" className="font-medium text-blue-700 hover:underline">GPA Goal Calculator</Link>{" "}
-            shows exactly how many terms you need to hit a target — and when
-            the math becomes impossible.
+            Your &quot;current&quot; GPA is the running average for the term
+            you&apos;re in right now — useful weeks before the registrar
+            finalizes anything. Pull your live percentage from each course&apos;s
+            LMS gradebook (Canvas, Blackboard), convert it to a letter, and enter
+            it above to see where you&apos;d land if grades closed today. That
+            forecast is what tells you whether one more high-stakes final is worth
+            the push, or whether a late withdrawal protects the number better.
+            To roll this term into your overall record across all years, use the{" "}
+            <Link href="/cumulative-gpa-calculator" className="font-medium text-blue-700 hover:underline">Cumulative GPA Calculator</Link>{" "}
+            instead.
           </p>
 
           <InlineCalcCta

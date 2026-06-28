@@ -12,7 +12,9 @@ export const metadata: Metadata = {
 };
 
 export default function GpaHubPage() {
-  const sorted = [...GPA_SCORE_DATA].sort((a, b) => b.numeric - a.numeric);
+  const sorted = GPA_SCORE_DATA.filter((d) => d.indexed).sort(
+    (a, b) => b.numeric - a.numeric,
+  );
   return (
     <>
       <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "GPA Scores", href: "/gpa" }]} />

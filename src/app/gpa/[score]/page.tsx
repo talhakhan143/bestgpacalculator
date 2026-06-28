@@ -1,14 +1,19 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { GPA_SCORE_DATA, getGpaScoreData, getAllGpaSlugs } from "@/lib/gpa-score-data";
+import { GPA_SCORE_DATA, getGpaScoreData } from "@/lib/gpa-score-data";
 import { Faq } from "@/components/sections/Faq";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { ArticleSchema, FaqSchema } from "@/components/seo/JsonLd";
 import { RelatedCalculators } from "@/components/sections/RelatedCalculators";
 
+export const dynamicParams = false;
+
+// Only pre-render indexable score pages. Thin/un-enriched scores are removed
+// from the site (404) to shrink the programmatic footprint that the May 2026
+// core update penalized as scaled content.
 export async function generateStaticParams() {
-  return getAllGpaSlugs().map((score) => ({ score }));
+  return GPA_SCORE_DATA.filter((d) => d.indexed).map((d) => ({ score: d.slug }));
 }
 
 export async function generateMetadata({
@@ -40,7 +45,7 @@ export default async function GpaScorePage({
 }) {
   const { score } = await params;
   const data = getGpaScoreData(score);
-  if (!data) notFound();
+  if (!data || !data.indexed) notFound();
 
   const url = `https://bestgpacalculator.online/gpa/${data.slug}`;
   const title = `Is a ${data.value} GPA Good?`;
@@ -238,7 +243,7 @@ export default async function GpaScorePage({
         <div className="glass rounded-3xl p-7 sm:p-9">
           <h2 className="text-xl font-bold tracking-tight text-slate-900">Other GPA scores</h2>
           <div className="mt-4 flex flex-wrap gap-2">
-            {GPA_SCORE_DATA.filter((d) => d.slug !== data.slug)
+            {GPA_SCORE_DATA.filter((d) => d.indexed && d.slug !== data.slug)
               .sort((a, b) => a.numeric - b.numeric)
               .map((d) => (
                 <Link

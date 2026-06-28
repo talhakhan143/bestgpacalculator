@@ -199,12 +199,13 @@ Worked example (4 classes, 1 credit each):
             Weighted vs unweighted — which one matters?
           </h3>
           <p className="mt-3 text-base leading-relaxed text-slate-700">
-            Both. Selective colleges typically <strong>recalculate</strong> your
-            GPA on a standard scale to normalize across schools, then look at
-            course rigor separately. So the weighted number signals ambition,
-            but the unweighted (or recalculated) number drives admissions math.
-            Track both. Use this calculator&apos;s side-by-side display to see
-            how each AP class shifts the gap.
+            Both. Selective colleges usually <strong>recalculate</strong> your
+            GPA onto one common scale so applicants from different high schools
+            line up fairly, then size up course rigor on its own. The weighted
+            figure broadcasts ambition, while the recalculated unweighted figure
+            is what actually feeds the admissions math. Keep an eye on each —
+            this calculator&apos;s side-by-side display shows how every AP class
+            widens or closes the gap.
           </p>
         </div>
       </article>
